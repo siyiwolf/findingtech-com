@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Finding Company Primary Logo -->
+  <!-- Based on VI Guidelines v1.0 -->
+  <!-- Colors: Finding Blue #0057B8 -->
+
+  <!-- Logo Icon: Compass with center dot representing "finding" -->
+  <g transform="translate(10, 15)">
+    <!-- Outer circle -->
+    <circle cx="25" cy="25" r="24" fill="none" stroke="#0057B8" stroke-width="3"/>
+    <!-- Inner cross (compass) -->
+    <line x1="25" y1="8" x2="25" y2="42" stroke="#0057B8" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="8" y1="25" x2="42" y2="25" stroke="#0057B8" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Small circle at center -->
+    <circle cx="25" cy="25" r="6" fill="#0057B8"/>
+  </g>
+
+  <!-- Text: FINDING COMPANY -->
+  <text x="75" y="38" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="22" font-weight="700" fill="#0057B8">
+    <tspan>FINDING</tspan>
+  </text>
+  <text x="75" y="58" font-family="Inter, Helvetica Neue, Arial, sans-serif" font-size="12" font-weight="500" fill="#737373" letter-spacing="3">
+    <tspan>COMPANY</tspan>
+  </text>
+
+  <!-- Chinese: 斐丁科技 -->
+  <text x="195" y="68" font-family="PingFang SC, Microsoft YaHei, 'Source Han Sans CN', sans-serif" font-size="14" font-weight="500" fill="#0057B8" text-anchor="end">
+    <tspan>斐丁科技</tspan>
+  </text>
+</svg>

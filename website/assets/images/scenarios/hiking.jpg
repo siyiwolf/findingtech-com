@@ -1,0 +1,15 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hikeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0057B8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#hikeGrad)"/>
+  <text x="400" y="280" font-family="Inter, sans-serif" font-size="48" font-weight="700" fill="white" text-anchor="middle">
+    登山徒步场景
+  </text>
+  <text x="400" y="330" font-family="Inter, sans-serif" font-size="24" fill="white" opacity="0.8" text-anchor="middle">
+    海拔监测 · 气压预警 · 离线地图 · 紧急救援
+  </text>
+</svg>

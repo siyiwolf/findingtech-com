@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技术中心 | Finding Company</title>
+    <meta name="description" content="Finding Company技术中心：查看技术白皮书、API文档、SDK下载、开源项目。了解我们如何用AI和卫星通信保障户外安全。">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* Additional tech-specific styles */
+        .tech-hero {
+            background: linear-gradient(135deg, var(--midnight) 0%, #2c3e50 100%);
+            color: white;
+            padding: 4rem 0;
+        }
+        .tech-grid-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        .tech-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 2rem;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition-base);
+        }
+        .tech-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-xl);
+        }
+        .tech-card h3 {
+            color: var(--finding-blue);
+            margin-bottom: 1rem;
+        }
+        .tech-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .doc-list {
+            display: grid;
+            gap: 1rem;
+        }
+        .doc-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 1rem;
+            background: var(--gray-100);
+            border-radius: var(--radius-md);
+        }
+        .doc-item a {
+            color: var(--midnight);
+            font-weight: 500;
+        }
+        .doc-item .format {
+            background: var(--finding-blue);
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-family: var(--font-code);
+        }
+        .code-block {
+            background: var(--midnight);
+            color: #e6e6e6;
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            overflow-x: auto;
+            font-family: var(--font-code);
+            font-size: 0.875rem;
+        }
+        .highlight-title {
+            color: var(--tech-purple);
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/logo/finding-logo-primary.svg" alt="Finding Company" width="180">
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">首页</a></li>
+                <li><a href="../scenarios/index.html" class="nav-link">应用场景</a></li>
+                <li><a href="../products/index.html" class="nav-link">产品</a></li>
+                <li><a href="index.html" class="nav-link active">技术</a></li>
+                <li><a href="../about/index.html" class="nav-link">关于我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="tech-hero">
+        <div class="container">
+            <div style="max-width: 800px;">
+                <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">技术中心</h1>
+                <p style="font-size: 1.25rem; opacity: 0.9; margin-bottom: 2rem;">开放、透明、创新。探索 Finding 背后的技术，接入我们的平台。</p>
+                <div class="cta-buttons">
+                    <a href="#api" class="btn btn-primary">API 文档</a>
+                    <a href="#sdk" class="btn btn-secondary" style="color:white; border-color:white;">SDK 下载</a>
+                    <a href="whitepaper.html" class="btn btn-outline" style="color:white; border-color:white;">技术白皮书</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quick Links -->
+    <section class="tech-section">
+        <div class="container">
+            <h2 class="section-title">开发者资源</h2>
+            <div class="tech-grid-cards">
+                <div class="tech-card">
+                    <div class="icon">📡</div>
+                    <h3>卫星通信 API</h3>
+                    <p>通过 REST API 管理设备、发送短报文、订阅SOS事件。支持 Webhook 推送。</p>
+                    <a href="#api" class="btn btn-outline">查看文档</a>
+                </div>
+                <div class="tech-card">
+                    <div class="icon">🧠</div>
+                    <h3>AI 模型</h3>
+                    <p>了解我们的端侧AI架构：跌倒检测、环境分类、声音识别模型。支持 TensorFlow Lite 和 ONNX。</p>
+                    <a href="ai-models.html" class="btn btn-outline">模型库</a>
+                </div>
+                <div class="tech-card">
+                    <div class="icon">🗺️</div>
+                    <h3>地图服务</h3>
+                    <p>离线地图格式说明，工具链，瓦片服务器配置指南。支持自托管地图源。</p>
+                    <a href="maps.html" class="btn btn-outline">地图文档</a>
+                </div>
+                <div class="tech-card">
+                    <div class="icon">🔗</div>
+                    <h3>LoRa 协议</h3>
+                    <p>设备间自组网通信协议开源。可自行部署网关，扩展覆盖范围。</p>
+                    <a href="lora.html" class="btn btn-outline">获取协议</a>
+                </div>
+                <div class="tech-card">
+                    <div class="icon">📊</div>
+                    <h3>数据导出</h3>
+                    <p>从云端批量导出历史轨迹、传感器数据。支持 CSV、GPX、KML 格式。</p>
+                    <a href="data-export.html" class="btn btn-outline">导出指南</a>
+                </div>
+                <div class="tech-card">
+                    <div class="icon">🔧</div>
+                    <h3>固件更新</h3>
+                    <p>设备固件 OTA 升级流程，自定义固件签名说明，开发者模式开启方法。</p>
+                    <a href="firmware.html" class="btn btn-outline">开发指南</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SDK Downloads -->
+    <section class="tech-section bg-light" id="sdk">
+        <div class="container">
+            <h2 class="section-title">SDK 下载</h2>
+            <p class="section-subtitle">官方支持的 SDK，助你快速接入 Finding 平台</p>
+            <div class="sdk-list">
+                <div class="sdk-item">
+                    <div class="sdk-header">
+                        <h3>Python SDK</h3>
+                        <span class="version">v2.3.1</span>
+                    </div>
+                    <p>完整的 API 封装，支持设备管理、位置查询、SOS订阅、数据导出。兼容 Python 3.8+。</p>
+                    <div class="sdk-actions">
+                        <a href="https://pypi.org/project/findingtech" target="_blank" class="btn btn-primary">PyPI 安装</a>
+                        <a href="sdk/python/finding-2.3.1-py3-none-any.whl" class="btn btn-outline">下载 Wheel</a>
+                        <a href="sdk/python/docs/" class="btn btn-outline">文档</a>
+                    </div>
+                </div>
+
+                <div class="sdk-item">
+                    <div class="sdk-header">
+                        <h3>C SDK</h3>
+                        <span class="version">v1.8.0</span>
+                    </div>
+                    <p>嵌入式友好，适用于 Linux、RTOS。提供 HTTP client 和协议解析。支持离线编译。</p>
+                    <div class="sdk-actions">
+                        <a href="sdk/c/finding-sdk-1.8.0.tar.gz" class="btn btn-primary">下载</a>
+                        <a href="sdk/c/doxygen/" class="btn btn-outline">API 参考</a>
+                    </div>
+                </div>
+
+                <div class="sdk-item">
+                    <div class="sdk-header">
+                        <h3>MATLAB Toolbox</h3>
+                        <span class="version">v1.2.0</span>
+                    </div>
+                    <p>为科研用户设计，方便导入设备数据到 MATLAB 进行分析可视化。</p>
+                    <div class="sdk-actions">
+                        <a href="sdk/matlab/finding-toolbox-1.2.0.mltbx" class="btn btn-primary">下载</a>
+                        <a href="sdk/matlab/examples/" class="btn btn-outline">示例</a>
+                    </div>
+                </div>
+
+                <div class="sdk-item">
+                    <div class="sdk-header">
+                        <h3>Node.js Wrapper</h3>
+                        <span class="version">v1.5.3</span>
+                    </div>
+                    <p>Promise-based，适合构建 Web 应用和后端服务。包含 TypeScript 定义。</p>
+                    <div class="sdk-actions">
+                        <a href="https://www.npmjs.com/package/@finding/sdk" target="_blank" class="btn btn-primary">NPM 安装</a>
+                        <a href="sdk/node/finding-sdk-1.5.3.tgz" class="btn btn-outline">下载</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- API 文档入口 -->
+    <section class="tech-section" id="api">
+        <div class="container">
+            <h2 class="section-title">API 文档</h2>
+            <div class="api-overview">
+                <p>Finding Cloud 提供 RESTful API，用于与设备交互和数据获取。API 使用 HTTPS 和 Bearer Token 认证。</p>
+
+                <h3 class="highlight-title">快速开始</h3>
+                <ol class="install-steps">
+                    <li>在 <a href="../about/contact.html?subject=API%20Key" target="_blank">开发者portal</a> 注册并获取 API Key</li>
+                    <li>使用下面的 cURL 示例测试连接</li>
+                    <li>阅读完整文档，开始构建</li>
+                </ol>
+
+                <div class="code-block">
+# 获取设备列表
+curl -H "Authorization: Bearer YOUR_API_KEY" \
+     "https://api.findingtech.com/v1/devices"
+
+# 发送短报文
+curl -X POST "https://api.findingtech.com/v1/messages" \
+     -H "Authorization: Bearer YOUR_API_KEY" \
+     -H "Content-Type: application/json" \
+     -d '{"device_id": "DEVICE123", "message": "OK"}'
+
+# 订阅 SOS 事件 (Webhook)
+curl -X POST "https://api.findingtech.com/v1/webhooks" \
+     -H "Authorization: Bearer YOUR_API_KEY" \
+     -d '{"url": "https://your-server.com/sos", "event": "sos"}'</div>
+
+                <div class="api-links">
+                    <a href="api/authentication.html" class="btn btn-outline">认证方式</a>
+                    <a href="api/devices.html" class="btn btn-outline">设备管理</a>
+                    <a href="api/messages.html" class="btn btn-outline">消息发送</a>
+                    <a href="api/locations.html" class="btn btn-outline">位置查询</a>
+                    <a href="api/webhooks.html" class="btn btn-outline">Webhook</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术白皮书 -->
+    <section class="tech-section bg-light">
+        <div class="container">
+            <h2 class="section-title">技术白皮书</h2>
+            <div class="whitepaper-grid">
+                <div class="whitepaper-card">
+                    <h4>《Finding 卫星通信架构》</h4>
+                    <p>详细介绍我们如何整合铱星和北斗卫星，实现低延迟、高可靠的全球通信。包含链路预算、功耗优化、延迟分析。</p>
+                    <a href="whitepaper/satellite-architecture.pdf" class="btn btn-outline">下载 PDF (2.4 MB)</a>
+                </div>
+                <div class="whitepaper-card">
+                    <h4>《端侧AI推理优化》</h4>
+                    <p>如何在 1 TOPS 的 MCU 上运行跌倒检测、声音识别模型。模型压缩、量化、推理引擎选型。</p>
+                    <a href="whitepaper/edge-ai-optimization.pdf" class="btn btn-outline">下载 PDF (1.8 MB)</a>
+                </div>
+                <div class="whitepaper-card">
+                    <h4>《LoRa 自组网协议》</h4>
+                    <p>介绍我们的mesh网络协议，如何在无基础设施情况下实现多设备协同。</p>
+                    <a href="whitepaper/lora-mesh.pdf" class="btn btn-outline">下载 PDF (1.2 MB)</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 开源项目 -->
+    <section class="tech-section">
+        <div class="container">
+            <h2 class="section-title">开源项目</h2>
+            <p>我们开源部分项目，回馈社区。欢迎贡献代码和提 issue。</p>
+            <div class="github-repos">
+                <div class="repo-item">
+                    <h4><a href="https://github.com/findingtech/finding-sdk-python" target="_blank">finding-sdk-python</a></h4>
+                    <p>Python SDK 源码与示例</p>
+                    <div class="repo-meta">
+                        <span class="language">Python</span>
+                        <span class="stars">⭐ 312</span>
+                    </div>
+                </div>
+                <div class="repo-item">
+                    <h4><a href="https://github.com/findingtech/map-converter" target="_blank">map-converter</a></h4>
+                    <p>离线地图格式转换工具（GeoTIFF → Finding格式）</p>
+                    <div class="repo-meta">
+                        <span class="language">Go</span>
+                        <span class="stars">⭐ 87</span>
+                    </div>
+                </div>
+                <div class="repo-item">
+                    <h4><a href="https://github.com/findingtech/firmware-tools" target="_blank">firmware-tools</a></h4>
+                    <p>固件打包、签名、OTA工具链</p>
+                    <div class="repo-meta">
+                        <span class="language">Shell</span>
+                        <span class="stars">⭐ 45</span>
+                    </div>
+                </div>
+                <div class="repo-item">
+                    <h4><a href="https://github.com/findingtech/data-exporter" target="_blank">data-exporter</a></h4>
+                    <p>从 Finding Cloud 导出数据的 CLI 工具</p>
+                    <div class="repo-meta">
+                        <span class="language">Node.js</span>
+                        <span class="stars">⭐ 123</span>
+                    </div>
+                </div>
+            </div>
+            <p style="margin-top: 1rem;"><a href="https://github.com/findingtech" target="_blank" class="btn btn-outline">查看所有仓库 →</a></p>
+        </div>
+    </section>
+
+    <!-- 常见问题 for developers -->
+    <section class="tech-section bg-light">
+        <div class="container">
+            <h2 class="section-title">开发者常见问题</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h4>Q: API 有调用频率限制吗？</h4>
+                    <p>A: 默认每秒 10 次请求。如有更高需求，联系我们申请提升。Webhook 没有频率限制。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Q: 数据存储多久？</h4>
+                    <p>A: 位置历史默认保留 365 天，传感器数据保留 90 天。企业客户可配置更长保留期。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Q: 可以在自己的服务器部署吗？</h4>
+                    <p>A: 我们提供私有化部署方案，适合大型组织和科研机构。请联系 sales@findingtech.com 咨询。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Q: SDK 是否支持实时位置流？</h4>
+                    <p>A: 支持。通过 WebSocket 或 Server-Sent Events (SSE) 可以接收设备实时位置推送，延迟低于 2 秒。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Q: 能否自定义 AI 模型？</h4>
+                    <p>A: 设备端支持 TensorFlow Lite 和 ONNX 模型。如果你有特定场景的需求（如特定动物识别），可以训练模型并加载到设备。联系我们获取工具链。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>准备好构建了吗？</h2>
+                <p>获取 API Key，开始探索 Finding 平台</p>
+                <div class="cta-buttons">
+                    <a href="../about/contact.html?subject=API%20Key" class="btn btn-large btn-white">注册开发者账号</a>
+                    <a href="api/index.html" class="btn btn-large btn-outline-white">浏览完整文档</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="../assets/logo/finding-logo-primary.svg" alt="Finding Company" width="150">
+                    <p>户外运动的智能化AI硬件</p>
+                </div>
+                <div class="footer-links">
+                    <h4>产品</h4>
+                    <ul>
+                        <li><a href="../products/finding-pro.html">Finding Pro</a></li>
+                        <li><a href="../products/finding-lite.html">Finding Lite</a></li>
+                        <li><a href="../products/finding-mini.html">Finding Mini</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>场景</h4>
+                    <ul>
+                        <li><a href="../scenarios/hiking.html">登山徒步</a></li>
+                        <li><a href="../scenarios/cycling.html">骑行探险</a></li>
+                        <li><a href="../scenarios/camping.html">露营野炊</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>支持</h4>
+                    <ul>
+                        <li><a href="documentation.html">技术文档</a></li>
+                        <li><a href="../about/faq.html">常见问题</a></li>
+                        <li><a href="../about/contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>关于</h4>
+                    <ul>
+                        <li><a href="../about/company.html">公司介绍</a></li>
+                        <li><a href="../about/careers.html">加入我们</a></li>
+                        <li><a href="../about/news.html">新闻动态</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Finding Company（斐丁科技）. 保留所有权利。</p>
+                <p><a href="../about/privacy.html">隐私政策</a> | <a href="../about/terms.html">服务条款</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finding Company | 斐丁科技 - 户外运动的智能化AI硬件</title>
+    <meta name="description" content="Finding Company（斐丁科技）专注于户外运动的智能化AI硬件，为登山、骑行、露营、滑雪等探险活动提供安全、智能的科技装备。">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <img src="assets/logo/finding-logo-primary.svg" alt="Finding Company" width="180">
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">首页</a></li>
+                <li><a href="scenarios/index.html" class="nav-link">应用场景</a></li>
+                <li><a href="products/index.html" class="nav-link">产品</a></li>
+                <li><a href="tech/index.html" class="nav-link">技术</a></li>
+                <li><a href="about/index.html" class="nav-link">关于我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-background">
+            <video autoplay muted loop playsinline>
+                <source src="assets/videos/mountain-adventure.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">为探险者打造的<br><span class="highlight">AI智能伙伴</span></h1>
+            <p class="hero-subtitle">Finding Company（斐丁科技）—— 户外运动的智能化AI硬件，让每一次探险都安全、智能、有趣。</p>
+            <div class="hero-cta">
+                <a href="scenarios/index.html" class="btn btn-primary">探索应用场景</a>
+                <a href="products/index.html" class="btn btn-secondary">查看产品</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>向下滚动</span>
+            <div class="scroll-arrow"></div>
+        </div>
+    </header>
+
+    <!-- 核心价值 -->
+    <section class="value-proposition">
+        <div class="container">
+            <h2 class="section-title">为什么选择 Finding？</h2>
+            <div class="value-grid">
+                <div class="value-card">
+                    <div class="value-icon">🛡️</div>
+                    <h3>极限环境可靠性</h3>
+                    <p>IP68级防水防尘，-40℃至85℃极端温度工作，72小时超长续航。从珠峰大本营到沙漠深处，始终如一的可靠性能。</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🤖</div>
+                    <h3>实时AI决策</h3>
+                    <p>端侧AI芯片，无需网络即可进行环境感知、路径规划、风险评估。智能算法每秒分析1000+数据点，提前预警潜在危险。</p>
+                </div>
+                <div class="value-card">
+                    <div class="value-icon">🌍</div>
+                    <h3>无死角通信</h3>
+                    <p>集成卫星通信模块，全球覆盖。一键SOS、位置共享、离线消息。即使在无人区，也能与世界保持连接。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 场景展示 -->
+    <section class="scenarios-showcase">
+        <div class="container">
+            <h2 class="section-title">探索户外场景</h2>
+            <p class="section-subtitle">针对不同运动类型，Finding Device提供专属智能解决方案</p>
+            <div class="scenarios-grid">
+                <a href="scenarios/hiking.html" class="scenario-card">
+                    <div class="scenario-image" style="background-image: url('assets/images/scenarios/hiking.jpg')"></div>
+                    <div class="scenario-content">
+                        <h3>🏔️ 登山徒步</h3>
+                        <p>海拔监测、气压预警、离线地图、紧急救援</p>
+                        <span class="scenario-cta">探索功能 →</span>
+                    </div>
+                </a>
+                <a href="scenarios/cycling.html" class="scenario-card">
+                    <div class="scenario-image" style="background-image: url('assets/images/scenarios/cycling.jpg')"></div>
+                    <div class="scenario-content">
+                        <h3>🚴 骑行探险</h3>
+                        <p>实时导航、速度监测、事故检测、路线记录</p>
+                        <span class="scenario-cta">探索功能 →</span>
+                    </div>
+                </a>
+                <a href="scenarios/camping.html" class="scenario-card">
+                    <div class="scenario-image" style="background-image: url('assets/images/scenarios/camping.jpg')"></div>
+                    <div class="scenario-content">
+                        <h3>🏕️ 露营野炊</h3>
+                        <p>智能营地、野生动物预警、星空导航、天气预警</p>
+                        <span class="scenario-cta">探索功能 →</span>
+                    </div>
+                </a>
+                <a href="scenarios/skiing.html" class="scenario-card">
+                    <div class="scenario-image" style="background-image: url('assets/images/scenarios/skiing.jpg')"></div>
+                    <div class="scenario-content">
+                        <h3>🏂 滑雪运动</h3>
+                        <p>滑雪轨迹、雪崩预警、GPS定位、跌倒检测</p>
+                        <span class="scenario-cta">探索功能 →</span>
+                    </div>
+                </a>
+                <a href="scenarios/research.html" class="scenario-card">
+                    <div class="scenario-image" style="background-image: url('assets/images/scenarios/research.jpg')"></div>
+                    <div class="scenario-content">
+                        <h3>🔬 野外科研</h3>
+                        <p>数据采集、环境监测、设备协同、长时续航</p>
+                        <span class="scenario-cta">探索功能 →</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技术亮点 -->
+    <section class="tech-highlights">
+        <div class="container">
+            <h2 class="section-title">尖端技术，硬核实力</h2>
+            <div class="tech-grid">
+                <div class="tech-item">
+                    <div class="tech-stat">72<span>小时</span></div>
+                    <h4>超长续航</h4>
+                    <p>高能量密度电池 + 智能功耗管理，确保长时间野外使用</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-stat">1000+</div>
+                    <h4>数据点/秒</h4>
+                    <p>传感器每秒采集1000+数据点，AI实时分析，毫秒级响应</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-stat">全球</div>
+                    <h4>卫星覆盖</h4>
+                    <p>集成铱星/北斗/天通卫星，全球无死角通信能力</p>
+                </div>
+                <div class="tech-item">
+                    <div class="tech-stat">IP68</div>
+                    <h4>防护等级</h4>
+                    <p>完全防尘防水，可在2米水深浸泡30分钟</p>
+                </div>
+            </div>
+            <div class="tech-cta">
+                <a href="tech/index.html" class="btn btn-outline">查看技术白皮书</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 用户证言 -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">探险者的真实声音</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"在珠峰大本营，突遇暴风雪，是Finding Device的一键SOS功能救了我一命。救援队根据我的精确定位，在4小时内成功将我撤离。"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/images/avatars/user1.jpg" alt="张明" class="author-avatar">
+                        <div class="author-info">
+                            <h5>张明</h5>
+                            <span>登山爱好者，已攀登7座8000米山峰</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"骑行318国道时，Finding Device的事故检测功能自动触发了紧急通知。虽然只是轻微摔车，但家人和朋友第一时间收到信息，让我感到非常安心。"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/images/avatars/user2.jpg" alt="李婷" class="author-avatar">
+                        <div class="author-info">
+                            <h5>李婷</h5>
+                            <span>长途骑行爱好者，累计骑行20000公里</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"作为野生动物研究员，Finding Device的野外数据采集功能太强大了。离线状态下也能记录所有观测数据，回传效率提升了3倍。"</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="assets/images/avatars/user3.jpg" alt="王博士" class="author-avatar">
+                        <div class="author-info">
+                            <h5>王浩然</h5>
+                            <span>中科院野生动物研究所</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 产品预览 -->
+    <section class="products-preview">
+        <div class="container">
+            <h2 class="section-title">旗舰产品</h2>
+            <div class="products-grid">
+                <div class="product-card featured">
+                    <div class="product-badge">旗舰款</div>
+                    <div class="product-image">
+                        <img src="assets/images/products/finding-pro.jpg" alt="Finding Pro">
+                    </div>
+                    <h3>Finding Pro</h3>
+                    <p class="product-desc">全能旗舰，集成卫星通信、端侧AI、72小时续航，满足最严苛的探险需求。</p>
+                    <ul class="product-features">
+                        <li>铱星+北斗双模卫星</li>
+                        <li>端侧AI芯片（5 TOPS）</li>
+                        <li>1.5英寸OLED屏</li>
+                        <li>IP68防护</li>
+                    </ul>
+                    <a href="products/finding-pro.html" class="btn btn-primary">了解详情</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/products/finding-lite.jpg" alt="Finding Lite">
+                    </div>
+                    <h3>Finding Lite</h3>
+                    <p class="product-desc">轻量版，适合日常徒步和轻度户外，性价比之选。</p>
+                    <ul class="product-features">
+                        <li>北斗卫星定位</li>
+                        <li>48小时续航</li>
+                        <li>1.2英寸显示屏</li>
+                        <li>IP67防护</li>
+                    </ul>
+                    <a href="products/finding-lite.html" class="btn btn-outline">了解详情</a>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/images/products/finding-mini.jpg" alt="Finding Mini">
+                    </div>
+                    <h3>Finding Mini</h3>
+                    <p class="product-desc">超紧凑设计，可穿戴式，适合极限运动和快速响应。</p>
+                    <ul class="product-features">
+                        <li>仅重45g</li>
+                        <li>自动跌倒检测</li>
+                        <li>30天待机</li>
+                        <li>IP68防护</li>
+                    </ul>
+                    <a href="products/finding-mini.html" class="btn btn-outline">了解详情</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>准备好开启你的智能探险之旅了吗？</h2>
+                <p>加入千万探险者，用科技守护每一次出发</p>
+                <div class="cta-buttons">
+                    <a href="products/index.html" class="btn btn-large btn-primary">立即选购</a>
+                    <a href="about/community.html" class="btn btn-large btn-secondary">加入社区</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="assets/logo/finding-logo-primary.svg" alt="Finding Company" width="150">
+                    <p>户外运动的智能化AI硬件</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="WeChat">微信</a>
+                        <a href="#" aria-label="Weibo">微博</a>
+                        <a href="#" aria-label="Twitter">Twitter</a>
+                        <a href="#" aria-label="YouTube">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>产品</h4>
+                    <ul>
+                        <li><a href="products/finding-pro.html">Finding Pro</a></li>
+                        <li><a href="products/finding-lite.html">Finding Lite</a></li>
+                        <li><a href="products/finding-mini.html">Finding Mini</a></li>
+                        <li><a href="products/accessories.html">配件</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>场景</h4>
+                    <ul>
+                        <li><a href="scenarios/hiking.html">登山徒步</a></li>
+                        <li><a href="scenarios/cycling.html">骑行探险</a></li>
+                        <li><a href="scenarios/camping.html">露营野炊</a></li>
+                        <li><a href="scenarios/skiing.html">滑雪运动</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>支持</h4>
+                    <ul>
+                        <li><a href="tech/documentation.html">技术文档</a></li>
+                        <li><a href="tech/api.html">API/SDK</a></li>
+                        <li><a href="about/faq.html">常见问题</a></li>
+                        <li><a href="about/contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>关于</h4>
+                    <ul>
+                        <li><a href="about/company.html">公司介绍</a></li>
+                        <li><a href="about/team.html">团队</a></li>
+                        <li><a href="about/careers.html">加入我们</a></li>
+                        <li><a href="about/news.html">新闻动态</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Finding Company（斐丁科技）. 保留所有权利。</p>
+                <p><a href="about/privacy.html">隐私政策</a> | <a href="about/terms.html">服务条款</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

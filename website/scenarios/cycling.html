@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>骑行探险场景 | Finding Company</title>
+    <meta name="description" content="Finding Device为骑行爱好者提供：实时导航、速度监测、事故检测、路线记录。让骑行更安全、更有趣。">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">
+                <img src="../assets/logo/finding-logo-primary.svg" alt="Finding Company" width="180">
+            </a>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="../index.html" class="nav-link">首页</a></li>
+                <li><a href="index.html" class="nav-link active">应用场景</a></li>
+                <li><a href="../products/index.html" class="nav-link">产品</a></li>
+                <li><a href="../tech/index.html" class="nav-link">技术</a></li>
+                <li><a href="../about/index.html" class="nav-link">关于我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="scenario-hero" style="background-image: url('../assets/images/scenarios/cycling.jpg');">
+        <div class="scenario-hero-overlay"></div>
+        <div class="scenario-hero-content">
+            <span class="scenario-tag">🚴 骑行探险</span>
+            <h1>自由骑行，安全随行</h1>
+            <p>无论是318国道骑行还是山地越野，Finding Device 实时导航、事故预警，让每一次出发都安心抵达。</p>
+        </div>
+    </header>
+
+    <!-- Challenges -->
+    <section class="scenario-section">
+        <div class="container">
+            <h2>骑行者面临的核心挑战</h2>
+            <div class="challenges-grid">
+                <div class="challenge-item">
+                    <div class="challenge-icon">🗺️</div>
+                    <h3>导航不便</h3>
+                    <p>手机导航耗电快、易受天气影响，车把 mounting 不方便，需要简洁可靠的导航方案。</p>
+                </div>
+                <div class="challenge-item">
+                    <div class="challenge-icon">💥</div>
+                    <h3>事故风险</h3>
+                    <p>长途骑行难免摔车或突发疾病，独自骑行时紧急求助困难，需要自动检测和定位。</p>
+                </div>
+                <div class="challenge-item">
+                    <div class="challenge-icon">📊</div>
+                    <h3>数据记录</h3>
+                    <p>里程、速度、爬升、心率等数据分散在不同设备，难以整合分析。</p>
+                </div>
+                <div class="challenge-item">
+                    <div class="challenge-icon">📡</div>
+                    <h3>偏远信号</h3>
+                    <p>越野路线常经过无信号区域，无法实时分享位置给家人。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions -->
+    <section class="scenario-section bg-light">
+        <div class="container">
+            <h2>Finding Device 如何助力骑行</h2>
+            <div class="solution-grid">
+                <div class="solution-item">
+                    <div class="solution-header">
+                        <img src="../assets/logo/finding-logo-icon.svg" alt="" width="40">
+                        <h3>Turn-by-Turn 导航</h3>
+                    </div>
+                    <p>设备支持导入 GPX/KML 路线文件，语音提示转弯和偏离提醒。无需频繁看手机，抬头显示关键信息（速度、距离、下一个waypoint）。</p>
+                    <div class="solution-stat">
+                        <span class="stat-num">100m</span>
+                        <span class="stat-label">偏离预警精度</span>
+                    </div>
+                </div>
+
+                <div class="solution-item">
+                    <div class="solution-header">
+                        <img src="../assets/logo/finding-logo-icon.svg" alt="" width="40">
+                        <h3>自动事故检测</h3>
+                    </div>
+                    <p>内置高G值加速度计和运动算法，检测到剧烈冲击（如摔车）后，自动进入倒计时确认状态。用户无响应则触发SOS并通知紧急联系人。</p>
+                    <div class="solution-stat">
+                        <span class="stat-num">&lt;30s</span>
+                        <span class="stat-label">自动求助响应</span>
+                    </div>
+                </div>
+
+                <div class="solution-item">
+                    <div class="solution-header">
+                        <img src="../assets/logo/finding-logo-icon.svg" alt="" width="40">
+                        <h3>多传感器融合</h3>
+                    </div>
+                    <p>GPS + 北斗 + 气压计 + 陀螺仪 + 心率（外接），一站式记录所有关键数据。蓝牙连接手机后同步到 Strava、Keep 等平台。</p>
+                    <div class="solution-stat">
+                        <span class="stat-num">50+</span>
+                        <span class="stat-label">支持的数据类型</span>
+                    </div>
+                </div>
+
+                <div class="solution-item">
+                    <div class="solution-header">
+                        <img src="../assets/logo/finding-logo-icon.svg" alt="" width="40">
+                        <h3>卫星位置共享</h3>
+                    </div>
+                    <p>即使在无信号区域，也可定时（如每小时）通过卫星向家人分享当前位置。生成公开链接，好友可直接在网页追踪你的进度。</p>
+                    <div class="solution-stat">
+                        <span class="stat-num">实时</span>
+                        <span class="stat-label">位置更新</span>
+                    </div>
+                </div>
+
+                <div class="solution-item">
+                    <div class="solution-header">
+                        <img src="../assets/logo/finding-logo-icon.svg" alt="" width="40">
+                        <h3>长续航与快充</h3>
+                    </div>
+                    <p>Finding Lite 在持续导航模式下可工作48小时，支持USB-C快充，骑行休息时电量快速恢复。</p>
+                    <div class="solution-stat">
+                        <span class="stat-num">2h</span>
+                        <span class="stat-label">充电至80%</span>
+                    </div>
+                </div>
+
+                <div class="solution-item">
+                    <div class="solution-header">
+                        <img src="../assets/logo/finding-logo-icon.svg" alt="" width="40">
+                        <h3>社区与挑战</h3>
+                    </div>
+                    <p>加入 Finding 骑行社区，参与线上挑战（如"环骑行10000公里"）、获得虚拟徽章、分享路线成就。</p>
+                    <div class="solution-stat">
+                        <span class="stat-num">10k+</span>
+                        <span class="stat-label">活跃骑手</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 典型骑行行程 -->
+    <section class="scenario-section">
+        <div class="container">
+            <h2>一次长途骑行示例</h2>
+            <div class="journey-timeline">
+                <div class="timeline-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>规划路线</h3>
+                        <p>在 App 中规划路线，导入 GPX 文件到 Finding Lite。设置每日里程目标、补给点、休息站。将路线分享给家人，让他们能看到实时位置。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>骑行中</h3>
+                        <p>设备夹在车把上，语音提示："前方500米右转"。每20公里收到补给提醒。心率传感器连接，发现心率过高时振动提示休息。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>意外发生</h3>
+                        <p>弯道失控摔倒，设备检测到剧烈冲击。30秒倒计时内用户无操作，自动触发 SOS，发送位置给救援中心和紧急联系人。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>救援与恢复</h3>
+                        <p>附近骑友收到求助通知，赶到现场提供初步帮助。救援车根据精准定位到达。设备记录的事故数据用于后续保险理赔。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>成就分享</h3>
+                        <p>伤愈后继续完成行程，全程数据自动同步到 Finding 社区和 Strava。获得"坚韧骑手"徽章，鼓励更多人。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 用户故事 -->
+    <section class="scenario-section bg-light">
+        <div class="container">
+            <h2>真实用户故事</h2>
+            <div class="story-card">
+                <div class="story-author">
+                    <img src="../assets/images/avatars/user2.jpg" alt="李婷" class="author-avatar">
+                    <div class="author-meta">
+                        <h4>李婷</h4>
+                        <span>长途骑行爱好者，累计骑行20000公里</span>
+                    </div>
+                </div>
+                <div class="story-content">
+                    <p>"2024年夏天，我独自骑川藏线，在业拉山附近摔车，右腿严重扭伤无法动弹。Finding Mini 自动检测到事故，并发送了坐标。好在3小时后，一个路过车队看到了SOS信号，把我送到了附近的县城医院。如果没这个设备，后果不堪设想。"</p>
+                    <p>"现在我推荐所有长途骑友都带上 Finding。Mini 很小，不占地方，但关键时刻真的能救命。"</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 推荐产品 -->
+    <section class="scenario-section">
+        <div class="container">
+            <h2>骑行推荐产品</h2>
+            <div class="products-recommend">
+                <div class="product-highlight">
+                    <div class="product-tag">全能推荐</div>
+                    <img src="../assets/images/products/finding-lite.jpg" alt="Finding Lite" class="product-img">
+                    <h3>Finding Lite</h3>
+                    <p>轻巧耐用，续航48小时，支持北斗卫星和实时导航。适合公路骑行和山地越野。</p>
+                    <ul class="product-specs">
+                        <li>北斗卫星定位</li>
+                        <li>离线地图 + turn-by-turn</li>
+                        <li>事故自动检测</li>
+                        <li>IP67 防尘防水</li>
+                    </ul>
+                    <a href="../products/finding-lite.html" class="btn btn-primary">查看详情</a>
+                </div>
+
+                <div class="product-secondary">
+                    <div class="product-card-compact">
+                        <img src="../assets/images/products/finding-mini.jpg" alt="Finding Mini">
+                        <div class="info">
+                            <h4>Finding Mini</h4>
+                            <p>45g超轻，可夹在背包或头盔上。自动跌倒检测，不影响骑行。续航30天待机。</p>
+                            <a href="../products/finding-mini.html" class="btn btn-outline">了解</a>
+                        </div>
+                    </div>
+                    <div class="product-card-compact">
+                        <img src="../assets/images/products/finding-pro.jpg" alt="Finding Pro">
+                        <div class="info">
+                            <h4>Finding Pro</h4>
+                            <p>如果你需要卫星通话功能和最大续航，Pro是你的终极选择。</p>
+                            <a href="../products/finding-pro.html" class="btn btn-outline">了解</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="scenario-section bg-light">
+        <div class="container">
+            <h2>常见问题</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <h4>Q: Finding 支持哪些地图格式？</h4>
+                    <p>A: 支持 GPX、KML、GeoTIFF、MBTiles 等多种常见格式。App 提供简易工具将地图转换为设备可读格式。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Q: 骑行时如何查看导航？</h4>
+                    <p>A: 设备通过蓝牙连接手机 App，语音提示。或者使用 Finding Pro 的 1.5" 屏幕直接查看地图和方向。手机可放在包里省电。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Q: 事故检测误报多吗？</h4>
+                    <p>A: 算法经过大量骑行数据训练，误报率低于 2%。在崎岖山路可能略有升高，但倒计时机制让用户可以 Cancel。</p>
+                </div>
+                <div class="faq-item">
+                    <h4>Q: 能连接我的骑行台吗（智能训练）？</h4>
+                    <p>A: 目前仅支持位置、心率、踏频等传感器。骑行台数据暂不直接支持，但可通过 App 导出数据到 TrainingPeaks 等平台。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>让每一次骑行都安心无忧</h2>
+                <p>马上装备 Finding，开启安全探险</p>
+                <div class="cta-buttons">
+                    <a href="../products/index.html" class="btn btn-large btn-primary">立即选购</a>
+                    <a href="hiking.html" class="btn btn-large btn-secondary">查看其他场景</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="../assets/logo/finding-logo-primary.svg" alt="Finding Company" width="150">
+                    <p>户外运动的智能化AI硬件</p>
+                    <div class="footer-social">
+                        <a href="#">微信</a>
+                        <a href="#">微博</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">YouTube</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>产品</h4>
+                    <ul>
+                        <li><a href="../products/finding-pro.html">Finding Pro</a></li>
+                        <li><a href="../products/finding-lite.html">Finding Lite</a></li>
+                        <li><a href="../products/finding-mini.html">Finding Mini</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>场景</h4>
+                    <ul>
+                        <li><a href="hiking.html">登山徒步</a></li>
+                        <li><a href="cycling.html">骑行探险</a></li>
+                        <li><a href="camping.html">露营野炊</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>支持</h4>
+                    <ul>
+                        <li><a href="../tech/documentation.html">技术文档</a></li>
+                        <li><a href="../about/faq.html">常见问题</a></li>
+                        <li><a href="../about/contact.html">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>关于</h4>
+                    <ul>
+                        <li><a href="../about/company.html">公司介绍</a></li>
+                        <li><a href="../about/careers.html">加入我们</a></li>
+                        <li><a href="../about/news.html">新闻动态</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Finding Company（斐丁科技）. 保留所有权利。</p>
+                <p><a href="../about/privacy.html">隐私政策</a> | <a href="../about/terms.html">服务条款</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

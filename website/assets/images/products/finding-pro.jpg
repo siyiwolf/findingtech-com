@@ -1,0 +1,17 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="proGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0057B8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#003A75;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="#f5f5f5"/>
+  <rect x="100" y="40" width="200" height="220" rx="20" fill="url(#proGrad)"/>
+  <circle cx="200" cy="140" r="40" fill="none" stroke="white" stroke-width="4"/>
+  <line x1="200" y1="100" x2="200" y2="180" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <line x1="160" y1="140" x2="240" y2="140" stroke="white" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="200" cy="140" r="8" fill="white"/>
+  <text x="200" y="270" font-family="Inter, sans-serif" font-size="18" font-weight="700" fill="#0057B8" text-anchor="middle">
+    Finding Pro
+  </text>
+</svg>

@@ -1,0 +1,15 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="researchGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0057B8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A1A1A;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#researchGrad)"/>
+  <text x="400" y="280" font-family="Inter, sans-serif" font-size="48" font-weight="700" fill="white" text-anchor="middle">
+    野外科研场景
+  </text>
+  <text x="400" y="330" font-family="Inter, sans-serif" font-size="24" fill="white" opacity="0.8" text-anchor="middle">
+    数据采集 · 环境监测 · 设备协同 · 长时续航
+  </text>
+</svg>

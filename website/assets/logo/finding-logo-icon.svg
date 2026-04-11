@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+  <!-- Finding Company Icon Logo -->
+  <!-- Simplified version for small sizes -->
+
+  <g transform="translate(5, 5)">
+    <!-- Outer circle -->
+    <circle cx="25" cy="25" r="23" fill="none" stroke="#0057B8" stroke-width="3"/>
+    <!-- Cross lines (compass) -->
+    <line x1="25" y1="6" x2="25" y2="44" stroke="#0057B8" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="6" y1="25" x2="44" y2="25" stroke="#0057B8" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Center dot -->
+    <circle cx="25" cy="25" r="6" fill="#0057B8"/>
+  </g>
+</svg>

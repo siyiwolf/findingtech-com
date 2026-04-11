@@ -1,0 +1,15 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cycleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2ECC71;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0057B8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#cycleGrad)"/>
+  <text x="400" y="280" font-family="Inter, sans-serif" font-size="48" font-weight="700" fill="white" text-anchor="middle">
+    骑行探险场景
+  </text>
+  <text x="400" y="330" font-family="Inter, sans-serif" font-size="24" fill="white" opacity="0.8" text-anchor="middle">
+    实时导航 · 速度监测 · 事故检测 · 路线记录
+  </text>
+</svg>
