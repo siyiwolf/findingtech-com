@@ -1,0 +1,463 @@
+openapi: 3.0.3
+info:
+  title: CampBot API
+  version: 1.0.0
+  description: |
+    CampBot 智能营地系统 API 规范
+    包含设备管理、任务控制、状态查询、实时数据推送
+  contact:
+    name: Finding Company
+    email: api@findingtech.com
+
+servers:
+  - url: https://api.findingtech.com/v1
+    description: Production
+  - url: https://staging-api.findingtech.com/v1
+    description: Staging
+
+security:
+  - bearerAuth: []
+
+paths:
+  /robots:
+    get:
+      summary: 获取机器人列表
+      operationId: listRobots
+      tags:
+        - Robots
+      parameters:
+        - name: type
+          in: query
+          schema:
+            type: string
+            enum: [assembly, carrier, guard, power, cook, climate]
+          description: 按类型筛选
+        - name: status
+          in: query
+          schema:
+            type: string
+            enum: [idle, busy, charging, offline, error]
+          description: 按状态筛选
+        - name: page
+          in: query
+          schema:
+            type: integer
+            default: 1
+          description: 页码
+        - name: limit
+          in: query
+          schema:
+            type: integer
+            default: 20
+          description: 每页数量
+      responses:
+        '200':
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Robot'
+                  pagination:
+                    $ref: '#/components/schemas/Pagination'
+        '401':
+          $ref: '#/components/responses/Unauthorized'
+
+  /robots/{robotId}:
+    get:
+      summary: 获取机器人详情
+      operationId: getRobot
+      tags:
+        - Robots
+      parameters:
+        - name: robotId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: 成功
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Robot'
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+    post:
+      summary: 发送指令到机器人
+      operationId: sendCommand
+      tags:
+        - Robots
+      parameters:
+        - name: robotId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                command:
+                  type: string
+                  enum: [start, stop, pause, resume, emergency_stop, return_home]
+                parameters:
+                  type: object
+                  additionalProperties: true
+                  description: 命令参数（可选）
+              required:
+                - command
+      responses:
+        '200':
+          description: 指令已接受
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  success:
+                    type: boolean
+                  message:
+                    type: string
+                  command_id:
+                    type: string
+                    description: 指令ID，用于追踪执行状态
+        '400':
+          $ref: '#/components/responses/BadRequest'
+
+  /missions:
+    post:
+      summary: 创建营地任务（一键搭建）
+      operationId: createMission
+      tags:
+        - Missions
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                tent_type:
+                  type: string
+                  enum: [definitive_3p, geodesic_4p, tunnel_2p]
+                  description: 帐篷类型
+                location:
+                  $ref: '#/components/schemas/Position'
+                priority:
+                  type: integer
+                  minimum: 1
+                  maximum: 5
+                  default: 3
+              required:
+                - tent_type
+                - location
+      responses:
+        '201':
+          description: 任务创建成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  mission_id:
+                    type: string
+                  estimated_duration_minutes:
+                    type: integer
+                  assigned_robots:
+                    type: array
+                    items:
+                      type: string
+                  status:
+                    type: string
+                    enum: [pending, assigned, running, completed, failed]
+        '400':
+          $ref: '#/components/responses/BadRequest'
+
+  /missions/{missionId}:
+    get:
+      summary: 查询任务状态
+      operationId: getMission
+      tags:
+        - Missions
+      parameters:
+        - name: missionId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  mission_id:
+                    type: string
+                  status:
+                    $ref: '#/components/schemas/MissionStatus'
+                  tasks:
+                    type: array
+                    items:
+                      $ref: '#/components/schemas/Task'
+                  started_at:
+                    type: string
+                    format: date-time
+                  completed_at:
+                    type: string
+                    format: date-time
+        '404':
+          $ref: '#/components/responses/NotFound'
+
+  /telemetry:
+    get:
+      summary: 查询遥测数据
+      operationId: queryTelemetry
+      tags:
+        - Telemetry
+      parameters:
+        - name: robot_id
+          in: query
+          schema:
+            type: string
+          description: 机器人ID（可选）
+        - name: metric
+          in: query
+          schema:
+            type: string
+            enum: [battery, temperature, humidity, position, motor_temp]
+          description: 指标类型
+        - name: start
+          in: query
+          required: true
+          schema:
+            type: string
+            format: date-time
+        - name: end
+          in: query
+          required: true
+          schema:
+            type: string
+            format: date-time
+      responses:
+        '200':
+          description: 成功
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        timestamp:
+                          type: string
+                          format: date-time
+                        value:
+                          type: number
+        '400':
+          $ref: '#/components/responses/BadRequest'
+
+  /ws:
+    # WebSocket 端点
+    description: |
+      WebSocket 连接，用于实时数据推送
+      连接 URL: `wss://api.findingtech.com/ws?token=<JWT>`
+      消息格式：JSON
+    # OpenAPI 3.0 对 WebSocket 支持有限，此处仅标注
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  schemas:
+    Robot:
+      type: object
+      properties:
+        id:
+          type: string
+          example: "assembly-001"
+        name:
+          type: string
+          example: "AssemblyBot 1"
+        type:
+          type: string
+          enum: [assembly, carrier, guard, power, cook, climate]
+          example: "assembly"
+        status:
+          type: string
+          enum: [idle, busy, charging, offline, error]
+          example: "busy"
+        battery:
+          type: number
+          format: float
+          minimum: 0
+          maximum: 100
+          example: 87.5
+        position:
+          $ref: '#/components/schemas/Position'
+        current_task:
+          type: string
+          nullable: true
+          example: "task-20250412-001"
+        health:
+          type: object
+          properties:
+            motors:
+              type: string
+              enum: [ok, warning, error]
+            sensors:
+              type: string
+              enum: [ok, warning, error]
+            communication:
+              type: string
+              enum: [ok, warning, error]
+        last_seen:
+          type: string
+          format: date-time
+          example: "2025-04-12T17:30:00Z"
+      required:
+        - id
+        - type
+        - status
+
+    Position:
+      type: object
+      properties:
+        x:
+          type: number
+          format: float
+          example: 12.34
+        y:
+          type: number
+          format: float
+          example: 56.78
+        theta:
+          type: number
+          format: float
+          example: 1.57
+      required:
+        - x
+        - y
+        - theta
+
+    MissionStatus:
+      type: string
+      enum: [pending, assigned, running, completed, failed]
+
+    Task:
+      type: object
+      properties:
+        task_id:
+          type: string
+        type:
+          type: string
+          enum: [assemble_tent, carry_item, patrol, deploy_panel, cook_assist, climate_control]
+        assigned_robot:
+          type: string
+        status:
+          type: string
+          enum: [pending, running, completed, failed]
+        started_at:
+          type: string
+          format: date-time
+        completed_at:
+          type: string
+          format: date-time
+
+    Pagination:
+      type: object
+      properties:
+        total:
+          type: integer
+        page:
+          type: integer
+        limit:
+          type: integer
+        total_pages:
+          type: integer
+
+  responses:
+    Unauthorized:
+      description: 未授权
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              code:
+                type: integer
+                example: 401
+              message:
+                type: string
+                example: "Unauthorized"
+    NotFound:
+      description: 资源不存在
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              code:
+                type: integer
+                example: 404
+              message:
+                type: string
+                example: "Not Found"
+    BadRequest:
+      description: 请求参数错误
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              code:
+                type: integer
+                example: 400
+              message:
+                type: string
+                example: "Invalid parameters"
+
+tags:
+  - name: Robots
+    description: 机器人设备管理
+  - name: Missions
+    description: 营地任务管理
+  - name: Telemetry
+    description: 遥测数据查询
+
+```
+
+---
+
+**说明**：
+- 接口基于 RESTful 设计
+- 认证采用 Bearer Token（JWT）
+- 实时数据通过 WebSocket 推送（端点 `/ws`）
+- 错误码：200 成功，400 参数错误，401 未授权，404 不存在，500 服务器错误
+
+**下一步**：
+- 使用 `redoc-cli` 生成 HTML 文档：`npx redoc-cli bundle campbot-api.yaml -o docs.html`
+- 用 Postman / Insomnia 导入 YAML 生成测试集合
+
+---
+
+**维护**：后端 API 团队  
+**最后更新**：2025-04-12  
+**版本**：v1.0.0
