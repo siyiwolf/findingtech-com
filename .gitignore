@@ -1,0 +1,27 @@
+# Build artifacts
+*.log
+*.tmp
+*.temp
+.DS_Store
+
+# PDF generation temp files
+/.pandoc/
+/chrome/
+
+# Node modules (if any)
+node_modules/
+
+# IDE
+.vscode/
+.idea/
+
+# OpenClaw specific
+.sessions/
+.memory/
+
+# Backup files
+*.bak
+*.backup
+
+# OS
+Thumbs.db
