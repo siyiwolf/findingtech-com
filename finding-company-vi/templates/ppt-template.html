@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1920, height=1080">
+  <title>Finding Company PPT Template</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+SC:wght@400;700&display=swap');
+
+    :root {
+      --finding-blue: #0057B8;
+      --deep-ocean: #003A75;
+      --sky-light: #4A90E2;
+      --cloud-white: #FFFFFF;
+      --midnight: #1A1A1A;
+      --light-gray: #F5F7FA;
+      --border-gray: #E1E4E8;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 1920px;
+      height: 1080px;
+      font-family: 'Inter', 'Noto Sans SC', sans-serif;
+      background: var(--cloud-white);
+      overflow: hidden;
+    }
+
+    /* 通用页面布局 */
+    .slide {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      padding: 0 80px 60px 80px;
+      display: none;
+    }
+
+    .slide.active {
+      display: block;
+    }
+
+    /* 页眉 */
+    .header {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  height: 120px;
+  background: linear-gradient(90deg, var(--finding-blue), var(--sky-light));
+  padding: 0 48px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 120px;
+      background: linear-gradient(90deg, var(--finding-blue), var(--sky-light));
+      display: flex;
+      align-items: center;
+      padding: 0 48px;
+    }
+
+    .header-logo {
+  transition: transform 0.3s ease;
+      height: 70px;
+      margin-right: 28px;
+    }
+
+    .header-company {
+  text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+      color: white;
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .header-classified {
+  background: rgba(255,255,255,0.15);
+      margin-left: auto;
+      color: white;
+      font-size: 13px;
+      border: 1px solid rgba(255,255,255,0.6);
+      padding: 8px 20px;
+      border-radius: 20px;
+    }
+
+    /* 页脚 */
+    .footer {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50px;
+      background: var(--deep-ocean);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 40px;
+      color: rgba(255,255,255,0.7);
+      font-size: 12px;
+    }
+
+    /* 内容区域 */
+    .content {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      right: 0;
+      bottom: 50px;
+      padding: 60px 80px;
+    }
+
+    /* 标题样式 */
+    .title-main {
+      font-size: 48px;
+      font-weight: 700;
+      color: var(--finding-blue);
+      margin-bottom: 16px;
+    }
+
+    .title-sub {
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--deep-ocean);
+      margin-bottom: 40px;
+    }
+
+    .section-title {
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--finding-blue);
+      margin: 30px 0 20px 0;
+      padding-bottom: 12px;
+      border-bottom: 4px solid var(--finding-blue);
+    }
+
+    .subsection-title {
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--deep-ocean);
+      margin: 24px 0 12px 0;
+    }
+
+    /* 正文 */
+    .body-text {
+      font-size: 18px;
+      line-height: 1.6;
+      color: var(--midnight);
+    }
+
+    .body-text li {
+      margin: 12px 0;
+      padding-left: 24px;
+      position: relative;
+    }
+
+    .body-text li::before {
+      content: "▸";
+      position: absolute;
+      left: 8px;
+      color: var(--sky-light);
+      font-weight: bold;
+    }
+
+    /* 两栏布局 */
+    .two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      margin-top: 20px;
+    }
+
+    .column-box {
+      background: var(--light-gray);
+      border-radius: 12px;
+      padding: 30px;
+      border-left: 4px solid var(--finding-blue);
+    }
+
+    /* 数据卡片 */
+    .data-cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin: 40px 0;
+    }
+
+    .data-card {
+      background: white;
+      border: 2px solid var(--border-gray);
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+      transition: border-color 0.3s;
+    }
+
+    .data-card:hover {
+      border-color: var(--finding-blue);
+    }
+
+    .data-card-value {
+      font-size: 42px;
+      font-weight: 700;
+      color: var(--finding-blue);
+      margin-bottom: 8px;
+    }
+
+    .data-card-label {
+      font-size: 14px;
+      color: var(--deep-ocean);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* 表格样式 */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    th, td {
+      padding: 16px 20px;
+      text-align: left;
+      border-bottom: 1px solid var(--border-gray);
+    }
+
+    th {
+      background: var(--finding-blue);
+      color: white;
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    tr:hover {
+      background: var(--light-gray);
+    }
+
+    /* 封面页 */
+    .cover-slide {
+      background: linear-gradient(135deg, var(--finding-blue) 0%, var(--deep-ocean) 100%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .cover-logo {
+      width: 200px;
+      height: auto;
+      margin-bottom: 40px;
+    }
+
+    .cover-title {
+      font-size: 64px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+
+    .cover-subtitle {
+      font-size: 28px;
+      font-weight: 400;
+      opacity: 0.9;
+      margin-bottom: 80px;
+    }
+
+    .cover-date {
+      font-size: 18px;
+      opacity: 0.7;
+    }
+
+    /* 过渡页 */
+    .section-slide {
+      background: var(--light-gray);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .section-slide .section-title {
+      font-size: 56px;
+      text-align: center;
+      margin: 0;
+      border: none;
+    }
+
+    /* 图表占位符 */
+    .chart-placeholder {
+      width: 100%;
+      height: 400px;
+      background: white;
+      border: 2px dashed var(--border-gray);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--sky-light);
+      font-size: 18px;
+      margin: 20px 0;
+    }
+
+    /* 重要提示 */
+    .highlight-box {
+      background: linear-gradient(135deg, rgba(74, 144, 226, 0.1) 0%, rgba(0, 87, 184, 0.1) 100%);
+      border-left: 4px solid var(--sky-light);
+      padding: 24px;
+      border-radius: 0 12px 12px 0;
+      margin: 24px 0;
+    }
+
+    .highlight-box p {
+      color: var(--deep-ocean);
+      font-size: 18px;
+    }
+
+    /* 联系方式页 */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      margin-top: 60px;
+    }
+
+    .contact-item {
+      margin-bottom: 30px;
+    }
+
+    .contact-label {
+      font-size: 14px;
+      color: var(--sky-light);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .contact-value {
+      font-size: 24px;
+      font-weight: 600;
+      color: var(--deep-ocean);
+    }
+
+    /* 编号列表自定义 */
+    ol {
+      margin-left: 20px;
+    }
+
+    ol li {
+      margin: 16px 0;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    ol li strong {
+      color: var(--finding-blue);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 封面页 -->
+  <div class="slide active" id="cover">
+    <div class="cover-slide">
+      <img src="../logo/finding-logo-primary.svg" class="cover-logo" alt="Finding Company">
+      <h1 class="cover-title">Finding Company</h1>
+      <p class="cover-subtitle">户外运动的智能化 AI 硬件</p>
+      <p class="cover-date" id="current-date">2026年4月</p>
+    </div>
+  </div>
+
+  <!-- 目录页 -->
+  <div class="slide" id="toc">
+    <div class="header">
+      <img src="../logo/finding-logo-primary.svg" class="header-logo" alt="Finding">
+      <span class="header-company">FINDING COMPANY</span>
+    </div>
+    <div class="content">
+      <h1 class="title-main">目录</h1>
+      <ol style="font-size: 24px; line-height: 2.5; color: var(--deep-ocean);">
+        <li><strong>市场机遇</strong> —— 行业趋势与痛点</li>
+        <li><strong>产品方向</strong> —— 核心解决方案</li>
+        <li><strong>技术路径</strong> —— AI硬件架构</li>
+        <li><strong>商业模式</strong> —— 盈利与增长</li>
+        <li><strong>竞争格局</strong> —— 差异化定位</li>
+        <li><strong>执行计划</strong> —— 里程碑与资源</li>
+        <li><strong>风险与应对</strong> —— 关键挑战</li>
+      </ol>
+    </div>
+    <div class="footer">
+      <span>Finding Company 斐丁科技</span>
+      <span>第 2 页 / 共 32 页</span>
+    </div>
+  </div>
+
+  <!-- 市场机遇 -->
+  <div class="slide" id="market">
+    <div class="header">
+      <img src="../logo/finding-logo-primary.svg" class="header-logo" alt="Finding">
+      <span class="header-company">FINDING COMPANY</span>
+      <span class="header-classified">内部资料</span>
+    </div>
+    <div class="content">
+      <h1 class="title-main">市场机遇：户外智能化浪潮</h1>
+      <h2 class="title-sub">万亿市场待掘金，AI硬件破局正当时</h2>
+
+      <div class="data-cards">
+        <div class="data-card">
+          <div class="data-card-value">¥1.2万亿</div>
+          <div class="data-card-label">中国户外市场</div>
+        </div>
+        <div class="data-card">
+          <div class="data-card-value">35%</div>
+          <div class="data-card-label">智能化年增长</div>
+        </div>
+        <div class="data-card">
+          <div class="data-card">
+          <div class="data-card-value">68%</div>
+          <div class="data-card-label">消费者需求</div>
+        </div>
+        <div class="data-card">
+          <div class="data-card-value">Top 3</div>
+          <div class="data-card-label">我们的目标</div>
+        </div>
+      </div>
+
+      <h3 class="section-title">核心痛点</h3>
+      <div class="two-columns">
+        <div class="column-box">
+          <h4 style="color: var(--finding-blue); margin-bottom: 16px;">• 安全风险</h4>
+          <ul class="body-text">
+            <li>野外失联、天气突变、急救延迟</li>
+            <li>传统装备缺乏预警与定位能力</li>
+          </ul>
+        </div>
+        <div class="column-box">
+          <h4 style="color: var(--finding-blue); margin-bottom: 16px;">• 体验单一</h4>
+          <ul class="body-text">
+            <li>装备功能孤立，无法智能联动</li>
+            <li>缺少数据化记录与个性化推荐</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <p><strong>洞察：</strong>消费者不再满足于基础功能，渴望"智能安全+极致体验"的下一代户外装备。</p>
+      </div>
+    </div>
+    <div class="footer">
+      <span>Finding Company 斐丁科技</span>
+      <span>第 3 页 / 共 32 页</span>
+    </div>
+  </div>
+
+  <!-- 更多幻灯片... -->
+  <div class="slide" id="product">
+    <div class="header">
+      <img src="../logo/finding-logo-primary.svg" class="header-logo" alt="Finding">
+      <span class="header-company">FINDING COMPANY</span>
+      <span class="header-classified">内部资料</span>
+    </div>
+    <div class="content">
+      <h1 class="title-main">产品方向</h1>
+      <h2 class="title-sub">智能硬件矩阵，重塑户外体验</h2>
+
+      <h3 class="section-title">方向一：露营装备智能化</h3>
+      <ul class="body-text">
+        <li><strong>智能温控帐篷：</strong>AI气候适应，自动调节通风/保温</li>
+        <li><strong>自发电照明系统：</strong>太阳能+动能转化，智能光效</li>
+        <li><strong>户外电源管家：</strong>多设备智能管理，能耗优化</li>
+        <li><strong>智能露营厨房：</strong>温度控制、用量精准、安全预警</li>
+      </ul>
+
+      <h3 class="section-title">方向二：机器人集群应用</h3>
+      <ul class="body-text">
+        <li><strong>物流运输机器人：</strong>营地物资配送，路径规划</li>
+        <li><strong>安防巡检机器人：</strong>24小时巡逻，异常检测</li>
+        <li><strong>清洁维护机器人：</strong>垃圾回收、环境清洁</li>
+        <li><strong>集群协同系统：</strong>多机调度、任务分配、数据融合</li>
+      </ul>
+
+      <div class="highlight-box">
+        <p><strong>关键创新：</strong>"硬件+AI+集群"三位一体，打造可复制、可扩展的智能户外解决方案。</p>
+      </div>
+    </div>
+    <div class="footer">
+      <span>Finding Company 斐丁科技</span>
+      <span>第 4 页 / 共 32 页</span>
+    </div>
+  </div>
+
+  <div class="slide" id="tech">
+    <div class="header">
+      <img src="../logo/finding-logo-primary.svg" class="header-logo" alt="Finding">
+      <span class="header-company">FINDING COMPANY</span>
+      <span class="header-classified">内部资料</span>
+    </div>
+    <div class="content">
+      <h1 class="title-main">技术路径</h1>
+      <h2 class="title-sub">边缘AI + 轻量化集群通信</h2>
+
+      <div class="two-columns">
+        <div class="column-box">
+          <h3 style="color: var(--finding-blue); margin-bottom: 16px;">硬件架构</h3>
+          <ul class="body-text">
+            <li>主控芯片: ARM Cortex-A53 / ESP32-S3</li>
+            <li>AI加速器: NPU 0.5-2 TOPS</li>
+            <li>传感器融合: GPS+IMU+环境多传感器</li>
+            <li>通信模块: LoRa + BLE5 + Mesh组网</li>
+            <li>电源管理: 太阳能+超级电容+快充</li>
+          </ul>
+        </div>
+        <div class="column-box">
+          <h3 style="color: var(--finding-blue); margin-bottom: 16px;">软件栈</h3>
+          <ul class="body-text">
+            <li>OS: FreeRTOS / Zephyr</li>
+            <li>AI框架: TensorFlow Lite Micro</li>
+            <li>集群协议: 自定义轻量级Mesh</li>
+            <li>数据链路: MQTT over LoRaWAN</li>
+            <li>边缘推理: 行为识别+异常检测</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="section-title">技术里程碑</h3>
+      <table>
+        <tr>
+          <th>阶段</th>
+          <th>时间</th>
+          <th>目标</th>
+        </tr>
+        <tr>
+          <td>Phase 1</td>
+          <td>Q2 2026</td>
+          <td>单机原型验证，传感器融合</td>
+        </tr>
+        <tr>
+          <td>Phase 2</td>
+          <td>Q3 2026</td>
+          <td>集群通信协议开发，3机协同</td>
+        </tr>
+        <tr>
+          <td>Phase 3</td>
+          <td>Q4 2026</td>
+          <td>小批量试产，户外测试</td>
+        </tr>
+        <tr>
+          <td>Phase 4</td>
+          <td>Q1 2027</td>
+          <td>量产落地，客户交付</td>
+        </tr>
+      </table>
+    </div>
+    <div class="footer">
+      <span>Finding Company 斐丁科技</span>
+      <span>第 5 页 / 共 32 页</span>
+    </div>
+  </div>
+
+  <div class="slide" id="business">
+    <div class="header">
+      <img src="../logo/finding-logo-primary.svg" class="header-logo" alt="Finding">
+      <span class="header-company">FINDING COMPANY</span>
+      <span class="header-classified">内部资料</span>
+    </div>
+    <div class="content">
+      <h1 class="title-main">商业模式</h1>
+      <h2 class="title-sub">软硬件一体，订阅增值</h2>
+
+      <div class="two-columns">
+        <div class="column-box">
+          <h3 style="color: var(--finding-blue); margin-bottom: 16px;">收入来源</h3>
+          <ul class="body-text">
+            <li><strong>硬件销售：</strong>智能装备、机器人单体</li>
+            <li><strong>SaaS服务：</strong>集群管理、数据分析订阅</li>
+            <li><strong>解决方案：</strong>营地/景区一体化定制</li>
+            <li><strong>数据服务：</strong>环境监测、用户洞察</li>
+          </ul>
+        </div>
+        <div class="column-box">
+          <h3 style="color: var(--finding-blue); margin-bottom: 16px;">定价策略</h3>
+          <ul class="body-text">
+            <li>单兵装备: ¥2,000 - ¥8,000 区间</li>
+            <li>集群套装: ¥50,000 - ¥200,000</li>
+            <li>SaaS月费: ¥99 - ¥999 不等</li>
+            <li>定制方案: 项目制报价</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <p><strong>核心逻辑：</strong>硬件获客，软件留存，数据增值，建立"智能户外"生态壁垒。</p>
+      </div>
+    </div>
+    <div class="footer">
+      <span>Finding Company 斐丁科技</span>
+      <span>第 6 页 / 共 32 页</span>
+    </div>
+  </div>
+
+  <div class="slide" id="competition">
+    <div class="header">
+      <img src="../logo/finding-logo-primary.svg" class="header-logo" alt="Finding">
+      <span class="header-company">FINDING COMPANY</span>
+      <span class="header-classified">内部资料</span>
+    </div>
+    <div class="content">
+      <h1 class="title-main">竞争格局</h1>
+      <h2 class="title-sub">差异化定位：集群智能，场景深耕</h2>
+
+      <table>
+        <tr>
+          <th>竞争者</th>
+          <th>优势</th>
+          <th>劣势</th>
+          <th>我们的机会</th>
+        </tr>
+        <tr>
+          <td>户外大牌（The North Face等）</td>
+          <td>品牌强、渠道广</td>
+          <td>智能化慢、价格高</td>
+          <td>轻量化AI，性价比</td>
+        </tr>
+        <tr>
+          <td>消费级无人机（DJI）</td>
+          <td>飞控技术领先</td>
+          <td>地面场景弱</td>
+          <td>地面集群+移动平台</td>
+        </tr>
+        <tr>
+          <td>服务机器人（普渡等）</td>
+          <td>商用方案成熟</td>
+          <td>户外适应性差</td>
+          <td>专攻户外严苛环境</td>
+        </tr>
+        <tr>
+          <td>初创竞品</td>
+          <td>创新快</td>
+          <td>资金有限</td>
+          <td>资金+落地场景双优势</td>
+        </tr>
+      </table>
+
+      <div class="highlight-box">
+        <p><strong>护城河：</strong>户外场景深耕 + 集群算法 + 数据闭环，构筑技术+场景双重壁垒。</p>
+      </div>
+    </div>
+    <div class="footer">
+      <span>Finding Company 斐丁科技</span>
+      <span>第 7 页 / 共 32 页</span>
+    </div>
+  </div>
+
+  <div class="slide" id="plan">
+    <div class="header">
+      <img src="../logo/finding-logo-primary.svg" class="header-logo" alt="Finding">
+      <span class="header-company">FINDING COMPANY</span>
+      <span class="header-classified">内部资料</span>
+    </div>
+    <div class="content">
+      <h1 class="title-main">执行计划</h1>
+      <h2 class="title-sub">12个月，从概念到量产</h2>
+
+      <table>
+        <tr>
+          <th>季度</th>
+          <th>关键任务</th>
+          <th>交付物</th>
+        </tr>
+        <tr>
+          <td>Q2 2026</td>
+          <td>需求验证、技术选型、核心算法开发</td>
+          <td>单机原型、PoC演示</td>
+        </tr>
+        <tr>
+          <td>Q3 2026</td>
+          <td>集群协议开发、多机协同测试</td>
+          <td>3机协同Demo、专利提交</td>
+        </tr>
+        <tr>
+          <td>Q4 2026</td>
+          <td>工业设计、 samp卡制作、小批量试产</td>
+          <td>可演示样机、测试报告</td>
+        </tr>
+        <tr>
+          <td>Q1 2027</td>
+          <td>量产、首批客户交付、市场推广</td>
+          <td>量产机、首批订单、品牌发布</td>
+        </tr>
+      </table>
+
+      <div class="highlight-box">
+        <p><strong>资源需求：</strong>研发团队15人（硬件6+软件6+AI3），启动资金¥2000万，需2万平厂房及供应链支持。</p>
+      </div>
+    </div>
+    <div class="footer">
+      <span>Finding Company 斐丁科技</span>
+      <span>第 8 页 / 共 32 页</span>
+    </div>
+  </div>
+
+  <div class="slide" id="risk">
+    <div class="header">
+      <img src="../logo/finding-logo-primary.svg" class="header-logo" alt="Finding">
+      <span class="header-company">FINDING COMPANY</span>
+      <span class="header-classified">内部资料</span>
+    </div>
+    <div class="content">
+      <h1 class="title-main">风险与应对</h1>
+      <h2 class="title-sub">预见风险，主动防御</h2>
+
+      <div class="two-columns">
+        <div class="column-box">
+          <h3 style="color: var(--finding-blue); margin-bottom: 16px;">技术风险</h3>
+          <ul class="body-text">
+            <li>集群协同算法复杂度高</li>
+            <li>户外环境可靠性挑战</li>
+            <li>功耗与续航平衡</li>
+            <li><strong>缓解：</strong>模块化设计、多轮测试、快速迭代</li>
+          </ul>
+        </div>
+        <div class="column-box">
+          <h3 style="color: var(--finding-blue); margin-bottom: 16px;">市场风险</h3>
+          <ul class="body-text">
+            <li>消费者接受度未知</li>
+            <li>大厂快速跟进</li>
+            <li>渠道建设周期长</li>
+            <li><strong>缓解：</strong>早期用户共创、专利布局、合作共赢</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="highlight-box">
+        <p><strong>关键假设：</strong>假设12个月内核心算法稳定，供应链成本可控，首批种子用户愿意支付溢价。</p>
+      </div>
+    </div>
+    <div class="footer">
+      <span>Finding Company 斐丁科技</span>
+      <span>第 9 页 / 共 32 页</span>
+    </div>
+  </div>
+
+  <div class="slide" id="thanks">
+    <div class="cover-slide">
+      <img src="../logo/finding-logo-primary.svg" class="cover-logo" alt="Finding">
+      <h1 class="cover-title">Thank You</h1>
+      <p class="cover-subtitle">让我们共同定义户外智能的未来</p>
+      <div class="contact-grid" style="text-align: left;">
+        <div>
+          <div class="contact-item">
+            <div class="contact-label">官网</div>
+            <div class="contact-value" style="font-size: 20px;">www.findingtech.com</div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-label">邮箱</div>
+            <div class="contact-value" style="font-size: 20px;">contact@findingtech.com</div>
+          </div>
+        </div>
+        <div>
+          <div class="contact-item">
+            <div class="contact-label">地址</div>
+            <div class="contact-value" style="font-size: 20px;">中国深圳南山区科技园</div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-label">电话</div>
+            <div class="contact-value" style="font-size: 20px;">+86 755 1234 5678</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 自动设置当前日期
+    document.getElementById('current-date').textContent = new Date().toLocaleDateString('zh-CN', {
+      year: 'numeric',
+      month: 'long'
+    });
+  </script>
+</body>
+</html>

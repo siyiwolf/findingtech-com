@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100" width="400" height="100">
+  <!-- 定义渐变 -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#0057B8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4A90E2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- 图形部分：简约指南针/探索圆点 -->
+  <g id="graphic">
+    <!-- 外圆 -->
+    <circle cx="40" cy="50" r="30" fill="none" stroke="url(#logoGradient)" stroke-width="4"/>
+    <!-- 指南针指针（简化） -->
+    <path d="M 40 25 L 44 45 L 40 50 L 36 45 Z" fill="#0057B8"/>
+    <path d="M 40 75 L 44 55 L 40 50 L 36 55 Z" fill="#4A90E2"/>
+    <!-- 中心点 -->
+    <circle cx="40" cy="50" r="4" fill="#0057B8"/>
+  </g>
+
+  <!-- 文字部分 -->
+  <g id="text" font-family="Inter, 'Helvetica Neue', Arial, sans-serif">
+    <!-- 英文名称 -->
+    <text x="85" y="45" font-size="28" font-weight="700" fill="#0057B8" letter-spacing="2">FINDING</text>
+    <text x="85" y="72" font-size="24" font-weight="600" fill="#003A75" letter-spacing="4">COMPANY</text>
+    <!-- 中文名称 -->
+    <text x="260" y="48" font-size="20" font-weight="700" fill="#0057B8" letter-spacing="8">斐丁科技</text>
+  </g>
+</svg>

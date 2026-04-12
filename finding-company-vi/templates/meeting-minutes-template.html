@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>会议纪要 - Finding Company</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Noto+Sans+SC:wght@400;700&display=swap');
+
+    :root {
+      --finding-blue: #0057B8;
+      --deep-ocean: #003A75;
+      --sky-light: #4A90E2;
+      --light-gray: #F5F7FA;
+      --border-gray: #E1E4E8;
+      --text-primary: #1A1A1A;
+      --text-secondary: #666666;
+      --success: #2ECC71;
+      --warning: #F39C12;
+      --danger: #E74C3C;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', 'Noto Sans SC', sans-serif;
+      color: var(--text-primary);
+      background: var(--light-gray);
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 21cm;
+      margin: 0 auto;
+      background: white;
+      box-shadow: 0 0 30px rgba(0,0,0,0.08);
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--finding-blue) 0%, var(--deep-ocean) 100%);
+      color: white;
+      padding: 30px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .header-logo {
+      height: 44px;
+      filter: brightness(0) invert(1);
+    }
+
+    .header-title {
+      font-size: 20px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .header-badge {
+      background: rgba(255,255,255,0.2);
+      padding: 6px 14px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .body {
+      padding: 40px;
+    }
+
+    /* 头部信息网格 */
+    .info-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 24px;
+      margin-bottom: 30px;
+      padding-bottom: 24px;
+      border-bottom: 2px solid var(--border-gray);
+    }
+
+    .info-item {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .info-label {
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .info-value {
+      font-size: 16px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .info-value.highlight {
+      color: var(--finding-blue);
+      font-size: 18px;
+    }
+
+    /* 章节样式 */
+    .section {
+      margin-bottom: 36px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--finding-blue);
+      margin-bottom: 16px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--finding-blue);
+    }
+
+    .section-title::before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 18px;
+      background: var(--finding-blue);
+      border-radius: 2px;
+    }
+
+    .section-content {
+      padding-left: 16px;
+    }
+
+    /* 嘉宾列表 */
+    .attendees-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .attendee-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 12px;
+      background: var(--light-gray);
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .attendee-tag.remote {
+      border-left: 3px solid var(--sky-light);
+    }
+
+    /* 议程列表 */
+    .agenda-item {
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .agenda-time {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 13px;
+      color: var(--text-secondary);
+      white-space: nowrap;
+    }
+
+    .agenda-topic {
+      flex: 1;
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text-primary);
+    }
+
+    .agenda-owner {
+      font-size: 13px;
+      color: var(--text-secondary);
+      background: var(--light-gray);
+      padding: 4px 10px;
+      border-radius: 12px;
+    }
+
+    /* 讨论内容 */
+    .discussion-item {
+      margin-bottom: 20px;
+      padding-left: 12px;
+      border-left: 3px solid var(--sky-light);
+    }
+
+    .discussion-topic {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--deep-ocean);
+      margin-bottom: 8px;
+    }
+
+    .discussion-content {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text-primary);
+    }
+
+    /* 决策高亮 */
+    .decision {
+      background: linear-gradient(135deg, rgba(0,87,184,0.05) 0%, rgba(74,144,226,0.05) 100%);
+      border-left: 4px solid var(--finding-blue);
+      padding: 16px;
+      margin: 20px 0;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .decision-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--finding-blue);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+    }
+
+    .decision-content {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text-primary);
+    }
+
+    /* 行动项表格 */
+    .action-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+
+    .action-table th {
+      background: var(--finding-blue);
+      color: white;
+      font-weight: 600;
+      text-align: left;
+      padding: 12px 16px;
+      border: none;
+    }
+
+    .action-table td {
+      padding: 14px 16px;
+      border-bottom: 1px solid var(--border-gray);
+      vertical-align: top;
+    }
+
+    .action-table tr:nth-child(even) {
+      background: var(--light-gray);
+    }
+
+    .action-table tr:hover {
+      background: rgba(0,87,184,0.03);
+    }
+
+    .action-owner {
+      font-weight: 600;
+      color: var(--deep-ocean);
+    }
+
+    .action-due {
+      white-space: nowrap;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--text-secondary);
+    }
+
+    /* 状态标签 */
+    .status-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .status-pending { background: #FFF3CD; color: #856404; }
+    .status-inprogress { background: #CCE5FF; color: #004085; }
+    .status-done { background: #D4EDDA; color: #155724; }
+    .status-overdue { background: #F8D7DA; color: #721C24; }
+
+    /* 附件列表 */
+    .attachment-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .attachment-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 14px;
+      background: var(--light-gray);
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    .attachment-icon {
+      width: 16px;
+      height: 16px;
+      background: var(--finding-blue);
+      border-radius: 3px;
+    }
+
+    /* 页脚 */
+    .footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border-gray);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    .footer-link {
+      color: var(--finding-blue);
+      text-decoration: none;
+    }
+
+    .footer-link:hover {
+      text-decoration: underline;
+    }
+
+    /* 打印样式 */
+    @media print {
+      body { background: white; padding: 0; }
+      .container { box-shadow: none; max-width: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- 页眉 -->
+    <div class="header">
+      <div class="header-left">
+        <img src="../logo/finding-logo-primary.svg" class="header-logo" alt="Finding">
+        <span class="header-title">FINDING COMPANY 会议纪要</span>
+      </div>
+      <div class="header-badge">内部资料</div>
+    </div>
+
+    <!-- 正文 -->
+    <div class="body">
+
+      <!-- 基本信息 -->
+      <div class="info-grid">
+        <div class="info-item">
+          <span class="info-label">会议主题</span>
+          <span class="info-value highlight" id="meeting-title">[填写会议主题]</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">会议时间</span>
+          <span class="info-value" id="meeting-date">[YYYY-MM-DD HH:MM]</span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">会议地点</span>
+          <span class="info-value" id="meeting-location">[线上/线下地点]</span>
+        </div>
+      </div>
+
+      <!-- 参会人员 -->
+      <div class="section">
+        <div class="section-title">参会人员</div>
+        <div class="section-content">
+          <div class="attendees-list">
+            <span class="attendee-tag">👤 姓名 (部门) <input type="checkbox"></span>
+            <span class="attendee-tag remote">🌐 姓名 (远程)</span>
+            <span class="attendee-tag" style="border: 2px dashed var(--sky-light); background: transparent;">+ 添加参会人</span>
+          </div>
+          <div style="margin-top: 10px; font-size: 13px; color: var(--text-secondary);">
+            <strong>记录人：</strong> _______________
+          </div>
+        </div>
+      </div>
+
+      <!-- 会议议程 -->
+      <div class="section">
+        <div class="section-title">会议议程</div>
+        <div class="section-content">
+          <div class="agenda-item">
+            <span class="agenda-time">10:00 - 10:10</span>
+            <span class="agenda-topic">开场与目标说明</span>
+            <span class="agenda-owner">主持人</span>
+          </div>
+          <div class="agenda-item">
+            <span class="agenda-time">10:10 - 10:40</span>
+            <span class="agenda-topic">[议题一]</span>
+            <span class="agenda-owner">汇报人</span>
+          </div>
+          <div class="agenda-item">
+            <span class="agenda-time">10:40 - 11:10</span>
+            <span class="agenda-topic">[议题二]</span>
+            <span class="agenda-owner">汇报人</span>
+          </div>
+          <div class="agenda-item">
+            <span class="agenda-time">11:10 - 11:30</span>
+            <span class="agenda-topic">自由讨论与决策</span>
+            <span class="agenda-owner">全体</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 讨论内容 -->
+      <div class="section">
+        <div class="section-title">讨论内容</div>
+        <div class="section-content">
+          <div class="discussion-item">
+            <div class="discussion-topic">议题一：讨论主题</div>
+            <div class="discussion-content">
+              [详细记录讨论过程，关键观点、数据、引用]
+            </div>
+          </div>
+
+          <div class="decision">
+            <div class="decision-title">决策</div>
+            <div class="decision-content">
+              记录会议中做出的重要决定
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 行动项 -->
+      <div class="section">
+        <div class="section-title">行动项 (Action Items)</div>
+        <div class="section-content">
+          <table class="action-table">
+            <thead>
+              <tr>
+                <th width="30%">任务描述</th>
+                <th width="20%">负责人</th>
+                <th width="20%">截止日期</th>
+                <th width="15%">状态</th>
+                <th width="15%">备注</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>任务描述示例：完成产品原型设计</td>
+                <td class="action-owner">张三</td>
+                <td class="action-due">2026-04-18</td>
+                <td><span class="status-badge status-pending">待开始</span></td>
+                <td>[可选备注]</td>
+              </tr>
+              <tr>
+                <td><strong>新增任务：</strong>点击右侧"+"添加行</td>
+                <td class="action-owner">—</td>
+                <td class="action-due">—</td>
+                <td><span class="status-badge status-pending">待开始</span></td>
+                <td>—</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- 下次会议 -->
+      <div class="section">
+        <div class="section-title">下次会议</div>
+        <div class="section-content">
+          <div class="info-grid" style="grid-template-columns: 1fr 1fr; margin-bottom: 0;">
+            <div class="info-item">
+              <span class="info-label">预计时间</span>
+              <span class="info-value" contenteditable="true">[YYYY-MM-DD HH:MM]</span>
+            </div>
+            <div class="info-item">
+              <span class="info-label">主要议题</span>
+              <span class="info-value" contenteditable="true">[简要说明]</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 附件 -->
+      <div class="section">
+        <div class="section-title">相关附件</div>
+        <div class="section-content">
+          <div class="attachment-list">
+            <span class="attachment-item">
+              <div class="attachment-icon"></div>
+              📄 文档名称.pdf
+            </span>
+            <span class="attachment-item" style="border: 2px dashed var(--sky-light); background: transparent;">
+              + 添加附件
+            </span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- 页脚 -->
+    <div class="footer">
+      <div>
+        Finding Company 斐丁科技 | 会议纪要
+      </div>
+      <div>
+        生成时间：<span id="generated-time"></span>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // 填充日期时间
+    document.getElementById('meeting-date').textContent = new Date().toLocaleString('zh-CN', {
+      year: 'numeric',
+      month: '2-digit',
+      day: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: false
+    });
+
+    document.getElementById('generated-time').textContent = new Date().toLocaleString('zh-CN');
+  </script>
+</body>
+</html>

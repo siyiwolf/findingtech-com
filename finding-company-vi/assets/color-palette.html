@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>Finding Company - 品牌色卡</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #f5f7fa;
+      padding: 60px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: white;
+      padding: 48px;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.08);
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #003A75;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 40px;
+      font-size: 14px;
+    }
+
+    .color-section {
+      margin-bottom: 48px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #333;
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #eee;
+    }
+
+    .color-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .color-card {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    .color-swatch {
+      height: 120px;
+      position: relative;
+    }
+
+    .color-info {
+      padding: 16px;
+      background: white;
+    }
+
+    .color-name {
+      font-weight: 700;
+      color: #333;
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    .color-values {
+      display: flex;
+      gap: 12px;
+      font-size: 12px;
+      color: #666;
+      font-family: 'Monaco', 'Menlo', monospace;
+    }
+
+    .color-usage {
+      margin-top: 8px;
+      font-size: 13px;
+      color: #888;
+    }
+
+    .hex-copy {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(255,255,255,0.9);
+      padding: 6px 10px;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #333;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .hex-copy:hover {
+      background: white;
+      transform: scale(1.05);
+    }
+
+    .badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(0,87,184,0.9);
+      color: white;
+      padding: 4px 10px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    .section-separator {
+      height: 1px;
+      background: #e1e4e8;
+      margin: 40px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Finding Company</h1>
+    <p class="subtitle">品牌视觉识别系统 · 色彩规范</p>
+
+    <!-- 主色调 -->
+    <div class="color-section">
+      <h2 class="section-title">主色调 (Primary Colors)</h2>
+      <div class="color-grid">
+        <div class="color-card">
+          <div class="color-swatch" style="background: #0057B8;">
+            <span class="badge">主品牌色</span>
+            <span class="hex-copy" onclick="copyText('#0057B8')">#0057B8</span>
+          </div>
+          <div class="color-info">
+            <div class="color-name">Finding Blue</div>
+            <div class="color-values">
+              <span>RGB: 0, 87, 184</span>
+              <span>|</span>
+              <span>CMYK: 100, 53, 0, 0</span>
+            </div>
+            <div class="color-usage">Logo、标题、主按钮、导航栏</div>
+          </div>
+        </div>
+
+        <div class="color-card">
+          <div class="color-swatch" style="background: #003A75;">
+            <span class="badge">深色</span>
+            <span class="hex-copy" onclick="copyText('#003A75')">#003A75</span>
+          </div>
+          <div class="color-info">
+            <div class="color-name">Deep Ocean</div>
+            <div class="color-values">
+              <span>RGB: 0, 58, 117</span>
+              <span>|</span>
+              <span>CMYK: 100, 50, 0, 54</span>
+            </div>
+            <div class="color-usage">辅助标题、页脚、强调元素</div>
+          </div>
+        </div>
+
+        <div class="color-card">
+          <div class="color-swatch" style="background: #4A90E2;">
+            <span class="badge">亮色</span>
+            <span class="hex-copy" onclick="copyText('#4A90E2')">#4A90E2</span>
+          </div>
+          <div class="color-info">
+            <div class="color-name">Sky Light</div>
+            <div class="color-values">
+              <span>RGB: 74, 144, 226</span>
+              <span>|</span>
+              <span>CMYK: 67, 36, 0, 11</span>
+            </div>
+            <div class="color-usage">高光、次要按钮、装饰元素</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 中性色 -->
+    <div class="color-section">
+      <h2 class="section-title">中性色 (Neutral Colors)</h2>
+      <div class="color-grid">
+        <div class="color-card">
+          <div class="color-swatch" style="background: #FFFFFF; border: 1px solid #eee;">
+            <span class="hex-copy" onclick="copyText('#FFFFFF')">#FFFFFF</span>
+          </div>
+          <div class="color-info">
+            <div class="color-name">Cloud White</div>
+            <div class="color-values">
+              <span>RGB: 255, 255, 255</span>
+            </div>
+            <div class="color-usage">背景、卡片、负空间</div>
+          </div>
+        </div>
+
+        <div class="color-card">
+          <div class="color-swatch" style="background: #F5F7FA;">
+            <span class="hex-copy" onclick="copyText('#F5F7FA')">#F5F7FA</span>
+          </div>
+          <div class="color-info">
+            <div class="color-name">Light Gray</div>
+            <div class="color-values">
+              <span>RGB: 245, 247, 250</span>
+            </div>
+            <div class="color-usage">分隔区、卡片背景、输入框</div>
+          </div>
+        </div>
+
+        <div class="color-card">
+          <div class="color-swatch" style="background: #1A1A1A;">
+            <span class="hex-copy" onclick="copyText('#1A1A1A')" style="color: white;">#1A1A1A</span>
+          </div>
+          <div class="color-info">
+            <div class="color-name">Midnight</div>
+            <div class="color-values">
+              <span>RGB: 26, 26, 26</span>
+            </div>
+            <div class="color-usage">正文文本、表格、图表</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 辅助色 -->
+    <div class="color-section">
+      <h2 class="section-title">辅助色 (Accent Colors)</h2>
+      <p class="color-usage" style="margin-bottom: 20px;">用于状态、场景区分、特殊强调</p>
+      <div class="color-grid">
+        <div class="color-card">
+          <div class="color-swatch" style="background: #2ECC71;">
+            <span class="hex-copy" onclick="copyText('#2ECC71')">#2ECC71</span>
+          </div>
+          <div class="color-info">
+            <div class="color-name">Nature Green</div>
+            <div class="color-usage">成功、生态、完成状态</div>
+          </div>
+        </div>
+
+        <div class="color-card">
+          <div class="color-swatch" style="background: #F39C12;">
+            <span class="hex-copy" onclick="copyText('#F39C12')">#F39C12</span>
+          </div>
+          <div class="color-info">
+            <div class="color-name">Sunset Orange</div>
+            <div class="color-usage">警告、进行中、重要提示</div>
+          </div>
+        </div>
+
+        <div class="color-card">
+          <div class="color-swatch" style="background: #E74C3C;">
+            <span class="hex-copy" onclick="copyText('#E74C3C')">#E74C3C</span>
+          </div>
+          <div class="color-info">
+            <div class="color-name">Alert Red</div>
+            <div class="color-usage">错误、危险、延期</div>
+          </div>
+        </div>
+
+        <div class="color-card">
+          <div class="color-swatch" style="background: #9B59B6;">
+            <span class="hex-copy" onclick="copyText('#9B59B6')">#9B59B6</span>
+          </div>
+          <div class="color-info">
+            <div class="color-name">Tech Purple</div>
+            <div class="color-usage">创新、AI、智能概念</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-separator"></div>
+
+    <div style="font-size: 13px; color: #888; text-align: center;">
+      <p>复制提示：点击色卡上的 HEX 代码即可复制到剪贴板</p>
+      <p>© 2026 Finding Company · 版本 1.0</p>
+    </div>
+  </div>
+
+  <script>
+    function copyText(text) {
+      navigator.clipboard.writeText(text).then(() => {
+        alert('已复制: ' + text);
+      }).catch(err => {
+        console.error('复制失败', err);
+      });
+    }
+  </script>
+</body>
+</html>
