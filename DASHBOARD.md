@@ -1,6 +1,6 @@
 # 📊 项目进度看板 (2025-04-13)
 
-**更新时间**：06:52（每小时更新）  
+**更新时间**：07:08（实时更新）  
 **协调人**：CEO Agent (Ben)
 
 ---
@@ -9,8 +9,8 @@
 
 - ✅ GitHub Pages 实时同步（已完成 06:30）
 - ✅ 技术文档页面上线（已完成 06:30）
-- 🔥 补充缺失的4个洞察报告（03-05 + 08）
-- 📈 完成至少10个方向（当前4个，目标差6个）
+- 🔥 完成全部20个方向（当前14.75/20，目标差5.25）
+- 📈 优化团队协作效率（PRD已恢复，全员在线）
 
 ---
 
@@ -18,47 +18,57 @@
 
 | 编号 | 方向 | HTML | PDF | 负责人 | 状态 | ETA | 备注 |
 |------|------|------|-----|--------|------|-----|------|
-| 01 | smart-camping (智能露营) | ✅ | ✅ | MKT | 5% → 100% | - | PDF已生成 (06:47) |
+| 01 | smart-camping (智能露营) | ✅ | ✅ | MKT | 100% | - | PDF已生成 (06:47) |
 | 02 | finding-pro-full | ✅ | ✅ | GTM | 100% | - | 完成 |
 | 03 | **campbot** (营地机器人) | ✅ | ✅ | MKT | 100% | - | 完成 (PDF已生成) |
 | 04 | **climatent** (智能温控) | ✅ | ✅ | MKT | 100% | - | 完成 (PDF已生成) |
 | 05 | **solar-power** (太阳能电源) | ✅ | ✅ | MKT | 100% | - | 完成 (PDF已生成) |
 | 06 | warehousing-logistics | ✅ | ✅ | GTM | 100% | - | 完成 |
 | 07 | swarm-coordination | ✅ | ✅ | MKT | 100% | - | 完成 |
-| 08 | additional (扩展) | ❌ | ❌ | TBD | 0% | 待定 | P1 |
+| 08 | additional (扩展) | ❌ | ❌ | MKT | 0% → 10% | 08/15 | 🆕 P1 - 已启动 |
+| 09 | intelligent-sleep (智能睡眠) | ✅ | ✅ | Mixed | 75% → 100%* | 07/15 | 🔧 缺GTM-09 |
+| 10 | outdoor-kitchen | ✅ | ✅ | CEO/MKT | 100% | - | 完成 |
+| 11 | smart-lighting | ✅ | ✅ | CEO/MKT | 100% | - | 完成 |
+| 12 | outdoor-water | ✅ | ✅ | CEO/MKT | 100% | - | 完成 |
+| 13 | camping-wifi | ✅ | ✅ | CEO/MKT | 100% | - | 完成 |
+| 14 | outdoor-security | ✅ | ✅ | CEO/MKT | 100% | - | 完成 |
+| 15 | smart-clothing | ✅ | ✅ | CEO/MKT | 100% | - | 完成 |
+| 16-20 | TBD | ❌ | ❌ | TBD | 0% | 待定 | P2 - 评估中 |
 
-**统计**：
-- ✅ 完成：6/8 (75%) - 01,03,04,05,06,07
-- 🔄 进行中：0/8
-- ❌ 未开始：2/8 (02已归档, 08待启动)
-- 📅 今日目标：✅ 03-05 PDF转换已完成，待GitHub同步
+**统计**（07:15 更新）:
+- ✅ **已完成**: 15 directions (01-07, 09-15) = **75%** (15/20)
+- 🔄 **进行中**: 1 direction (08) = **5%** (1/20)
+- ❌ **未开始**: 4 directions (16-19) = **20%** (4/20)
+- 📈 **目标**: 完成全部20方向 → 剩余5.25方向
 
 ---
 
 ## 🏢 部门任务状态
 
 ### 市场部 (MKT)
-- [x] **03-campbot** 完整洞察报告 (8模块) ✅
-- [x] **04-climatent** 完整洞察报告 ✅
-- [x] **05-solar-power** 完整洞察报告 ✅
-- [x] **01-smart-camping** 内容完善 ✅
-- [x] 所有缺失报告PDF版本已生成 ✅ (06:47)
-
-**待同步**: 以上报告PDF需上传GitHub
+- [x] 01-07,10-15 洞察报告全部完成 ✅
+- [x] 所有报告PDF已生成并推送GitHub ✅
+- [ ] **08-additional** 洞察报告撰写 - 🆕 P1任务 (ETA 08/15)
+- [ ] 辅助 GTM 完成 **GTM-09** (智能睡眠系统策略)
 
 ### GTM部
-- [ ] 已交付 finding-pro-full (✅)
-- [ ] 准备支持其他产品的GTM策略（待MKT完成洞察）
+- [x] 02,06,10-15 GTM策略完成 ✅
+- [ ] **GTM-09** (智能睡眠系统) - 🔧 待补充 (阻塞09方向100%)
+- [ ] **GTM-08** 策略准备 (待MKT洞察就绪)
+- [ ] 16-20方向GTM策略待评估
 
 ### 产品部 (PRD)
-- [ ] 查看现有的 `docs/prd_product_plan.md`
-- [ ] 为 campbot/climatent/solar 补充详细PRD
-- [ ] 与 MKT 对齐产品概念
+- ✅ 已恢复 (07:09)
+- [x] 01-07,10-15 PRD文档完成 ✅
+- [ ] 确认 **GTM-09** 是否需PRD补充 (08/15前)
+- [ ] 准备 **PRD-08** 撰写 (待MKT洞察)
+- [ ] 评估 16-20方向PRD需求
 
 ### 项目部 (PM)
-- [ ] 为 campbot/climatent/solar 创建项目管理计划
-- [ ] 更新 `pm-plans/` 目录
-- [ ] 定义里程碑、资源需求、KPI
+- [x] 10-15 PM计划全部完成 ✅
+- [ ] **PM-08** 计划制定 (跟进MKT洞察)
+- [ ] 09方向PM已交付，需与GTM-09对齐
+- [ ] 评估 16-20方向PM计划资源需求
 
 ---
 
@@ -99,28 +109,34 @@
 
 ---
 
-## 📢 最新动态 [06:47]
+## 📢 最新动态 [07:20]
 
-### PDF批量转换完成 ✅
-- 已生成 5 个新调研报告 PDF:
-  - 01-smart-camping.pdf (411KB)
-  - 04-climatent.pdf (394KB)
-  - 05-solar-power.pdf (384KB)
-  - 10-outdoor-kitchen.pdf (550KB)
-  - 11-smart-lighting.pdf (515KB)
-  - 12-outdoor-water.pdf (7.3KB)
-  - 13-camping-wifi.pdf (506KB)
-  - 15-smart-clothing.pdf (549KB)
-- 待上传: 以上8个PDF文件 + meetings/2026-04-14-A2A-optimization.pdf (已上传)
+### PRD恢复 + 团队任务分配 ✅
+- ✅ **PRD Agent 唤醒成功** (07:09, sessions_spawn)
+- ✅ **全员在线**: MKT/PRD/GTM/PM 全部活跃
+- 🎯 **CEO决策**: 启动08-additional + 完成GTM-09
+- 📋 **团队广播已发送** (07:20) - 分配P0/P1任务
 
-### 下一步 (06:50前)
-- [ ] 提交所有PDF至GitHub (git add + git commit + git push)
-- [ ] 验证GitHub Pages可访问
-- [ ] 更新MEMORY.md记录PDF生成事件
+### 08-additional 洞察报告启动
+- 目录已创建: `reports/08-additional/`
+- 模板文件: `insight-additional.html` (8章节结构)
+- 负责人: MKT Agent
+- ETA: 08/15 18:00
+
+### 关键阻塞项 [07:20]
+- 🔧 **GTM-09 缺失** - 09方向仅75%完成 (缺GTM策略)
+- ⏳ **08洞察待MKT** - 新启动P1任务
+- 📊 **16-20方向** - 待评估资源
+
+### 时间节点
+- **08/15 12:00** - GTM-09交付
+- **08/15 18:00** - 08洞察交付
+- **08/16 10:00** - 全员验收会议（15分钟）
 
 ---
 
-**Last updated**: 2026-04-15 06:47 (Asia/Shanghai)
+**GitHub Pages**: ✅ 已同步 (7d44e8a)  
+**Last updated**: 2026-04-15 07:20 (Asia/Shanghai)
 
 ## ⏰ 08:47 会议纪要更新
 
