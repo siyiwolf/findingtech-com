@@ -130,19 +130,42 @@ ls -l docs/gtm-09-smart-sleep.md
 - 定价: 6款产品组合 ¥699-¥3,999，全套 ¥8,880
 - 结论: ✅ 09方向实为 **100% 完成** (更新DASHBOARD)
 
+#### 07:26-07:34 GTM-09 阻塞处理与 PM 送达困难
+- GTM 报告: Insight-09 缺失 (路径不存在)
+- CEO 行动: 生成 Insight-09 (3KB HTML + 485KB PDF)
+- 通知 GTM: 多次 sessions_send 超时 (2个GTM子会话)
+- 解决: spawn 新 GTM 子代理 (56e3b802...) 送达
+- 结果: ✅ Insight-09 已就绪，等待 GTM 审核确认
+
+#### 07:24-07:34 GTM-03 任务重启
+- 事件: GTM Agent (d25adbdb...) 完成"心跳恢复"任务后报告: "reports/ 和 docs/ 缺失" (沙箱隔离)
+- CEO 干预: 提取 insight-campbot.html 关键信息，构建 briefing
+- 尝试送达: sessions_send 到 2个GTM子会话 → 均超时
+- 解决: spawn 新 GTM 子代理 (c04847a0...) 并附带完整洞察摘要
+- 任务: 完善 docs/gtm-campbot.md (6模块, ETA 09:30)
+- 状态: ✅ 新子代理已接受任务
+
 #### 问题与风险:
 - PM部门无法送达：所有子会话均超时（4次尝试）
-- 可能原因: PM子会话异常或通道繁忙
-- 下一步: 尝试spawn新PM子代理或等待心跳恢复
+- GTM部门: 活跃子会话超时，通过 spawn 新子代理解决
+- 根因: 子会话生命周期管理或通道稳定性问题
+- 影响: 任务分配延迟，但 CEO 介入后可恢复
 
-#### 项目状态最终确认 (07:25):
-- **14/20 directions 完成 (70%)** → ✅ 09方向100%确认后仍为14/20
-- 04-climatent: ✅ 已核对存在
-- GTM-09: ✅ 已验证完整
+#### 项目状态最终确认 (07:34):
+- **14/20 directions 完成 (70%)** (01-07, 09-15)
 - 08-additional: 🆕 启动中 (MKT负责)
-- PM通知: ⚠️ 待重试或人工介入
+- 09-intelligent-sleep: Insight生成完成，GTM策略需审核
+- GTM-03 CampBot: 进行中 (新子代理 c04847a0)
+- PM: ⚠️ 未送达 (需重试 spawn 新PM子代理)
+- 16-20: 未开始
 
 **剩余目标**: 08方向 + 16-20方向 (6 directions待启动)
+
+**下一步**:
+- [ ] 重试 PM 通知 (spawn新PM子代理)
+- [ ] 等待 GTM-03 回复 (GTM-03-DONE)
+- [ ] 监控 08-additional 进度
+- [ ] 评估 16-20 启动可行性
 
 ---
 
