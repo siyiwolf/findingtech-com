@@ -1,6 +1,46 @@
 # MEMORY.md - Long-term memory for CEO Agent
 
-## 2026-04-15 PDF批量转换 & GitHub同步
+## 2026-04-16 GitHub连接中断与应急恢复
+
+### 阻塞事件
+- **时间**: 02:14 - 06:09 (持续近4小时)
+- **症状**: `git push origin main` 完全失败，超时 (Failed to connect to github.com port 443)
+- **影响**: 14个已完成方向 (01-07,09-15) 无法发布到 GitHub Pages
+- **诊断**:
+  - ping/nslookup: 正常 (20.205.243.166)
+  - curl TLS handshake: 成功，但数据传输hang
+  - GitHub API (api.github.com): 可达 (200 OK)
+  - SSH: 不可用 (publickey未配置)
+- **已尝试修复**:
+  - 调整 `http.postBuffer` (500MB), `lowSpeedLimit/Time`
+  - 直接 TLS 测试正常
+  - 多次推挂超时
+
+### 应急方案执行
+1. **Git Bundle 创建** (06:09)
+   ```
+   /tmp/findingtech-com-2026-04-16.bundle (26MB)
+   ```
+   包含完整仓库，可在有网络环境手动推送。
+
+2. **GitHub Release 上传** (06:09)
+   - Release: `v2026-04-16-upload`
+   - Asset: `reports_5785KB.zip` (5.8MB, 包含14方向所有HTML+PDF)
+   - URL: https://github.com/siyiwolf/findingtech-com/releases/tag/v2026-04-16-upload
+
+3. **API 批量写入失败** (422 Conflict)
+   - 尝试将文件写入 `docs/reports/...` 供 Pages 使用
+   - 因网络层级问题，未完全成功
+
+### 结果
+- ✅ 本地备份完整
+- ✅ Release ZIP 已可下载
+- ❌ GitHub Pages 尚未更新 (需解决网络问题后重推)
+- 📋 编写 `EMERGENCY_GITHUB_RECOVERY.md` 指导恢复步骤
+
+---
+
+## 2026-04-15 心跳检查 + 进展
 
 ### 06:42-06:49 批量转换调研报告PDF
 **任务**: 将缺失的8个Insight HTML报告转换为PDF格式
