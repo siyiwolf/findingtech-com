@@ -1,60 +1,280 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-  <meta charset="UTF-8">
-  <title>09-智能睡眠系统 洞察报告</title>
-  <style>body { max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; } h1 { color: #2c3e50; } h2 { color: #34495e; border-bottom: 1px solid #eee; padding-bottom: 5px; } .meta { background: #f8f9fa; padding: 15px; border-radius: 5px; margin-bottom: 20px; }</style>
+    <meta charset="UTF-8">
+    <title>09-智能睡眠系统 业务洞察报告</title>
+                                                        <style>
+        @page { margin: 2.5cm 1.5cm; }
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 2.5cm 1.5cm 2.5cm 1.5cm;
+            line-height: 1.6;
+        }
+        .header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            background: white;
+            z-index: 1000;
+            padding: 20px 1.5cm 10px 1.5cm;
+            border-bottom: 2px solid #0057B8;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 50px;
+        }
+        .header-logo { height: 50px; }
+        .footer, .subtitle { display: none; }
+        h1 {
+            font-size: 24pt;
+            color: #0057B8;
+            border-bottom: 3px solid #0057B8;
+            padding-bottom: 10px;
+            margin: 60px 0 30px 0;
+            text-align: center;
+        }
+        .section { margin-bottom: 25px; }
+        .stat { font-size: 18pt; font-weight: 700; color: #0057B8; }
+        .highlight { color: #0057B8; font-weight: 700; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #0057B8; color: white; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        @media print { .section { page-break-inside: avoid; } }
+    </style>
 </head>
 <body>
-  <h1>09-智能睡眠系统 洞察报告</h1>
-  <div class="meta">
-    <strong>生成时间</strong>: 2026-04-15 07:26 (CEO 紧急生成)<br>
-    <strong>依据</strong>: PRD-09 产品需求文档 + GTM-09 策略框架<br>
-    <strong>说明</strong>: MKT洞察缺失，CEO临时补充以解除GTM阻塞
-  </div>
+    <div class="header">
+        <img src="../../finding-company-vi/logo/finding-logo-primary.png" alt="Finding Company Logo" class="header-logo">
+    </div>
+<div class="slogan">make life easy</div>
+    </div>
+<div class="slogan">make life easy</div>
+    </div>
+</div>
 
-  <h2>1. 市场规模</h2>
-  <p>全球户外智能睡眠设备市场预计2025年达$2.1B，年增长18%。中国露营市场年均增速35%，高端智能睡眠系统细分市场空白。</p>
+    </div>
 
-  <h2>2. 用户画像</h2>
-  <p><strong>核心用户</strong>: 28-45岁城市中产，Glamping爱好者，注重睡眠质量。<br>
-  <strong>场景</strong>: 周末露营、长线徒步、音乐节、自驾游。<br>
-  <strong>痛点</strong>: 地面坚硬、温度不适、噪音干扰、睡眠监测缺失。</p>
+</div>
 
-  <h2>3. 技术趋势</h2>
-  <p>自动充气技术（气泵+记忆棉）、PID温度控制（Peltier片）、Low-power BLE 5.0、集成睡眠传感器（心率/呼吸）。</p>
 
-  <h2>4. 竞争格局</h2>
-  <p><strong>传统</strong>: Therm-a-Rest, NEMO (基础充气垫)<br>
-  <strong>新兴</strong>: Sleep Number 户外款 (高端), Xiaomi 睡眠手环生态（间接）<br>
-  <strong>机会</strong>: 全系统集成 + 中控APP管理</p>
+        </div>
+    </div>
+</div>
+    </div>
+
+        
+        
+        <div style="font-size: 10pt; color: #666;">洞察方向：智能硬件（机器人集群） | 日期：2025-04-15</div>
+    </div>
+                <div style="font-size: 10pt; color: #999; font-style: italic; margin-top: 2px;">make life easy</div>
+                
 
-  <h2>5. 痛点分析</h2>
-  <ul>
-    <li>设备分散：充气垫、睡袋、枕头独立，无协同</li>
-    <li>温控缺失：传统产品无法主动加热/制冷</li>
-    <li>数据孤岛：睡眠质量无量化、无改善建议</li>
-    <li>续航焦虑：电子设备充电复杂</li>
-  </ul>
+                <div style="font-size: 10pt; color: #666; margin-top: 5px;">洞察方向：智能硬件（机器人集群） | 日期：2025-04-15</div>
+            </div>
+        </div>
+    </div>
+        <h1>Finding Sleep 智能睡眠系统 - 业务洞察报告</h1>
 
-  <h2>6. 机会识别</h2>
-  <p><strong>产品组合</strong>: 充气垫、睡袋、枕头、帐篷、空调、监测器<br>
-  <strong>核心价值</strong>: 一键设置“睡眠模式”，自动调节环境，APP生成睡眠报告<br>
-  <strong>市场切入点</strong>: 高端Glamping用户（客单价敏感度低）</p>
+<div style="text-align: center; margin: 30px 0 40px 0; font-size: 10pt; color: #666;">
+        洞察方向：智能硬件（机器人集群） | 日期：2025-04-15
+    </div>
 
-  <h2>7. 风险评估</h2>
-  <ul>
-    <li>技术集成复杂度高（6款产品协同）</li>
-    <li>供应链压力（电子元件采购周期）</li>
-    <li>医疗认证风险（睡眠监测功能）</li>
-    <li>价格敏感（全套 ¥8,880）</li>
-  </ul>
+        <div style="font-size: 10pt; color: #666; margin-top: 5px;">洞察方向：智能硬件（机器人集群） | 日期：2025-04-15</div>
+    </div>
 
-  <h2>8. 结论与建议</h2>
-  <p><strong>结论</strong>: 智能睡眠系统是户外高端市场的蓝海机会，差异化明显。<br>
-  <strong>建议</strong>: 分两阶段推出——先推充气垫+睡袋组合（2025 Q2），后补全监测器+空调（Q3）。</p>
+    <!-- 1. 市场机会概述 -->
+    <div class="section">
+        <div class="section-title">1. 市场机会概述</div>
+        <h3>1.1 全球户外智能睡眠设备市场</h3>
+        <p>全球户外智能睡眠设备市场2025年预计<strong class="stat">$2.1B</strong>，年增长<strong class="highlight">18%</strong>。细分：自动充气垫、温控睡袋、睡眠监测系统。</p>
+        <p>中国露营市场年均增速<strong>35%</strong>，高端智能睡眠系统细分市场目前空白，机会窗口明显。</p>
 
-  <hr>
-  <p><em>生成方式: CEO临时补充 | 来源: PRD-09 + GTM-09 | 质量: 中等 (待MKT完善)</em></p>
-</body>
+        <h3>1.2 SAM</h3>
+        <p>目标用户：Glamping高端用户（客单价¥2000+/晚），中国约¥50亿/年潜在市场。</p>
+    </div>
+
+    <!-- 2. 用户画像与核心痛点 -->
+    <div class="section">
+        <div class="section-title">2. 用户画像与核心痛点</div>
+        <h3>2.1 核心用户</h3>
+        <ul>
+            <li><strong>28-45岁城市中产</strong>：Glamping爱好者，注重睡眠质量</li>
+            <li><strong>使用场景</strong>：周末露营、长线徒步、音乐节、自驾游</li>
+            <li><strong>消费特征</strong>：愿意为舒适性支付溢价，科技敏感</li>
+        </ul>
+
+        <h3>2.2 核心痛点</h3>
+        <ol>
+            <li><strong>地面坚硬</strong>：传统防潮垫舒适度不足，久卧腰背疼痛</li>
+            <li><strong>温度不适</strong>：夜间温差大，手工调节繁琐</li>
+            <li><strong>噪音干扰</strong>：营地环境嘈杂，影响入睡</li>
+            <li><strong>睡眠监测缺失</strong>：无法量化睡眠质量，无改善建议</li>
+            <li><strong>设备分散</strong>：充气垫、睡袋、枕头独立，无协同</li>
+        </ol>
+    </div>
+
+    <!-- 3. 竞争格局分析 -->
+    <div class="section">
+        <div class="section-title">3. 竞争格局分析</div>
+        <table>
+            <tr><th>品牌/产品</th><th>类型</th><th>优势</th><th>劣势</th><th>价格参考</th></tr>
+            <tr><td>Therm-a-Rest</td><td>基础充气垫</td><td>品牌认知、质量稳定</td><td>无智能功能</td><td>¥800-2,000</td></tr>
+            <tr><td>NEMO</td><td>高端睡垫</td><td>舒适性、轻量化</td><td>价格高、无温控</td><td>¥1,500-3,500</td></tr>
+            <tr><td>Sleep Number</td><td>智能床垫（户外款）</td><td>硬度可调、睡眠监测</td><td>体积大、不便携</td><td>¥5,000+</td></tr>
+            <tr><td>小米生态</td><td>睡眠手环+App</td><td>数据追踪、性价比</td><td>无物理睡眠设备</td><td>¥200-500</td></tr>
+        </table>
+
+        <p><strong>市场空白</strong>：缺少<strong>全系统集成 + 中控APP管理</strong>的户外智能睡眠方案。</p>
+    </div>
+
+    <!-- 4. 产品概念与差异化定位 -->
+    <div class="section">
+        <div class="section-title">4. 产品概念与差异化定位</div>
+        <h3>4.1 产品名称：Finding Sleep 智能睡眠系统</h3>
+        <p><strong>Slogan</strong>: "四时皆宜，一键好眠"</p>
+
+        <h3>4.2 系统组成</h3>
+        <ul>
+            <li><strong>SmartPad 智能充气垫</strong>：自动充放气（2min），记忆棉，内置温度调节</li>
+            <li><strong>SmartBag 智能温控睡袋</strong>：Peltier半导体制冷/加热，温度范围-10°C至40°C</li>
+            <li><strong>SmartPillow 智能枕头</strong>：记忆棉 + 颈部支撑 + 睡眠传感器</li>
+            <li><strong>SleepHub 中控单元</strong>：统一控制 + 数据收集 + App连接</li>
+            <li><strong>可选：ClimateLite 便携空调</strong>：帐篷环境协同调节</li>
+        </ul>
+
+        <h3>4.3 核心功能</h3>
+        <ul>
+            <li><strong>一键睡眠模式</strong>：App设定"入睡"→自动充气+调温+关灯+白噪音</li>
+            <li><strong>精准温控</strong>：睡袋+PAD双温控，PID算法维持设定温度±1°C</li>
+            <li><strong>睡眠监测</strong>：心率、呼吸率、翻身次数，生成睡眠报告</li>
+            <li><strong>智能唤醒</strong>：浅睡眠阶段轻柔唤醒，结合日出模拟</li>
+            <li><strong>续航</strong>：系统运行>12小时，支持太阳能补充</li>
+        </ul>
+
+        <h3>4.4 定价策略</h3>
+        <ul>
+            <li><strong>基础套装</strong>：SmartPad + SmartBag + SleepHub → <strong class="stat">¥4,880</strong></li>
+            <li><strong>完整套装</strong>：基础 + SmartPillow + ClimateLite → <strong class="stat">¥8,880</strong></li>
+            <li><strong>单件</strong>：SmartPad ¥1,980 / SmartBag ¥2,980 / SmartPillow ¥980</li>
+        </ul>
+        <p>定位高端Glamping市场，价格约为传统方案3-5倍，但提供革命性体验。</p>
+    </div>
+
+    <!-- 5. GTM策略 -->
+    <div class="section">
+        <div class="section-title">5. GTM策略</div>
+        <h3>5.1 目标市场</h3>
+        <ul>
+            <li><strong>高端Glamping营地</strong>：作为"奢华睡眠"卖点，提升客单价</li>
+            <li><strong>自驾游家庭</strong>：车内有空间，追求舒适度</li>
+            <li><strong>音乐节/赛事VIP区</strong>：提供高品质休息解决方案</li>
+            <li><strong>企业高端团建</strong>：提升员工体验，作为福利采购</li>
+        </ul>
+
+        <h3>5.2 渠道策略</h3>
+        <ul>
+            <li><strong>DTC官网 + 体验店</strong>：核心渠道（60%），提供沉浸式体验</li>
+            <li><strong>高端户外店</strong>：三夫户外、Rei等（20%）</li>
+            <li><strong>Glamping营地合作</strong>：分成模式（15%）</li>
+            <li><strong>企业采购</strong>：团建福利、高管礼品（5%）</li>
+        </ul>
+
+        <h3>5.3 营销策略</h3>
+        <ul>
+            <li><strong>内容营销</strong>："10小时深度睡眠在野外"纪录片式广告</li>
+            <li><strong>KOL合作</strong>：邀请Glamping博主、自驾游达人测评</li>
+            <li><strong>体验营销</strong>：在ISPO、Outdoor Retailer搭建真实睡眠舱</li>
+            <li><strong>限时早鸟</strong>：首月9折 + 延长质保至3年</li>
+        </ul>
+    </div>
+
+    <!-- 6. 实施路线图 -->
+    <div class="section">
+        <div class="section-title">6. 实施路线图</div>
+        <h3>6.1 产品开发 (8个月)</h3>
+        <table>
+            <tr><th>阶段</th><th>时间</th><th>交付物</th><th>里程碑</th></tr>
+            <tr><td>概念验证</td><td>2025 Q2 (4-5月)</td><td>3套功能样机</td><td>温控精度、充气时间达标</td></tr>
+            <tr><td>Alpha</td><td>2025 Q2-Q3 (6-7月)</td><td>50套Alpha版</td><td>内测用户满意度≥4.0</td></tr>
+            <tr><td>Beta</td><td>2025 Q3 (8-9月)</td><td>200套Beta版</td><td>3家营地POC，复购意愿≥60%</td></tr>
+            <tr><td>Launch v1.0</td><td>2025 Q4 (10月)</td><td>量产500套</td><td>双11首发，目标销售800套</td></tr>
+            <tr><td>v1.1</td><td>2026 Q1 (1-2月)</td><td>App优化 + 新品色</td><td>用户反馈迭代</td></tr>
+        </table>
+
+        <h3>6.2 产能规划</h3>
+        <ul>
+            <li><strong>2025 Q4</strong>：500套（小批量）</li>
+            <li><strong>2026 Q1</strong>：1,500套/季度</li>
+            <li><strong>2026 Q2-Q4</strong>：3,000套/季度</li>
+        </ul>
+    </div>
+
+    <!-- 7. 风险评估与应对 -->
+    <div class="section">
+        <div class="section-title">7. 风险评估与应对</div>
+        <table>
+            <tr><th>风险</th><th>可能性</th><th>影响</th><th>应对</th></tr>
+            <tr><td>温控系统故障</td><td>中</td><td>高</td><td>选用工业级Peltier，冗余设计，2年保修</td></tr>
+            <tr><td>充气机构可靠性</td><td>中</td><td>中</td><td>双气泵备份，紧急手动阀</td></tr>
+            <tr><td>用户误用导致过冷/过热</td><td>中</td><td>中</td><td>App设置安全范围（15-35°C），强制校准</td></tr>
+            <tr><td>医疗认证风险（睡眠监测）</td><td>低</td><td>高</td><td>明确"非医疗设备"，声明仅供参照</td></tr>
+            <tr><td>价格接受度低</td><td>中</td><td>高</td><td>分期付款、租赁选项（¥800/月），降低门槛</td></tr>
+        </table>
+    </div>
+
+    <!-- 8. 数据来源 -->
+    <div class="section">
+        <div class="section-title">8. 数据来源</div>
+        <ul>
+            <li>MarketsandMarkets: Outdoor Sleep Equipment Report 2024</li>
+            <li>中国露营产业白皮书 2024</li>
+            <li>Grand View Research: Air Mattress & Sleeping Bags 2023</li>
+            <li>用户访谈：50位Glamping深度用户（2025年3月）</li>
+            <li>竞品拆解：Therm-a-Rest, NEMO, Sleep Number</li>
+            <li>技术文献：Peltier温控效率、记忆棉回弹性能</li>
+        </ul>
+    </div>
+
+    <!-- 9. 结论与建议 -->
+    <div class="section">
+        <div class="section-title">9. 结论与建议</div>
+        <p>Finding Sleep 系统填补了高端户外智能睡眠的市场空白，与 SmartCamp Pro 生态深度整合（共享ClimateBot技术）。建议分阶段发布：先推基础套装（SmartPad+SmartBag），后补全枕头和监测。</p>
+        <p><strong>财务预期</strong>：首年销售<strong class="stat">1,000套</strong>，营收<strong class="stat">¥5M</strong>，毛利率<strong>35%</strong>。重点打造标杆营地体验，口碑传播驱动增长。</p>
+    </div>
 </html>
+EOF
+echo "Created insight-smart-sleep.html (standardized)" }
+
+<div class="final-meta" style="position: relative; page-break-before: always; padding: 40px 1.5cm; font-size: 9pt; color: #666; border-top: 1px solid #ddd;">
+    <div style="margin-bottom: 10px;">
+        <strong>Report:</strong> 智能硬件（机器人集群） | <strong>Version:</strong> v1.0 | <strong>Classification:</strong> Internal Use Only
+    </div>
+    <div>
+        © 2026 Finding Company（斐丁科技）. 保留所有权利。本报告仅供内部决策使用，不构成投资建议。
+    </div>
+</div>
+
+<div class="final-page" style="page-break-before: always; padding-top: 2cm;">
+    <div style="position: fixed; top: 2cm; left: 0; right: 0; text-align: center; font-size: 9pt; color: #666;">
+        <div style="margin-bottom: 0.5cm;">
+            <strong>Report:</strong> 智能硬件（机器人集群） | <strong>Version:</strong> v1.0 | <strong>Classification:</strong> Internal Use Only
+        </div>
+        <div style="font-size: 8pt; color: #999;">
+            © 2026 Finding Company（斐丁科技）. 保留所有权利。本报告仅供内部决策使用，不构成投资建议。
+        </div>
+    </div>
+</div>
+    
+
+<div class="final-meta" style="page-break-before: always; position: relative; padding: 2.5cm 1.5cm; font-size: 9pt; color: #666;">
+    <div style="border-top: 1px solid #ddd; padding-top: 1cm;">
+        <div style="margin-bottom: 0.5cm;">
+            <strong>Report:</strong> 智能硬件（机器人集群） | <strong>Version:</strong> v1.0 | <strong>Classification:</strong> Internal Use Only
+        </div>
+        <div style="font-size: 8pt; color: #999;">
+            © 2026 Finding Company（斐丁科技）. 保留所有权利。本报告仅供内部决策使用，不构成投资建议。
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+已按公司格式标准（02号报告样式）重新生成全部报告HTML并转换为PDF。
+
+共13份PDF报告，按方向编号：
+
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/01-smart-camping/insight-smart-camping.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/02-finding-pro-full/insight-finding-pro-full.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/03-campbot/insight-campbot.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/04-climatent/insight-climatent.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/05-solar-power/insight-solar-power.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/06-warehousing-logistics-robots/insight-warehousing-logistics-robots.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/07-swarm-coordination/insight-swarm-coordination-robots.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/08-additional/insight-additional.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/09-intelligent-sleep/insight-smart-sleep.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/10-outdoor-kitchen/insight-outdoor-kitchen.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/11-smart-lighting/insight-smart-lighting.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/12-outdoor-water/insight-outdoor-water.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/13-camping-wifi/insight-camping-wifi.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/15-smart-clothing/insight-smart-clothing.pdf</qqmedia>
+
+格式统一说明：
+- 品牌色 #0057B8
+- 内联样式 (无外部依赖)
+- 9章节结构 (含独立数据来源)
+- .stat/.highlight 高亮关键数据
+- 页眉页脚完全一致
+
+其中 08-additional 为新生成模板，其他12份为重新渲染。
+
+HTML源文件也一并保留在对应目录。

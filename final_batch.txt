@@ -1,0 +1,14 @@
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/01-smart-camping/insight-smart-camping.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/02-finding-pro-full/insight-finding-pro-full.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/03-campbot/insight-campbot.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/04-climatent/insight-climatent.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/05-solar-power/insight-solar-power.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/06-warehousing-logistics-robots/insight-warehousing-logistics-robots.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/07-swarm-coordination/insight-swarm-coordination-robots.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/08-additional/insight-additional.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/09-intelligent-sleep/insight-smart-sleep.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/10-outdoor-kitchen/insight-outdoor-kitchen.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/11-smart-lighting/insight-smart-lighting.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/12-outdoor-water/insight-outdoor-water.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/13-camping-wifi/insight-camping-wifi.pdf</qqmedia>
+<qqmedia>/home/ecs-assist-user/.openclaw/workspace-ceo/reports/15-smart-clothing/insight-smart-clothing.pdf</qqmedia>

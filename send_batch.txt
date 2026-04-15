@@ -1,0 +1,14 @@
+<qqmedia>reports/01-smart-camping/insight-smart-camping.pdf</qqmedia>
+<qqmedia>reports/02-finding-pro-full/insight-finding-pro-full.pdf</qqmedia>
+<qqmedia>reports/03-campbot/insight-campbot.pdf</qqmedia>
+<qqmedia>reports/04-climatent/insight-climatent.pdf</qqmedia>
+<qqmedia>reports/05-solar-power/insight-solar-power.pdf</qqmedia>
+<qqmedia>reports/06-warehousing-logistics-robots/insight-warehousing-logistics-robots.pdf</qqmedia>
+<qqmedia>reports/07-swarm-coordination/insight-swarm-coordination-robots.pdf</qqmedia>
+<qqmedia>reports/08-additional/insight-additional.pdf</qqmedia>
+<qqmedia>reports/09-intelligent-sleep/insight-smart-sleep.pdf</qqmedia>
+<qqmedia>reports/10-outdoor-kitchen/insight-outdoor-kitchen.pdf</qqmedia>
+<qqmedia>reports/11-smart-lighting/insight-smart-lighting.pdf</qqmedia>
+<qqmedia>reports/12-outdoor-water/insight-outdoor-water.pdf</qqmedia>
+<qqmedia>reports/13-camping-wifi/insight-camping-wifi.pdf</qqmedia>
+<qqmedia>reports/15-smart-clothing/insight-smart-clothing.pdf</qqmedia>
