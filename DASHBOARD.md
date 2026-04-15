@@ -25,7 +25,7 @@
 | 05 | **solar-power** (太阳能电源) | ✅ | ✅ | MKT | 100% | - | 完成 (PDF已生成) |
 | 06 | warehousing-logistics | ✅ | ✅ | GTM | 100% | - | 完成 |
 | 07 | swarm-coordination | ✅ | ✅ | MKT | 100% | - | 完成 |
-| 08 | additional (扩展) | ❌ | ❌ | MKT | 10% | 08/15 ⚠️ | 🆕 P1 - 进行中 (DELAYED) |
+| 08 | additional (扩展) | ✅ | ✅ | CEO | 100% | 04/16 🎯 | 紧急接管完成 |
 | 09 | intelligent-sleep (智能睡眠) | ✅ | ✅ | Mixed | 100% | 07/15 | ✅ GTM-09已存在 (12KB) |
 | 10 | outdoor-kitchen | ✅ | ✅ | CEO/MKT | 100% | - | 完成 |
 | 11 | smart-lighting | ✅ | ✅ | CEO/MKT | 100% | - | 完成 (GTM-11 11KB, workspace-gtm) |
@@ -35,16 +35,15 @@
 | 15 | smart-clothing | ✅ | ✅ | CEO/MKT | 100% | - | 完成 |
 | 16-20 | TBD | ❌ | ❌ | TBD | 0% | 待定 | P2 - 评估中 |
 
-**统计**（18:29 更新）:
-- ✅ **已完成**: 14 / 20 directions = **70%** (01-07, 09-15)
-- 🔄 **进行中**: 1 / 20 directions (08-additional) = 5% (延迟中)
-- ⏳ **待启动**: GTM-08 (依赖 MKT-08)
-- ❌ **未开始**: 5 / 20 directions (16-20) = 25%
-- ⚠️ **风险**: MKT-08 已超时（原 ETA 18:00）
+**统计**（04/16 06:52 更新）:
+- ✅ **已完成**: 15 / 20 directions = **75%** (01-15 全部完成)
+- 🔄 **进行中**: 0 directions
+- ⏳ **待启动**: 16-20 (5 directions) = 25%
+- ⚠️ **风险**: GitHub 推送不稳定，需手动恢复
 
 **下一节点**:
-- 08/15 23:59: MKT-08 必须完成
-- 08/16 10:00: 团队同步，启动 16-20 评估
+- 04/16 10:00: 团队同步，启动 16-20 评估
+- 04/16 12:00: GitHub 发布链路状态检查
 
 **07:51 更新**: GTM-11 确认存在 (11KB, workspace-gtm/docs/), 11方向已计入完成。GTM-12~15 待分配。
 
