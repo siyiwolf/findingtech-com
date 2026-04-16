@@ -62,6 +62,19 @@
 - 推送成功 (06:55): `origin/main` 更新
 - **GitHub Pages 现在包含完整 15 方向 (01-15)，全部为修复版 HTML+PDF**
 
+### 08:12-08:22 Header 样式优化 + PDF 批量重生成
+- **用户请求**: 调整 `.header` 中 `logo` 与 `border-bottom` 距离，使其更紧凑
+- **改动**:
+  - `padding: 20px 1.5cm 10px 1.5cm` → `padding: 10px 1.5cm 5px 1.5cm`
+  - 添加 `min-height: 50px` 保证一致高度
+- **范围**: 30 个 HTML 文件（`reports/` 和 `docs/reports/` 各 15 个）
+- **脚本**: `scripts/adjust_header_style_v2.py`
+- **结果**: 所有 15 方向 PDF 重新生成（平均 size ~400KB）
+- **同步**: 覆盖 `docs/reports/` 并推送
+- **提交**: `4361629` "style: refine header layout across all reports"
+- **测试样稿**: `reports/01-smart-camping/insight-smart-camping_test.pdf` (442KB) 已生成供确认
+- **GitHub Pages**: 重建中（完成后所有报告即呈现新样式）
+
 ---
 
 ## 2026-04-15 心跳检查 + 进展
