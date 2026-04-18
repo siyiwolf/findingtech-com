@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>100 Outdoor Smart Products - SPAN Analysis</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 20px; background: #f9f9f9; }
+    .container { max-width: 1200px; margin: 0 auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+    canvas { border: 1px solid #ddd; }
+    .legend { display: flex; gap: 20px; margin: 10px 0; }
+    .legend-item { display: flex; align-items: center; gap: 5px; font-size: 14px; }
+    .color-box { width: 16px; height: 16px; border-radius: 3px; }
+    .controls { margin: 10px 0; }
+    button { padding: 6px 12px; margin-right: 10px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+    th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+    th { background: #f0f0f0; }
+    tr:hover { background: #f5f5f5; cursor: pointer; }
+    .tooltip { position: absolute; background: rgba(0,0,0,0.7); color: white; padding: 6px 10px; border-radius: 4px; font-size: 12px; pointer-events: none; display: none; z-index: 1000;}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 SPAN 战略组合分析 (100 Outdoor Smart Products)</h1>
+    <div class="legend">
+      <div class="legend-item"><div class="color-box" style="background:#4CAF50"></div>Q1: 高吸引力 + 高竞争力 (优先执行)</div>
+      <div class="legend-item"><div class="color-box" style="background:#FFC107"></div>Q2: 高吸引力 + 低竞争力 (需投资建设)</div>
+      <div class="legend-item"><div class="color-box" style="background:#F44336"></div>Q3: 低吸引力 + 低竞争力 (避免)</div>
+      <div class="legend-item"><div class="color-box" style="background:#2196F3"></div>Q4: 低吸引力 + 高竞争力 (利基/出口)</div>
+    </div>
+    <div class="controls">
+      <button onclick="resetView()">重置视图</button>
+      <button onclick="toggleGrid()">切换网格</button>
+    </div>
+    <canvas id="spanCanvas" width="1000" height="600"></canvas>
+    <div class="tooltip" id="tooltip"></div>
+
+    <h2>📊 数据表（点击表头排序）</h2>
+    <table id="dataTable">
+      <thead>
+        <tr><th data-sort="id">#</th><th data-sort="name">产品名称</th><th data-sort="market">市场吸引力</th><th data-sort="comp">竞争优势</th><th>象限</th><th>策略</th></tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <script>
+    const data = JSON.parse(localStorage.getItem('spanData')) || null; // not used directly
+    // We'll load data from span-data.json via fetch but inline for this standalone: embed directly.
+    const products = [{"id":1,"name":"smart-camping","market":85,"comp":75},{"id":2,"name":"smart-cooler","market":80,"comp":70},{"id":3,"name":"campbot-robot","market":75,"comp":80},{"id":4,"name":"climatent","market":80,"comp":70},{"id":5,"name":"solar-power","market":88,"comp":65},{"id":6,"name":"smart-sunshade","market":82,"comp":72},{"id":7,"name":"outdoor-fitness","market":78,"comp":68},{"id":8,"name":"additional-insight","market":70,"comp":80},{"id":9,"name":"smart-sleep","market":90,"comp":70},{"id":10,"name":"solar-phone-charger","market":92,"comp":60},{"id":11,"name":"smart-lighting","market":85,"comp":65},{"id":12,"name":"outdoor-water","market":88,"comp":62},{"id":13,"name":"camping-wifi","market":95,"comp":55},{"id":14,"name":"outdoor-security","market":90,"comp":60},{"id":15,"name":"smart-clothing","market":82,"comp":58},{"id":16,"name":"portable-power","market":95,"comp":60},{"id":17,"name":"swim-goggles","market":75,"comp":65},{"id":18,"name":"emergency-rescue","market":70,"comp":75},{"id":19,"name":"smart-storage","market":78,"comp":70},{"id":20,"name":"eco-monitor","market":72,"comp":68},{"id":21,"name":"outdoor-coffee","market":80,"comp":65},{"id":22,"name":"bike-mobile","market":85,"comp":60},{"id":23,"name":"smart-fishing","market":75,"comp":62},{"id":24,"name":"stargazing","market":72,"comp":70},{"id":25,"name":"pet-outdoor","market":80,"comp":68},{"id":26,"name":"solar-trailer","market":78,"comp":60},{"id":27,"name":"water-purifier-bottle","market":82,"comp":62},{"id":28,"name":"portable-ac","market":88,"comp":55},{"id":29,"name":"smart-tent-lock","market":75,"comp":65},{"id":30,"name":"inflatable-sauna","market":70,"comp":68},{"id":31,"name":"pet-drone-follower","market":78,"comp":75},{"id":32,"name":"electric-scooter-offroad","market":85,"comp":65},{"id":33,"name":"smart-cooler-bag","market":80,"comp":60},{"id":34,"name":"ar-binoculars","market":72,"comp":70},{"id":35,"name":"foldable-e-bike","market":88,"comp":62},{"id":36,"name":"camping-karaoke","market":75,"comp":55},{"id":37,"name":"smart-firepit","market":78,"comp":60},{"id":38,"name":"mosquito-repeller","market":90,"comp":55},{"id":39,"name":"portable-projector-rainproof","market":80,"comp":58},{"id":40,"name":"smart-hammock","market":76,"comp":68},{"id":41,"name":"pool-cleaner-robot","market":82,"comp":72},{"id":42,"name":"solar-backpack-array","market":85,"comp":60},{"id":43,"name":"smart-sunshade-2","market":82,"comp":72},{"id":44,"name":"outdoor-fitness-equip","market":78,"comp":70},{"id":45,"name":"portable-ice-maker","market":88,"comp":58},{"id":46,"name":"camping-toilet-compost","market":70,"comp":65},{"id":47,"name":"smart-trail-camera","market":85,"comp":75},{"id":48,"name":"electric-tent-heater","market":82,"comp":60},{"id":49,"name":"outdoor-wifi-router","market":95,"comp":55},{"id":50,"name":"smart-hat","market":75,"comp":62},{"id":51,"name":"portable-kayak","market":78,"comp":68},{"id":52,"name":"garden-monitor","market":80,"comp":70},{"id":53,"name":"bike-repair-station","market":72,"comp":65},{"id":54,"name":"pet-auto-feeder","market":88,"comp":65},{"id":55,"name":"solar-backpack","market":86,"comp":62},{"id":56,"name":"smart-socks","market":70,"comp":58},{"id":57,"name":"portable-smart-grill","market":82,"comp":68},{"id":58,"name":"solar-shower","market":78,"comp":60},{"id":59,"name":"smart-bike-lock","market":85,"comp":70},{"id":60,"name":"outdoor-white-noise","market":68,"comp":55},{"id":61,"name":"portable-power-bank","market":95,"comp":58},{"id":62,"name":"smart-inflatable-bed","market":75,"comp":60},{"id":63,"name":"outdoor-cup-warmer","market":72,"comp":55},{"id":64,"name":"portable-projector-mini","market":80,"comp":52},{"id":65,"name":"smart-foot-massager","market":70,"comp":58},{"id":66,"name":"camping-fridge-compressor","market":88,"comp":65},{"id":67,"name":"smart-hat-uv","market":75,"comp":60},{"id":68,"name":"outdoor-speaker-solar","market":85,"comp":55},{"id":69,"name":"portable-kitchen-scale","market":65,"comp":50},{"id":70,"name":"smart-plant-water","market":78,"comp":68},{"id":71,"name":"smart-roof-tile","market":82,"comp":75},{"id":72,"name":"water-leak-detector","market":90,"comp":65},{"id":73,"name":"outdoor-projector-screen","market":78,"comp":60},{"id":74,"name":"electric-bike-trailer","market":80,"comp":70},{"id":75,"name":"portable-zen-garden","market":72,"comp":58},{"id":76,"name":"smart-climbing-wall","market":70,"comp":80},{"id":77,"name":"portable-sauna-tent","market":75,"comp":65},{"id":78,"name":"electric-skateboard-offroad","market":82,"comp":68},{"id":79,"name":"pet-wash-trap","market":85,"comp":70},{"id":80,"name":"smart-firewood-dryer","market":68,"comp":62},{"id":81,"name":"outdoor-fridge-dual","market":88,"comp":60},{"id":82,"name":"bike-light-smart","market":90,"comp":65},{"id":83,"name":"camping-massage-chair","market":78,"comp":62},{"id":84,"name":"outdoor-barbeque-smoker","market":82,"comp":65},{"id":85,"name":"hammock-tent","market":80,"comp":70},{"id":86,"name":"smart-mailbox","market":85,"comp":60},{"id":87,"name":"portable-arcade-machine","market":80,"comp":55},{"id":88,"name":"anti-icing-spray-drone","market":72,"comp":85},{"id":89,"name":"smart-fitness-tracker-pro","market":85,"comp":75},{"id":90,"name":"3d-food-printer","market":75,"comp":68},{"id":91,"name":"portable-solar-power-station","market":95,"comp":75},{"id":92,"name":"outdoor-robot-lawn-mower","market":85,"comp":70},{"id":93,"name":"smart-sand-beach-umbrella","market":75,"comp":65},{"id":94,"name":"camping-shower-solar","market":80,"comp":58},{"id":95,"name":"smart-ice-fishing","market":72,"comp":68},{"id":96,"name":"smart-fishing-float","market":70,"comp":65},{"id":97,"name":"2-person-outdoor-hot-tub","market":75,"comp":72},{"id":98,"name":"smart-pool-cover","market":78,"comp":68},{"id":99,"name":"portable-dance-floor","market":72,"comp":60},{"id":100,"name":"smart-campfire","market":80,"comp":65}];
+
+    // Quadrant assignment
+    function getQuadrant(m, c) {
+      const mid = 50;
+      if (m >= mid && c >= mid) return { q: 1, label: 'Q1', color: '#4CAF50', strategy: '优先执行' };
+      if (m >= mid && c < mid) return { q: 2, label: 'Q2', color: '#FFC107', strategy: '需投资建设' };
+      if (m < mid && c < mid) return { q: 3, label: 'Q3', color: '#F44336', strategy: '避免/放弃' };
+      return { q: 4, label: 'Q4', color: '#2196F3', strategy: '利基/出口' };
+    }
+
+    // Canvas
+    const canvas = document.getElementById('spanCanvas');
+    const ctx = canvas.getContext('2d');
+    const padding = 60;
+    const width = canvas.width - 2*padding;
+    const height = canvas.height - 2*padding;
+
+    function drawGrid() {
+      ctx.clearRect(0,0,canvas.width,canvas.height);
+      ctx.strokeStyle = '#ccc';
+      ctx.lineWidth = 1;
+
+      // axes
+      ctx.beginPath(); ctx.moveTo(padding, padding); ctx.lineTo(padding, canvas.height-padding); ctx.lineTo(canvas.width-padding, canvas.height-padding); ctx.stroke();
+
+      // labels
+      ctx.fillStyle = '#000'; ctx.font = '14px Arial';
+      ctx.fillText('市场吸引力 →', canvas.width/2 + 20, canvas.height-padding + 30);
+      ctx.save(); ctx.translate(20, canvas.height/2); ctx.rotate(-Math.PI/2); ctx.fillText('竞争优势 →', 0,0); ctx.restore();
+
+      // midpoint lines
+      ctx.strokeStyle = '#999'; ctx.setLineDash([5,5]);
+      ctx.beginPath(); ctx.moveTo(padding + 25, padding + height/2); ctx.lineTo(canvas.width-padding, padding+height/2); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(padding + width/2, padding); ctx.lineTo(padding+width/2, canvas.height-padding); ctx.stroke();
+      ctx.setLineDash([]);
+
+      // ticks
+      ctx.fillStyle = '#666'; ctx.font = '12px Arial';
+      for(let i=0; i<=100; i+=25) {
+        const x = padding + (i/100)*width;
+        const y = padding + height - (i/100)*height;
+        ctx.fillText(i, x-10, canvas.height-padding+15);
+        ctx.fillText(i, padding-20, y+4);
+      }
+    }
+
+    function drawPoints() {
+      const tooltip = document.getElementById('tooltip');
+      products.forEach(p => {
+        const q = getQuadrant(p.market, p.comp);
+        const x = padding + (p.market/100)*width;
+        const y = padding + height - (p.comp/100)*height;
+
+        ctx.beginPath();
+        ctx.arc(x, y, 6, 0, Math.PI*2);
+        ctx.fillStyle = q.color;
+        ctx.fill();
+        ctx.strokeStyle = '#fff'; ctx.lineWidth = 1; ctx.stroke();
+
+        // label small
+        ctx.fillStyle = '#333';
+        ctx.font = '10px Arial';
+        ctx.fillText(p.id, x-5, y-8);
+      });
+
+      canvas.onmousemove = (e) => {
+        const rect = canvas.getBoundingClientRect();
+        const mx = e.clientX - rect.left;
+        const my = e.clientY - rect.top;
+        let found = null;
+        products.forEach(p => {
+          const x = padding + (p.market/100)*width;
+          const y = padding + height - (p.comp/100)*height;
+          const dist = Math.sqrt((mx-x)**2 + (my-y)**2);
+          if (dist < 8) found = p;
+        });
+        if (found) {
+          tooltip.style.display = 'block';
+          tooltip.style.left = (e.clientX+10) + 'px';
+          tooltip.style.top = (e.clientY+10) + 'px';
+          const q = getQuadrant(found.market, found.comp);
+          tooltip.innerHTML = `#${found.id} ${found.name}<br>市场: ${found.market}, 竞争: ${found.comp}<br>象限: ${q.label} (${q.strategy})`;
+        } else {
+          tooltip.style.display = 'none';
+        }
+      };
+    }
+
+    function populateTable() {
+      const tbody = document.querySelector('#dataTable tbody');
+      tbody.innerHTML = '';
+      products.forEach(p => {
+        const q = getQuadrant(p.market, p.comp);
+        const tr = document.createElement('tr');
+        tr.innerHTML = `<td>${p.id}</td><td>${p.name}</td><td>${p.market}</td><td>${p.comp}</td><td>${q.label}</td><td>${q.strategy}</td>`;
+        tr.onclick = () => highlightProduct(p.id);
+        tbody.appendChild(tr);
+      });
+    }
+
+    let showGrid = true;
+    function toggleGrid() {
+      showGrid = !showGrid;
+      drawGrid(); drawPoints();
+    }
+    function resetView() {
+      drawGrid(); drawPoints();
+    }
+
+    // Highlight point when clicking table row
+    function highlightProduct(id) {
+      // redraw with emphasis on this point
+      drawGrid(); drawPoints();
+      const p = products.find(x => x.id === id);
+      if (!p) return;
+      const x = padding + (p.market/100)*width;
+      const y = padding + height - (p.comp/100)*height;
+      ctx.beginPath();
+      ctx.arc(x, y, 10, 0, Math.PI*2);
+      ctx.strokeStyle = '#000';
+      ctx.lineWidth = 2;
+      ctx.stroke();
+    }
+
+    // init
+    drawGrid();
+    drawPoints();
+    populateTable();
+
+    // simple column sort
+    document.querySelectorAll('th[data-sort]').forEach(th => {
+      th.style.cursor = 'pointer';
+      th.onclick = () => {
+        const key = th.dataset.sort;
+        const dir = th.dataset.order === 'asc' ? 'desc' : 'asc';
+        th.dataset.order = dir;
+        tbody.sort((a,b) => {
+          let av = parseInt(a.cells[th.cellIndex].textContent) || a.cells[th.cellIndex].textContent;
+          let bv = parseInt(b.cells[th.cellIndex].textContent) || b.cells[th.cellIndex].textContent;
+          if (typeof av === 'string') av = av.toLowerCase();
+          if (typeof bv === 'string') bv = bv.toLowerCase();
+          if (av < bv) return dir === 'asc' ? -1 : 1;
+          if (av > bv) return dir === 'asc' ? 1 : -1;
+          return 0;
+        });
+        // clear other sort indicators
+        document.querySelectorAll('th').forEach(h => { if (h !== th) delete h.dataset.order; });
+        th.textContent = th.textContent.replace(/[↑↓]/,'') + (dir==='asc'?' ↑':' ↓');
+      };
+    });
+  </script>
+</body>
+</html>
