@@ -1,0 +1,389 @@
+{
+  "direction_id": 203,
+  "direction_name": "smart-plant-health-diagnosis",
+  "direction_title": "Smart Plant Health Diagnosis 智能植物健康诊断系统",
+  "category": "智能农业检测",
+  "segments": [
+    {
+      "id": "203-A",
+      "name": "Home Gardeners",
+      "value_orientation": "便捷诊断",
+      "consumption_motive": "快速发现植物病害+治疗方案",
+      "tam": "$2.1B",
+      "sam": "$520M",
+      "tm": "$130M"
+    },
+    {
+      "id": "203-B",
+      "name": "Commercial Nurseries",
+      "value_orientation": "规模管控",
+      "consumption_motive": "批量扫描+疫情预警+降低损失",
+      "tam": "$3.8B",
+      "sam": "$890M",
+      "tm": "$220M"
+    },
+    {
+      "id": "203-C",
+      "name": "Greenhouse Operators",
+      "value_orientation": "精细管理",
+      "consumption_motive": "环境优化+产量提升",
+      "tam": "$4.2B",
+      "sam": "$980M",
+      "tm": "$250M"
+    }
+  ],
+  "global_market_size": "$13.5B",
+  "china_2023_size": "¥10.2B",
+  "china_2027_size": "¥20.8B",
+  "china_cagr": "19.6%",
+  "segment_desc": "植物健康智能诊断",
+  "segment_pct": "24%",
+  "segment_growth": "45%+",
+  "sam_size": "¥1.8B/年",
+  "sam_breakdown": "Home ¥520M + Nurseries ¥890M + Greenhouse ¥980M",
+  "integrated_cagr": "21%",
+  "integrated_2030": "$32B",
+  "segment_1_desc": "手持植物诊断仪",
+  "segment_1_size": "$4.2B",
+  "segment_1_2030": "$9.8B",
+  "segment_1_cagr": "15.8%",
+  "segment_2_desc": "温室环境监控系统",
+  "segment_2_size": "$5.5B",
+  "segment_2_2030": "$12.2B",
+  "segment_2_cagr": "14.5%",
+  "segment_3_desc": "无人机植被健康监测",
+  "segment_3_size": "$3.8B",
+  "segment_3_2030": "$10.0B",
+  "segment_3_cagr": "17.8%",
+  "target_users": [
+    {
+      "role": "家庭园艺爱好者",
+      "description": "养有贵重盆栽或菜园，遇到黄叶/虫害不知如何处理"
+    },
+    {
+      "role": "商业苗圃经营者",
+      "description": "批量种植，需要快速扫描整批植物，预防疫情扩散"
+    },
+    {
+      "role": "温室种植企业",
+      "description": "精细化种植，需根据植物状态自动调节环境参数"
+    }
+  ],
+  "pain_points": [
+    {
+      "title": "病害识别困难",
+      "description": "网上查症状耗时，且容易误判，延误治疗"
+    },
+    {
+      "title": "用药不当",
+      "description": "过度使用农药或错误用药，伤害植物甚至污染环境"
+    },
+    {
+      "title": "疫情传播快",
+      "description": "一株生病感染整片，批量损失巨大"
+    },
+    {
+      "title": "环境不匹配",
+      "description": "光/水/肥不适合导致亚健康，非病害但生长不良"
+    }
+  ],
+  "competitors": [
+    {
+      "name": "PlantNet (App)",
+      "优势": "免费，识别种类多",
+      "劣势": "仅识别植物种类，无健康诊断，无治疗建议",
+      "对策": "病害诊断+治疗方案+用药推荐，一站式服务"
+    },
+    {
+      "name": "传统实验室检测",
+      "优势": "精度极高，权威",
+      "劣势": "送样慢（3-7天），成本高（¥200+/样本），无法现场",
+      "对策": "现场5分钟出结果，成本<¥10，支持即时处理"
+    },
+    {
+      "name": "Trane (温室传感器)",
+      "优势": "环境监控成熟",
+      "劣势": "仅环境数据，不结合植物视觉状态",
+      "对策": "视觉+环境融合，给出精准调控建议"
+    }
+  ],
+  "differentiators": [
+    {
+      "title": "光谱+AI多模态",
+      "description": "可见光+近红外光谱，识别叶绿素含量、水分胁迫、营养缺乏"
+    },
+    {
+      "title": "治疗方案数据库",
+      "description": "内置500+常见病害治疗方案，精准推荐有机/化学方案"
+    },
+    {
+      "title": "批量扫描与预警",
+      "description": "手持/无人机快速扫描整片，自动标记患病区域，计算感染率"
+    }
+  ],
+  "product_models": [
+    {
+      "name": "PlantDoc Pro"
+    },
+    {
+      "name": "PlantDoc Lite"
+    },
+    {
+      "name": "PlantDrone"
+    }
+  ],
+  "product_attributes": [
+    {
+      "attr": "定位",
+      "values": [
+        {
+          "this": "专业 gardener"
+        },
+        {
+          "this": "家庭入门"
+        },
+        {
+          "this": "农场级"
+        }
+      ]
+    },
+    {
+      "attr": "检测精度",
+      "values": [
+        {
+          "this": "40+病害+营养"
+        },
+        {
+          "this": "20+常见病害"
+        },
+        {
+          "this": "区域级疫情预警"
+        }
+      ]
+    },
+    {
+      "attr": "输出报告",
+      "values": [
+        {
+          "this": "治疗方案+用药剂量"
+        },
+        {
+          "this": "病害名称+简介"
+        },
+        {
+          "this": "感染热力图"
+        }
+      ]
+    },
+    {
+      "attr": "续航",
+      "values": [
+        {
+          "this": "4小时扫描"
+        },
+        {
+          "this": "2小时"
+        },
+        {
+          "this": "45分钟飞行"
+        }
+      ]
+    },
+    {
+      "attr": "价格",
+      "values": [
+        {
+          "this": "¥3,599"
+        },
+        {
+          "this": "¥1,299"
+        },
+        {
+          "this": "¥28,000"
+        }
+      ]
+    }
+  ],
+  "flagship_model": "PlantDoc Pro",
+  "flagship_features": [
+    {
+      "title": "多光谱摄像头",
+      "description": "可见光+近红外，叶绿素、水分、氮磷钾缺乏识别"
+    },
+    {
+      "title": "40+病害库",
+      "description": "白粉病、霜霉病、根腐病等常见病害准确率 >92%"
+    },
+    {
+      "title": "治疗方案引擎",
+      "description": "根据病害阶段推荐有机/化学方案，精确到毫升"
+    },
+    {
+      "title": "离线模式",
+      "description": "无网络也可诊断，数据同步后云端备份"
+    },
+    {
+      "title": "批量记录",
+      "description": "每株自动编号，追踪治疗历史，计算治愈率"
+    }
+  ],
+  "ecosystem_synergy": [
+    {
+      "title": "Lite → Pro 升级",
+      "description": "Lite用户遇到复杂病害升级Pro，数据无缝迁移"
+    },
+    {
+      "title": "Pro → Drone 扩展",
+      "description": "Pro用户扩大种植规模后购买Drone进行批量监测"
+    },
+    {
+      "title": "耗材订阅",
+      "description": "病害库更新订阅 ¥29/月，治疗方案数据库持续扩充"
+    }
+  ],
+  "channels": [
+    {
+      "model": "PlantDoc Pro",
+      "desc": "DTC + 园艺店（80% DTC，20% 实体店）"
+    },
+    {
+      "model": "PlantDoc Lite",
+      "desc": "DTC + 电商（70% DTC，30% 淘宝/京东）"
+    },
+    {
+      "model": "PlantDrone",
+      "desc": "直销 + 农机经销商（50% DTC，50% B2B）"
+    }
+  ],
+  "pricing": [
+    {
+      "model": "PlantDoc Pro",
+      "msrp": "¥3,599",
+      "channel_price": "DTC: ¥3,599\\n园艺店: ¥2,999",
+      "early_bird": "早鸟减¥300，送1年病害库更新"
+    },
+    {
+      "model": "PlantDoc Lite",
+      "msrp": "¥1,299",
+      "channel_price": "DTC: ¥1,299\\n电商: ¥1,099",
+      "early_bird": "首发送50次高级诊断"
+    },
+    {
+      "model": "PlantDrone",
+      "msrp": "¥28,000",
+      "channel_price": "农场: ¥25,000\\n经销商: ¥22,000",
+      "early_bird": "含3次现场培训"
+    }
+  ],
+  "marketing": [
+    {
+      "model": "PlantDoc Pro",
+      "plan": "园艺KOL教程（如何救活月季），作物医生背书"
+    },
+    {
+      "model": "PlantDoc Lite",
+      "plan": "抖音短视频（一 scan 知病因），电商大促"
+    },
+    {
+      "model": "PlantDrone",
+      "plan": "农业展会推广，大型农场案例研究，政府补贴对接"
+    }
+  ],
+  "roadmap": [
+    {
+      "quarter": "2025 Q3",
+      "milestone": "PlantDoc Pro完成，病害库覆盖30+常见"
+    },
+    {
+      "quarter": "2025 Q4",
+      "milestone": "Pro发布，Lite研发，签约首批园艺博主"
+    },
+    {
+      "quarter": "2026 Q1",
+      "milestone": "Lite发布，Drone原型，与农业院校合作"
+    },
+    {
+      "quarter": "2026 Q2",
+      "milestone": "Drone量产，三款同时销售"
+    },
+    {
+      "quarter": "2026 Q3-Q4",
+      "milestone": "病害库扩展至100+，开放用户贡献UGC诊断"
+    }
+  ],
+  "capacity": [
+    {
+      "model": "PlantDoc Pro",
+      "plan": "首批2,000台（2025 Q4），2026年产能8,000台"
+    },
+    {
+      "model": "PlantDoc Lite",
+      "plan": "首批8,000台（2026 Q1），年产能40,000台"
+    },
+    {
+      "model": "PlantDrone",
+      "plan": "首批500台（2026 Q2），年产能2,000台"
+    }
+  ],
+  "risks": [
+    {
+      "risk": "病害识别准确率不足",
+      "category": "AI",
+      "probability": "中",
+      "impact": "高",
+      "mitigation": "多光谱+大数据训练，目标>92%准确率，持续优化"
+    },
+    {
+      "risk": "农民接受度低",
+      "category": "市场",
+      "probability": "中",
+      "impact": "高",
+      "mitigation": "现场演示+成功案例+老农体验，建立口碑"
+    },
+    {
+      "risk": "农业季节性波动",
+      "category": "销售",
+      "probability": "高",
+      "impact": "中",
+      "mitigation": "南北市场互补+反季节大棚推广，平滑季度曲线"
+    },
+    {
+      "risk": "农药推荐合规风险",
+      "category": "法律",
+      "probability": "低",
+      "impact": "高",
+      "mitigation": "仅作信息参考，明确免责声明，与国家推荐目录同步"
+    },
+    {
+      "risk": "开源识别工具竞争",
+      "category": "技术",
+      "probability": "高",
+      "impact": "中",
+      "mitigation": "专注多光谱硬件+治疗方案闭环，App免费但硬件收费"
+    }
+  ],
+  "data_sources": [
+    {
+      "source": "MarketsandMarkets: Crop Health Monitoring Market Report 2024"
+    },
+    {
+      "source": "联合国粮农组织（FAO）：全球作物损失因病害占比 2023"
+    },
+    {
+      "source": "中国农业科学院：智能诊断设备在园艺中的应用 2024"
+    },
+    {
+      "source": "用户调研：Finding Company 1,800份园艺问卷（2024 Q1）"
+    },
+    {
+      "source": "VOC分析：收集300+园艺爱好者反馈（问卷编号 VOC-203-A/B/C）"
+    },
+    {
+      "source": "竞品实验室：PlantNet、PictureThis、Plantix 对比测试"
+    }
+  ],
+  "conclusion_summary": "PlantDoc 系列填补了植物健康诊断市场空白，Pro 满足爱好者和小规模种植者，Lite 降低门槛，Drone 服务大规模农场。多光谱硬件+治疗方案闭环形成壁垒。首年营收目标 ¥42M，主打\\\"救活一株名贵植物就回本\\\"的卖点。",
+  "first_year_revenue": "¥42M",
+  "revenue_breakdown": "Pro 55%、Lite 35%、Drone 10%",
+  "three_year_goal": "三年内成为国内植物健康诊断第一品牌，病害库覆盖全国主要作物，市占率 >30%。"
+}

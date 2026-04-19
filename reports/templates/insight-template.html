@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>{{DIRECTION_NUMBER}}-{{DIRECTION_NAME}} 市场洞察</title>
+    <style>
+        @page { margin: 3cm 1.5cm; }
+        body {
+            font-family: 'Inter', 'Noto Sans SC', sans-serif;
+            max-width: 21cm;
+            margin: 0 auto;
+            padding: 2.5cm 1.5cm 2.5cm 1.5cm;
+            line-height: 1.6;
+        }
+        .header {
+            position: fixed;
+            top: 0; left: 0; right: 0;
+            background: white;
+            z-index: 1000;
+            padding: 0px 1.5cm 0px 1.5cm;
+            border-bottom: 2px solid #0057B8;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            height: 50px;
+        }
+        .header-logo { height: 50px; }
+        .footer, .subtitle { display: none; }
+        h1 {
+            font-size: 24pt;
+            color: #0057B8;
+            border-bottom: 3px solid #0057B8;
+            padding-bottom: 10px;
+            margin: 60px 0 30px 0;
+            text-align: center;
+        }
+        .section { margin-bottom: 25px; }
+        .section-title {
+            font-size: 16pt;
+            font-weight: 700;
+            color: #0057B8;
+            margin-bottom: 15px;
+        }
+        .stat { font-size: 18pt; font-weight: 700; color: #0057B8; }
+        .highlight { color: #0057B8; font-weight: 700; }
+        table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #0057B8; color: white; }
+        tr:nth-child(even) { background-color: #f9f9f9; }
+        @media print { .section { page-break-inside: avoid; } }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="../../../finding-company-vi/logo/finding-logo-primary.png" alt="Finding Company Logo" class="header-logo">
+    </div>
+    <h1>{{DIRECTION_NUMBER}}-{{DIRECTION_NAME}} {{DIRECTION_TITLE}}</h1>
+    <div style="text-align: center; margin: 30px 0 40px 0; font-size: 10pt; color: #666;">
+        洞察方向：{{DIRECTION_TITLE}} | 日期：2026-04-19
+    </div>
+
+    <!-- 1. 市场机会概述 -->
+    <div class="section">
+        <div class="section-title">1. 市场机会概述</div>
+        <h3>1.1 全球{{DIRECTION_NAME}}市场</h3>
+        <p>全球{{DIRECTION_CATEGORY}}市场2023年约<strong class="stat">{{GLOBAL_MARKET_SIZE}}</strong>，其中：
+        <ul>
+            <li>{{SEGMENT_1_DESC}}约<strong>{{SEGMENT_1_SIZE}}</strong>，2030年<strong>{{SEGMENT_1_2030}}</strong>，CAGR <strong>{{SEGMENT_1_CAGR}}</strong></li>
+            <li>{{SEGMENT_2_DESC}}约<strong>{{SEGMENT_2_SIZE}}</strong>，2030年<strong>{{SEGMENT_2_2030}}</strong>，CAGR <strong>{{SEGMENT_2_CAGR}}</strong></li>
+            <li>{{SEGMENT_3_DESC}}约<strong>{{SEGMENT_3_SIZE}}</strong>，2030年<strong>{{SEGMENT_3_2030}}</strong>，CAGR <strong>{{SEGMENT_3_CAGR}}</strong></li>
+        </ul></p>
+        <p><strong>整合后的{{DIRECTION_NAME}}市场</strong>：三者叠加形成"一体化{{DIRECTION_SOLUTION}}解决方案"，目前市场空白。预计2025-2030年CAGR <strong class="highlight">{{INTEGRATED_CAGR}}</strong>，2030年可达<strong class="stat">{{INTEGRATED_2030}}</strong>（三者总和的三分之一通过集成溢价实现）。</p>
+
+        <h3>1.2 中国市场机会</h3>
+        <p>中国{{DIRECTION_CATEGORY}}市场2023年{{CHINA_2023_SIZE}}，2027年预计{{CHINA_2027_SIZE}}（CAGR <strong>{{CHINA_CAGR}}</strong>）。{{CHINA_SEGMENT_DESC}}占比{{CHINA_SEGMENT_PCT}}，年增长<strong>{{CHINA_SEGMENT_GROWTH}}</strong>。</p>
+        <p><strong>SAM</strong>：{{DIRECTION_SOLUTION}}中国市场约<strong class="stat">{{SAM_SIZE}}</strong>（{{SAM_BREAKDOWN}}）。</p>
+    </div>
+
+    <!-- 2. 用户画像与核心痛点 -->
+    <div class="section">
+        <div class="section-title">2. 用户画像与核心痛点</div>
+        <h3>2.1 目标用户</h3>
+        <ul>
+            {{#each TARGET_USERS}}
+            <li><strong>{{this.role}}</strong>：{{this.description}}</li>
+            {{/each}}
+        </ul>
+
+        <h3>2.2 核心痛点（整合）</h3>
+        <ol>
+            {{#each PAIN_POINTS}}
+            <li><strong>{{this.title}}</strong>：{{this.description}}</li>
+            {{/each}}
+        </ol>
+    </div>
+
+    <!-- 3. 竞争格局分析 -->
+    <div class="section">
+        <div class="section-title">3. 竞争格局分析</div>
+        <h3>3.1 主要竞品</h3>
+        <table>
+            <tr><th>方案</th><th>优势</th><th>劣势</th><th>Finding对策</th></tr>
+            {{#each COMPETITORS}}
+            <tr><td>{{this.name}}</td><td>{{this.优势}}</td><td>{{this.劣势}}</td><td>{{this.对策}}</td></tr>
+            {{/each}}
+        </table>
+
+        <h3>3.2 我们的差异化</h3>
+        <ul>
+            {{#each DIFFERENTIATORS}}
+            <li><strong>{{this.title}}</strong>：{{this.description}}</li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <!-- 4. 产品概念与差异化定位 -->
+    <div class="section">
+        <div class="section-title">4. 产品概念与差异化定位</div>
+        <h3>4.1 完整产品矩阵</h3>
+        <table>
+            <tr><th width="20%">型号</th>{{#each PRODUCT_MODELS}}<th>{{this.name}}</th>{{/each}}</tr>
+            {{#each PRODUCT_ATTRIBUTES}}
+            <tr><td><strong>{{this.attr}}</strong></td>{{#each this.values}}<td>{{this}}</td>{{/each}}</tr>
+            {{/each}}
+        </table>
+
+        <h3>4.2 {{FLAGSHIP_MODEL}} 旗舰卖点</h3>
+        <ul>
+            {{#each FLAGSHIP_FEATURES}}
+            <li><strong>{{this.title}}</strong>：{{this.description}}</li>
+            {{/each}}
+        </ul>
+
+        <h3>4.3 产品生态协同</h3>
+        <p>三条产品线覆盖不同价格段和使用场景，形成协同：</p>
+        <ul>
+            {{#each ECOSYSTEM_SYNERGY}}
+            <li><strong>{{this.title}}</strong>：{{this.description}}</li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <!-- 5. GTM策略 -->
+    <div class="section">
+        <div class="section-title">5. GTM策略</div>
+        <h3>5.1 渠道分层</h3>
+        <ul>
+            {{#each CHANNELS}}
+            <li><strong>{{this.model}}</strong>：{{this.desc}}</li>
+            {{/each}}
+        </ul>
+
+        <h3>5.2 定价策略</h3>
+        <table>
+            <tr><th>产品</th><th>MSRP</th><th>渠道价</th><th>早期优惠</th></tr>
+            {{#each PRICING}}
+            <tr>
+                <td>{{this.model}}</td>
+                <td>{{this.msrp}}</td>
+                <td>{{this.channel_price}}</td>
+                <td>{{this.early_bird}}</td>
+            </tr>
+            {{/each}}
+        </table>
+
+        <h3>5.3 营销计划</h3>
+        <ul>
+            {{#each MARKETING}}
+            <li><strong>{{this.model}}</strong> - {{this.plan}}</li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <!-- 6. 实施路线图 -->
+    <div class="section">
+        <div class="section-title">6. 实施路线图</div>
+        <h3>6.1 产品开发节奏</h3>
+        <ul>
+            {{#each ROADMAP}}
+            <li><strong>{{this.quarter}}</strong>：{{this.milestone}}</li>
+            {{/each}}
+        </ul>
+
+        <h3>6.2 产能规划</h3>
+        <ul>
+            {{#each CAPACITY}}
+            <li><strong>{{this.model}}</strong>：{{this.plan}}</li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <!-- 7. 风险评估与应对 -->
+    <div class="section">
+        <div class="section-title">7. 风险评估与应对</div>
+        <table>
+            <tr><th>风险</th><th>类别</th><th>概率</th><th>影响</th><th>应对</th></tr>
+            {{#each RISKS}}
+            <tr>
+                <td>{{this.risk}}</td>
+                <td>{{this.category}}</td>
+                <td>{{this.probability}}</td>
+                <td>{{this.impact}}</td>
+                <td>{{this.mitigation}}</td>
+            </tr>
+            {{/each}}
+        </table>
+    </div>
+
+    <!-- 8. 数据来源 -->
+    <div class="section">
+        <div class="section-title">8. 数据来源</div>
+        <ul>
+            {{#each DATA_SOURCES}}
+            <li>{{this.source}}</li>
+            {{/each}}
+        </ul>
+    </div>
+
+    <!-- 9. 结论与建议 -->
+    <div class="section">
+        <div class="section-title">9. 结论与建议</div>
+        <p>{{CONCLUSION_SUMMARY}}</p>
+        <p><strong>财务预期</strong>：首年（2026）营收目标<strong class="stat">{{FIRST_YEAR_REVENUE}}</strong>，其中{{REVENUE_BREAKDOWN}}。{{THREE_YEAR_GOAL}}</p>
+    </div>
+
+    <div class="final-meta" style="position: relative; page-break-before: always; padding: 2.5cm 1.5cm; font-size: 9pt; color: #666; text-align: center; border-top: 1px solid #ddd; margin-top: 2cm;">
+        <div style="margin-bottom: 10px; line-height: 1.6;">
+            <strong>Report:</strong> {{DIRECTION_NUMBER}}-{{DIRECTION_NAME}} 市场洞察 | <strong>Version:</strong> 1.0 | <strong>Classification:</strong> Internal Use Only
+        </div>
+        <div style="font-size: 8pt; color: #999;">
+            © 2026 Finding Company（斐丁科技）. 保留所有权利。本报告仅供内部决策使用，不构成投资建议。
+        </div>
+    </div>
+</body>
+</html>

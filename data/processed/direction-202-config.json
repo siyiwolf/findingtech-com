@@ -1,0 +1,389 @@
+{
+  "direction_id": 202,
+  "direction_name": "ai-personal-fitness-coach",
+  "direction_title": "AI Personal Fitness Coach AI私人健身教练",
+  "category": "智能健身设备",
+  "segments": [
+    {
+      "id": "202-A",
+      "name": "Home Fitness Enthusiasts",
+      "value_orientation": "专业指导",
+      "consumption_motive": "省去私教费用+科学训练",
+      "tam": "$4.8B",
+      "sam": "$1.1B",
+      "tm": "$280M"
+    },
+    {
+      "id": "202-B",
+      "name": "Busy Professionals",
+      "value_orientation": "时间效率",
+      "consumption_motive": "碎片化高效训练+AI监督",
+      "tam": "$3.2B",
+      "sam": "$780M",
+      "tm": "$200M"
+    },
+    {
+      "id": "202-C",
+      "name": "Rehabilitation Patients",
+      "value_orientation": "安全康复",
+      "consumption_motive": "术后/伤后家庭康复指导",
+      "tam": "$2.5B",
+      "sam": "$520M",
+      "tm": "$150M"
+    }
+  ],
+  "global_market_size": "$18.2B",
+  "china_2023_size": "¥15.8B",
+  "china_2027_size": "¥28.9B",
+  "china_cagr": "16.8%",
+  "segment_desc": "高端智能健身指导",
+  "segment_pct": "32%",
+  "segment_growth": "38%+",
+  "sam_size": "¥2.1B/年",
+  "sam_breakdown": "Home ¥1.1B + Pro ¥780M + Rehab ¥520M",
+  "integrated_cagr": "18%",
+  "integrated_2030": "$45B",
+  "segment_1_desc": "AI动作纠正摄像头",
+  "segment_1_size": "$7.2B",
+  "segment_1_2030": "$16.5B",
+  "segment_1_cagr": "15.0%",
+  "segment_2_desc": "智能健身镜",
+  "segment_2_size": "$6.5B",
+  "segment_2_2030": "$15.2B",
+  "segment_2_cagr": "15.8%",
+  "segment_3_desc": "可穿戴健身教练",
+  "segment_3_size": "$4.5B",
+  "segment_3_2030": "$13.3B",
+  "segment_3_cagr": "19.5%",
+  "target_users": [
+    {
+      "role": "家庭健身人群",
+      "description": "25-45岁，购买过健身器材但缺乏指导，希望获得私教级反馈"
+    },
+    {
+      "role": "商务精英",
+      "description": "工作繁忙，只能碎片时间训练，需要高效且能纠正动作的教练"
+    },
+    {
+      "role": "康复患者",
+      "description": "术后/伤后需物理治疗，无法频繁去医院，需要安全监测"
+    }
+  ],
+  "pain_points": [
+    {
+      "title": "动作错误无人纠正",
+      "description": "跟着视频练，发力错误导致肌肉代偿甚至受伤"
+    },
+    {
+      "title": "训练计划不适合",
+      "description": "通用计划不适合个人体能和目标，效果差"
+    },
+    {
+      "title": "缺乏动力坚持",
+      "description": "独自训练容易放弃，缺少互动和激励"
+    },
+    {
+      "title": "康复风险高",
+      "description": "自行康复训练可能二次受伤，专业康复师稀缺且贵"
+    }
+  ],
+  "competitors": [
+    {
+      "name": "FITURE (魔镜)",
+      "优势": "先发优势，课程丰富，明星代言",
+      "劣势": "价格高（¥6000+），AI纠正简单（仅骨骼点）",
+      "对策": "多传感器融合+动作量化评分，精度提升50%，价格下探"
+    },
+    {
+      "name": "Mirror (美)",
+      "优势": "品牌高端，课程质量好",
+      "劣势": "无本地化，无AI深度纠正，价格极高",
+      "对策": "中文界面+本土教练+精准纠错，性价比优势"
+    },
+    {
+      "name": "Keep 智能单车",
+      "优势": "用户基数大，社区活跃",
+      "劣势": "品类单一，局限于单车，无全身训练",
+      "对策": "全品类覆盖（力量+有球+瑜伽），开放课程平台"
+    }
+  ],
+  "differentiators": [
+    {
+      "title": "9轴IMU+视觉双模",
+      "description": "惯性传感器+摄像头融合，动作精度达教练级（±3°）"
+    },
+    {
+      "title": "实时力学反馈",
+      "description": "语音实时纠正发力位置和幅度，延迟<100ms"
+    },
+    {
+      "title": "康复安全模式",
+      "description": "根据损伤史自动限制关节角度和负重，防止二次受伤"
+    }
+  ],
+  "product_models": [
+    {
+      "name": "Coach Pro"
+    },
+    {
+      "name": "Coach Lite"
+    },
+    {
+      "name": "Coach Rehab"
+    }
+  ],
+  "product_attributes": [
+    {
+      "attr": "定位",
+      "values": [
+        {
+          "this": "旗舰全能"
+        },
+        {
+          "this": "入门轻量"
+        },
+        {
+          "this": "专业康复"
+        }
+      ]
+    },
+    {
+      "attr": "监测精度",
+      "values": [
+        {
+          "this": "17点骨骼+力反馈"
+        },
+        {
+          "this": "9点骨骼"
+        },
+        {
+          "this": "17点+关节限位"
+        }
+      ]
+    },
+    {
+      "attr": "课程库",
+      "values": [
+        {
+          "this": "500+全品类"
+        },
+        {
+          "this": "200+基础"
+        },
+        {
+          "this": "300+康复专项"
+        }
+      ]
+    },
+    {
+      "attr": "屏幕尺寸",
+      "values": [
+        {
+          "this": "43寸 4K"
+        },
+        {
+          "this": "27寸 1080P"
+        },
+        {
+          "this": "32寸 2K"
+        }
+      ]
+    },
+    {
+      "attr": "价格",
+      "values": [
+        {
+          "this": "¥4,499"
+        },
+        {
+          "this": "¥2,199"
+        },
+        {
+          "this": "¥3,299"
+        }
+      ]
+    }
+  ],
+  "flagship_model": "Coach Pro",
+  "flagship_features": [
+    {
+      "title": "双模动作捕捉",
+      "description": "IMU+视觉融合，实现360°无死角动作捕捉"
+    },
+    {
+      "title": "实时语音纠正",
+      "description": "每3秒一次反馈，提示\"膝盖超伸\"\"腰部发力\"等"
+    },
+    {
+      "title": "训练负荷管理",
+      "description": "根据历史数据自动调整重量和组数，渐进超负荷"
+    },
+    {
+      "title": "康复安全围栏",
+      "description": "为特定损伤设置关节活动度限制，超出即警报"
+    },
+    {
+      "title": "虚拟教练形象",
+      "description": "3D虚拟教练同步演示，多角度对比用户动作"
+    }
+  ],
+  "ecosystem_synergy": [
+    {
+      "title": "Pro → Lite 转化",
+      "description": "Pro用户为亲友推荐Lite，享折扣码"
+    },
+    {
+      "title": "Lite → Rehab 升级",
+      "description": "Lite用户如有康复需求，可付费解锁Rehab课程库"
+    },
+    {
+      "title": "订阅服务",
+      "description": "基础课程免费，高级课程+AI私教 ¥99/月，ARPPU >¥80"
+    }
+  ],
+  "channels": [
+    {
+      "model": "Coach Pro",
+      "desc": "DTC + 高端健身房合作（75% DTC，25% 会所）"
+    },
+    {
+      "model": "Coach Lite",
+      "desc": "DTC + 电商（60% DTC，40% 京东/天猫）"
+    },
+    {
+      "model": "Coach Rehab",
+      "desc": "医院/康复中心 + DTC（40% B2B，60% DTC）"
+    }
+  ],
+  "pricing": [
+    {
+      "model": "Coach Pro",
+      "msrp": "¥4,499",
+      "channel_price": "DTC: ¥4,499\\n健身房: ¥3,799",
+      "early_bird": "早鸟减¥500，送1年订阅"
+    },
+    {
+      "model": "Coach Lite",
+      "msrp": "¥2,199",
+      "channel_price": "DTC: ¥2,199\\n电商: ¥1,899",
+      "early_bird": "首发送3个月订阅"
+    },
+    {
+      "model": "Coach Rehab",
+      "msrp": "¥3,299",
+      "channel_price": "医院: ¥2,799\\nDTC: ¥3,299",
+      "early_bird": "含10次专家报告"
+    }
+  ],
+  "marketing": [
+    {
+      "model": "Coach Pro",
+      "plan": "健身KOL测评，动作对比挑战，专业健身社区公关"
+    },
+    {
+      "model": "Coach Lite",
+      "plan": "抖音健身教程投放，家庭场景广告，大促冲量"
+    },
+    {
+      "model": "Coach Rehab",
+      "plan": "骨科/运动医学科合作，康复师推荐，医院样品"
+    }
+  ],
+  "roadmap": [
+    {
+      "quarter": "2025 Q3",
+      "milestone": "Coach Pro MVP完成，动作纠错精度达90%+"
+    },
+    {
+      "quarter": "2025 Q4",
+      "milestone": "Pro发布，Lite研发，签约首批健身房"
+    },
+    {
+      "quarter": "2026 Q1",
+      "milestone": "Lite发布，Rehab模块开发，临床测试"
+    },
+    {
+      "quarter": "2026 Q2",
+      "milestone": "Rehab独立版本，三款同时销售"
+    },
+    {
+      "quarter": "2026 Q3-Q4",
+      "milestone": "开放课程平台UGC，启动东南亚市场"
+    }
+  ],
+  "capacity": [
+    {
+      "model": "Coach Pro",
+      "plan": "首批3,000台（2025 Q4），2026年产能12,000台"
+    },
+    {
+      "model": "Coach Lite",
+      "plan": "首批10,000台（2026 Q1），年产能50,000台"
+    },
+    {
+      "model": "Coach Rehab",
+      "plan": "首批2,000台（2026 Q2），年产能8,000台"
+    }
+  ],
+  "risks": [
+    {
+      "risk": "动作识别误报率高",
+      "category": "技术",
+      "probability": "中",
+      "impact": "高",
+      "mitigation": "双模冗余+持续训练集优化，目标误报<3%"
+    },
+    {
+      "risk": "健身镜市场增速放缓",
+      "category": "市场",
+      "probability": "中",
+      "impact": "中",
+      "mitigation": "聚焦垂直场景（康复、专业），差异化竞争"
+    },
+    {
+      "risk": "隐私安全疑虑",
+      "category": "合规",
+      "probability": "中",
+      "impact": "高",
+      "mitigation": "端侧AI+数据匿名+明确用户授权，通过ISO 27001"
+    },
+    {
+      "risk": "健身课程版权",
+      "category": "法律",
+      "probability": "低",
+      "impact": "中",
+      "mitigation": "自建课程团队，签约教练IP，避免侵权"
+    },
+    {
+      "risk": "用户粘性不足",
+      "category": "产品",
+      "probability": "中",
+      "impact": "高",
+      "mitigation": "游戏化+社交PK+定期更新课程，DAU目标30%"
+    }
+  ],
+  "data_sources": [
+    {
+      "source": "IDC: Global Smart Fitness Device Forecast 2024"
+    },
+    {
+      "source": "艾媒咨询：中国智能健身镜市场研究报告 2024"
+    },
+    {
+      "source": "Frost & Sullivan: AI in Fitness Training 2023"
+    },
+    {
+      "source": "用户调研：Finding Company 2,000份健身问卷（2024 Q1）"
+    },
+    {
+      "source": "VOC分析：收集300+健身用户反馈（问卷编号 VOC-202-A/B/C）"
+    },
+    {
+      "source": "竞品深度测试：FITURE、Mirror、Tonal、Keep 各30天"
+    }
+  ],
+  "conclusion_summary": "Coach 系列以双模动作捕捉和实时语音纠错为核心竞争力，精准解决家庭健身'动作不标准'痛点。Pro 打造专业形象，Lite 走量，Rehab 开辟蓝海。首年营收目标 ¥68M，订阅服务贡献 35% LTV。",
+  "first_year_revenue": "¥68M",
+  "revenue_breakdown": "Pro 38%、Lite 52%、Rehab 10%",
+  "three_year_goal": "三年内占据国内智能健身指导市场 15% 份额，成为专业健身人群首选。"
+}

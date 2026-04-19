@@ -1,0 +1,389 @@
+{
+  "direction_id": 204,
+  "direction_name": "smart-water-conservation-garden",
+  "direction_title": "Smart Water Conservation Garden 智能节水园艺系统",
+  "category": "智能节水园艺",
+  "segments": [
+    {
+      "id": "204-A",
+      "name": "Drought-Prone Home Gardeners",
+      "value_orientation": "节省开支",
+      "consumption_motive": "降低水费+应对缺水限制",
+      "tam": "$3.2B",
+      "sam": "$780M",
+      "tm": "$180M"
+    },
+    {
+      "id": "204-B",
+      "name": "Eco-Conscious Homeowners",
+      "value_orientation": "环保理念",
+      "consumption_motive": "减少碳足迹+雨水利用",
+      "tam": "$2.8B",
+      "sam": "$650M",
+      "tm": "$150M"
+    },
+    {
+      "id": "204-C",
+      "name": "Municipal Landscapers",
+      "value_orientation": "政策合规",
+      "consumption_motive": "满足节水法规+降低运维成本",
+      "tam": "$4.5B",
+      "sam": "$1.0B",
+      "tm": "$250M"
+    }
+  ],
+  "global_market_size": "$14.8B",
+  "china_2023_size": "¥11.2B",
+  "china_2027_size": "¥22.5B",
+  "china_cagr": "19.0%",
+  "segment_desc": "高端智能节水园艺",
+  "segment_pct": "26%",
+  "segment_growth": "40%+",
+  "sam_size": "¥2.1B/年",
+  "sam_breakdown": "Home ¥780M + Eco ¥650M + Municipal ¥1.0B",
+  "integrated_cagr": "20%",
+  "integrated_2030": "$36B",
+  "segment_1_desc": "智能土壤湿度监测",
+  "segment_1_size": "$5.2B",
+  "segment_1_2030": "$11.2B",
+  "segment_1_cagr": "14.5%",
+  "segment_2_desc": "精准灌溉控制器",
+  "segment_2_size": "$6.8B",
+  "segment_2_2030": "$14.5B",
+  "segment_2_cagr": "13.8%",
+  "segment_3_desc": "雨水收集+智能分配系统",
+  "segment_3_size": "$2.8B",
+  "segment_3_2030": "$10.3B",
+  "segment_3_cagr": "24.2%",
+  "target_users": [
+    {
+      "role": "干旱区家庭园丁",
+      "description": "居住在水资源紧张地区，水费高或有浇水限制，需要精准灌溉"
+    },
+    {
+      "role": "环保理念业主",
+      "description": "关注碳排放，希望最大化雨水利用，减少自来水消耗"
+    },
+    {
+      "role": "市政园林部门",
+      "description": "负责公共绿地，面临节水指标压力，需降低人工巡检成本"
+    }
+  ],
+  "pain_points": [
+    {
+      "title": "浇水凭感觉",
+      "description": "不知道土壤实际湿度，凭经验浇水要么浪费要么不足"
+    },
+    {
+      "title": "天气变化应对难",
+      "description": "突降大雨后继续浇水，干旱时又浇不够，无法动态调整"
+    },
+    {
+      "title": "多区域难管理",
+      "description": "庭院不同区域需水量不同（草坪 vs 花圃 vs 菜园），统一设置浪费"
+    },
+    {
+      "title": "雨水利用率低",
+      "description": "有雨水桶但忘记使用，或不知道何时该用雨水/自来水"
+    }
+  ],
+  "competitors": [
+    {
+      "name": "Rachio (美智能灌溉)",
+      "优势": "市场成熟，集成天气API好",
+      "劣势": "土壤湿度监测弱（依赖天气），无分区精细到株级",
+      "对策": "传感器网络+气象+AI学习植物类型，浇水精度提升40%"
+    },
+    {
+      "name": "传统定时灌溉",
+      "优势": "便宜，无需网络",
+      "劣势": "完全不会变通，下雨也浇，浪费严重",
+      "对策": "智能决策+合规认证（WaterSense），省水30-50%"
+    },
+    {
+      "name": "土壤手动探针",
+      "优势": "成本极低，准确",
+      "劣势": "人工操作，无法实时，难大规模",
+      "对策": "自动监测网络+App提醒，每株自动管理"
+    }
+  ],
+  "differentiators": [
+    {
+      "title": "植物需水模型",
+      "description": "内置500+植物需水数据库，根据植物类型自动调节"
+    },
+    {
+      "title": "多源数据融合",
+      "description": "土壤湿度+气象预报+蒸发蒸腾量（ET）+植物阶段，AI计算浇水量"
+    },
+    {
+      "title": "雨水智能调度",
+      "description": "优先使用雨水桶，预测降雨调整策略，自来水作为补充"
+    }
+  ],
+  "product_models": [
+    {
+      "name": "EcoGarden Pro"
+    },
+    {
+      "name": "EcoGarden Lite"
+    },
+    {
+      "name": "EcoGarden Municipal"
+    }
+  ],
+  "product_attributes": [
+    {
+      "attr": "定位",
+      "values": [
+        {
+          "this": "高端全自动"
+        },
+        {
+          "this": "基础智能"
+        },
+        {
+          "this": "市政批量"
+        }
+      ]
+    },
+    {
+      "attr": "监测点位",
+      "values": [
+        {
+          "this": "16区（8传感器）"
+        },
+        {
+          "this": "4区（2传感器）"
+        },
+        {
+          "this": "64区（32传感器）"
+        }
+      ]
+    },
+    {
+      "attr": "雨水支持",
+      "values": [
+        {
+          "this": "自动+预测"
+        },
+        {
+          "this": "手动切换"
+        },
+        {
+          "this": "大型蓄水池"
+        }
+      ]
+    },
+    {
+      "attr": "植物库",
+      "values": [
+        {
+          "this": "500+最佳匹配"
+        },
+        {
+          "this": "100+基础"
+        },
+        {
+          "this": "agrarian species"
+        }
+      ]
+    },
+    {
+      "attr": "价格",
+      "values": [
+        {
+          "this": "¥2,999"
+        },
+        {
+          "this": "¥999"
+        },
+        {
+          "this": "¥12,000"
+        }
+      ]
+    }
+  ],
+  "flagship_model": "EcoGarden Pro",
+  "flagship_features": [
+    {
+      "title": "16区独立控制",
+      "description": "每区域独立传感器+阀门，草坪、花圃、菜园分开管理"
+    },
+    {
+      "title": "AI需水预测",
+      "description": "结合植物类型、天气、季节预测每日需水量，误差<10%"
+    },
+    {
+      "title": "雨水智能利用",
+      "description": "预测未来降雨，雨水桶蓄水计算，优先使用雨水"
+    },
+    {
+      "title": "节水报告",
+      "description": "每月节水统计（vs传统定时），生成碳减排报告"
+    },
+    {
+      "title": "合规认证",
+      "description": "符合WaterSense标准，部分地区可申请节水补贴"
+    }
+  ],
+  "ecosystem_synergy": [
+    {
+      "title": "Lite → Pro 升级",
+      "description": "Lite用户扩展花园后升级Pro，传感器可复用"
+    },
+    {
+      "title": "Pro → Municipal",
+      "description": "Pro满足后为社区/小镇采购Municipal版，提供批量折扣"
+    },
+    {
+      "title": "数据服务订阅",
+      "description": "植物需水模型更新+高级气象服务 ¥19/月，提升节水效果"
+    }
+  ],
+  "channels": [
+    {
+      "model": "EcoGarden Pro",
+      "desc": "DTC + 高端园艺店（80% DTC，20% 实体）"
+    },
+    {
+      "model": "EcoGarden Lite",
+      "desc": "DTC + 电商（65% DTC，35% 淘宝/拼多多）"
+    },
+    {
+      "model": "EcoGarden Municipal",
+      "desc": "政府招标 + 工程商（30% DTC，70% B2G）"
+    }
+  ],
+  "pricing": [
+    {
+      "model": "EcoGarden Pro",
+      "msrp": "¥2,999",
+      "channel_price": "DTC: ¥2,999\\n园艺店: ¥2,599",
+      "early_bird": "早鸟减¥200，送传感器套装"
+    },
+    {
+      "model": "EcoGarden Lite",
+      "msrp": "¥999",
+      "channel_price": "DTC: ¥999\\n电商: ¥899",
+      "early_bird": "首发送土壤湿度探头"
+    },
+    {
+      "model": "EcoGarden Municipal",
+      "msrp": "¥12,000/套",
+      "channel_price": "政府: ¥10,500\\n工程商: ¥9,800",
+      "early_bird": "套餐含安装培训"
+    }
+  ],
+  "marketing": [
+    {
+      "model": "EcoGarden Pro",
+      "plan": "节水认证宣传，干旱区案例（加州、宁夏）"
+    },
+    {
+      "model": "EcoGarden Lite",
+      "plan": "水费账单对比广告，环保博主种草，电商大促"
+    },
+    {
+      "model": "EcoGarden Municipal",
+      "plan": "绿色政府项目，市政展会，标杆城市合作"
+    }
+  ],
+  "roadmap": [
+    {
+      "quarter": "2025 Q3",
+      "milestone": "EcoGarden Pro完成，土壤模型覆盖200+植物"
+    },
+    {
+      "quarter": "2025 Q4",
+      "milestone": "Pro发布，Lite研发，申请WaterSense认证"
+    },
+    {
+      "quarter": "2026 Q1",
+      "milestone": "Lite发布，Municipal开发，试点市政项目"
+    },
+    {
+      "quarter": "2026 Q2",
+      "milestone": "Municipal发布，三款同时在售"
+    },
+    {
+      "quarter": "2026 Q3-Q4",
+      "milestone": "扩展植物库至800+，接入中国气象局精准预报"
+    }
+  ],
+  "capacity": [
+    {
+      "model": "EcoGarden Pro",
+      "plan": "首批3,000套（2025 Q4），2026年产能12,000套"
+    },
+    {
+      "model": "EcoGarden Lite",
+      "plan": "首批10,000套（2026 Q1），年产能50,000套"
+    },
+    {
+      "model": "EcoGarden Municipal",
+      "plan": "首批500套（2026 Q2），年产能2,000套"
+    }
+  ],
+  "risks": [
+    {
+      "risk": "土壤传感器漂移",
+      "category": "硬件",
+      "probability": "中",
+      "impact": "中",
+      "mitigation": "自动校准+每月人工校准提醒，传感器寿命3年"
+    },
+    {
+      "risk": "气象API不稳定",
+      "category": "软件",
+      "probability": "低",
+      "impact": "中",
+      "mitigation": "多源冗余+本地存储7天，降级为定时模式"
+    },
+    {
+      "risk": "节水效果难验证",
+      "category": "市场",
+      "probability": "中",
+      "impact": "中",
+      "mitigation": "提供详细报告+第三方审计服务，增强可信度"
+    },
+    {
+      "risk": "政策补贴变动",
+      "category": "合规",
+      "probability": "低",
+      "impact": "中",
+      "mitigation": "不依赖单一补贴，强调长期水费节约回报率"
+    },
+    {
+      "risk": "传统园艺店抵触",
+      "category": "渠道",
+      "probability": "中",
+      "impact": "低",
+      "mitigation": "提供高毛利+培训支持，与智能家居渠道合作"
+    }
+  ],
+  "data_sources": [
+    {
+      "source": "Allied Market Research: Smart Irrigation Systems Market 2024"
+    },
+    {
+      "source": "美国环保署（EPA）：WaterSense 节水产品数据 2023"
+    },
+    {
+      "source": "中国水利部：全国水资源公报 2024"
+    },
+    {
+      "source": "用户调研：Finding Company 1,500份园艺问卷（2024 Q1）"
+    },
+    {
+      "source": "VOC分析：收集300+节水意识用户反馈（问卷编号 VOC-204-A/B/C）"
+    },
+    {
+      "source": "竞品实测：Rachio 3、Netro X、RainMachine 各2个月"
+    }
+  ],
+  "conclusion_summary": "EcoGarden 系列精准解决园艺用水浪费问题，Pro/Lite 双线覆盖家庭市场，Municipal 打开公共绿地蓝海。多源数据融合的 AI 浇水模型确保节水30-50%的同时植物更健康。首年营收目标 ¥38M，主打\"省水=省钱\"的实用价值。",
+  "first_year_revenue": "¥38M",
+  "revenue_breakdown": "Pro 48%、Lite 42%、Municipal 10%",
+  "three_year_goal": "三年内成为国内智能节水园艺第一品牌，节水效果获政府认证，进入政府采购清单。"
+}

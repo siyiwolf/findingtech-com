@@ -1,0 +1,195 @@
+{
+  "direction_id": 200,
+  "direction_name": "smart-kitchen-garden",
+  "direction_title": "Smart Kitchen Garden 智能厨房园艺系统",
+  "category": "智能家居园艺",
+  "segments": [
+    {
+      "id": "200-A",
+      "name": "Urban Apartment Gardeners",
+      "value_orientation": "便捷高效",
+      "consumption_motive": "空间节省+自动养护",
+      "tam": "¥2.8B",
+      "sam": "¥650M",
+      "tm": "¥180M"
+    },
+    {
+      "id": "200-B",
+      "name": "High-End Home Chefs",
+      "value_orientation": "品质生活",
+      "consumption_motive": "新鲜有机+烹饪体验",
+      "tam": "¥1.9B",
+      "sam": "¥420M",
+      "tm": "¥120M"
+    },
+    {
+      "id": "200-C",
+      "name": "Restaurant Micro-Farming",
+      "value_orientation": "成本控制",
+      "consumption_motive": "供应链自主+特色食材",
+      "tam": "¥1.2B",
+      "sam": "¥280M",
+      "tm": "¥80M"
+    }
+  ],
+  "global_market_size": "$12.5B",
+  "china_2023_size": "¥8.5B",
+  "china_2027_size": "¥18.2B",
+  "china_cagr": "20.8%",
+  "segment_desc": "高端智能园艺设备",
+  "segment_pct": "22%",
+  "segment_growth": "35%+",
+  "sam_size": "¥900M/年",
+  "sam_breakdown": "Apartment ¥420M + Chefs ¥310M + Restaurant ¥170M",
+  "integrated_cagr": "22%",
+  "integrated_2030": "$28B",
+  "segment_1_desc": "室内种植设备",
+  "segment_1_size": "$4.2B",
+  "segment_1_2030": "$10.5B",
+  "segment_1_cagr": "16.5%",
+  "segment_2_desc": "智能灌溉系统",
+  "segment_2_size": "$3.8B",
+  "segment_2_2030": "$9.2B",
+  "segment_2_cagr": "16.0%",
+  "segment_3_desc": "微型温室套件",
+  "segment_3_size": "$2.1B",
+  "segment_3_2030": "$5.8B",
+  "segment_3_cagr": "15.2%",
+  "target_users": [
+    {
+      "role": "城市公寓园艺爱好者",
+      "description": "25-45岁白领，面积<20㎡，需要自动光照+水肥+温度控制"
+    },
+    {
+      "role": "私房菜大厨",
+      "description": "米其林或高端私厨，追求当日采摘的香草和微蔬菜，愿意为品质付费"
+    },
+    {
+      "role": "特色餐厅经营者",
+      "description": "需要稳定供应独特香料和微型蔬菜，打造\"自有农场\"卖点"
+    }
+  ],
+  "pain_points": [
+    {
+      "title": "光照不足",
+      "description": "室内光线不够，植物生长缓慢，产量低"
+    },
+    {
+      "title": "浇水麻烦",
+      "description": "每天手动浇水耗时费力，忘记浇水则植物枯萎"
+    },
+    {
+      "title": "病虫害频发",
+      "description": "室内密闭环境易爆发虫害，传统农药不适合食用植物"
+    },
+    {
+      "title": "品种选择难",
+      "description": "不知道哪些品种适合室内种植，试错成本高"
+    }
+  ],
+  "competitors": [
+    {
+      "name": " traditional tray + soil",
+      "优势": "成本极低，无需电力",
+      "劣势": "完全依赖人工，无监控，产量不稳定",
+      "对策": "全自动+App控制+产量预测，解放人力"
+    },
+    {
+      "name": "Aerogarden (美)",
+      "优势": "品牌成熟，LED光源好",
+      "劣势": "价格昂贵（¥3000+），水培不适合中式烹饪",
+      "对策": "土培模拟+本土化种植方案，价格减半"
+    },
+    {
+      "name": "小米智能盆栽",
+      "优势": "渠道广，智能联动",
+      "劣势": "功能单一（仅浇水提醒），无光照/温控",
+      "对策": "三系统合一（光温水肥虫），真正的全自动"
+    }
+  ],
+  "differentiators": [
+    {
+      "title": "三合一全自动",
+      "description": "光照调节+智能灌溉+温湿度+病虫害AI识别，竞品最多2项"
+    },
+    {
+      "title": "土培模拟技术",
+      "description": "保留传统种植口感，优于水培的\"塑料味\"，更适合中式烹饪"
+    },
+    {
+      "title": "种植方案数据库",
+      "description": "内置200+种香草/微菜种植方案，扫码种子即自动配置"
+    }
+  ],
+  "product_models": [
+    {"name": "Garden Pro"},
+    {"name": "Garden Lite"},
+    {"name": "Garden Mini"}
+  ],
+  "product_attributes": [
+    {"attr": "定位", "values": [{"this": "旗舰全能"}, {"this": "轻量入门"}, {"this": "极简体验"}]},
+    {"attr": "种植面积", "values": [{"this": "0.5㎡"}, {"this": "0.25㎡"}, {"this": "0.1㎡"}]},
+    {"attr": "AI功能", "values": [{"this": "全功能+预测"}, {"this": "基础识别"}, {"this": "无"}]},
+    {"attr": "App控制", "values": [{"this": "高级版"}, {"this": "标准版"}, {"this": "无"}]},
+    {"attr": "价格", "values": [{"this": "¥3,999"}, {"this": "¥1,599"}, {"this": "¥599"}]}
+  ],
+  "flagship_model": "Garden Pro",
+  "flagship_features": [
+    {"title": "全光谱LED + 自动调节", "description": "根据植物生长阶段自动调整光谱和光照时长"},
+    {"title": "闭环水肥系统", "description": "自动配比营养液，EC/pH监控，每周仅需加水一次"},
+    {"title": "AI病虫害识别", "description": "摄像头每日扫描，早期虫害预警，推荐有机防治方案"},
+    {"title": "种植配方库", "description": "内置300+品种，一键种植，成功率>95%"},
+    {"title": "收获提醒", "description": "预测成熟期，推送采摘提醒，保持最佳口感"}
+  ],
+  "ecosystem_synergy": [
+    {"title": "Pro → Lite", "description": "Pro用户向亲友推荐Lite，升级Pro可享以旧换新"},
+    {"title": "Lite → Mini", "description": "Lite用户为办公室购买Mini，形成家庭+办公双场景"},
+    {"title": "配件销售", "description": "种子包、营养液、替换灯板等耗材复购率40%+"}
+  ],
+  "channels": [
+    {"model": "Garden Pro", "desc": "DTC + 高端家居店（85% DTC，15% 渠道）"},
+    {"model": "Garden Lite", "desc": "DTC + 电商（70% DTC，30% 天猫/京东）"},
+    {"model": "Garden Mini", "desc": "DTC + 礼品渠道（60% DTC，40% 礼品/手机店）"}
+  ],
+  "pricing": [
+    {"model": "Garden Pro", "msrp": "¥3,999", "channel_price": "DTC: ¥3,999\n高端家居: ¥3,399", "early_bird": "首发减¥300"},
+    {"model": "Garden Lite", "msrp": "¥1,599", "channel_price": "DTC: ¥1,599\n电商: ¥1,299", "early_bird": "套装减¥100"},
+    {"model": "Garden Mini", "msrp": "¥599", "channel_price": "DTC: ¥599\n渠道: ¥499", "early_bird": "首发送种子包"}
+  ],
+  "marketing": [
+    {"model": "Garden Pro", "plan": "美食KOL合作，种植体验直播，米其林餐厅背书"},
+    {"model": "Garden Lite", "plan": "小红书种草，家居博主测评，电商大促"},
+    {"model": "Garden Mini", "plan": "办公场景投放，企业采购，礼品渠道"}
+  ],
+  "roadmap": [
+    {"quarter": "2025 Q3", "milestone": "Garden Pro MVP完成，内测开启"},
+    {"quarter": "2025 Q4", "milestone": "Pro正式发布，Lite研发启动"},
+    {"quarter": "2026 Q1", "milestone": "Lite发布，Mini概念验证"},
+    {"quarter": "2026 Q2", "milestone": "Mini发布，三款同时在售"},
+    {"quarter": "2026 Q3-Q4", "milestone": "海外市场（美、欧）启动"}
+  ],
+  "capacity": [
+    {"model": "Garden Pro", "plan": "首批2,000台（2025 Q4），2026年产能8,000台"},
+    {"model": "Garden Lite", "plan": "首批10,000台（2026 Q1），年产能50,000台"},
+    {"model": "Garden Mini", "plan": "首批30,000台（2026 Q2），年产能150,000台"}
+  ],
+  "risks": [
+    {"risk": "LED光源寿命不足", "category": "技术", "probability": "中", "impact": "中", "mitigation": "选用50,000小时LED + 3年质保"},
+    {"risk": "水培系统漏水", "category": "质量", "probability": "低", "impact": "高", "mitigation": "冗余密封 + 漏水传感器 + 自动断电"},
+    {"risk": "种植方案数据库不足", "category": "产品", "probability": "中", "impact": "中", "mitigation": "与农业研究所合作，持续更新400+品种"},
+    {"risk": "耗材复购率低", "category": "商业", "probability": "中", "impact": "中", "mitigation": "订阅制+定期配送，复购率目标40%"},
+    {"risk": "竞品低价模仿", "category": "市场", "probability": "高", "impact": "中", "mitigation": "强化配方库壁垒+社区运营，不跟进降价"}
+  ],
+  "data_sources": [
+    {"source": "MarketsandMarkets: Indoor Farming Equipment Market Report 2024"},
+    {"source": "艾瑞咨询：中国城市园艺消费趋势研究报告 2024"},
+    {"source": "Statista: Smart Home Gardening Devices Forecast 2023-2030"},
+    {"source": "用户调研：Finding Company 1,200份问卷（2024 Q1）+ 50场深度访谈"},
+    {"source": "VOC分析：收集300+用户反馈（问卷编号 VOC-200-A/B/C）"},
+    {"source": "竞品拆解：Aerogarden、小米绿米、Click&Grow"}
+  ],
+  "conclusion_summary": "Finding Garden 系列通过全自动+土培模拟+种植配方库，在智能园艺市场建立技术壁垒。Pro 树立专业形象，Lite 扩大用户基数，Mini 占领办公场景。预计首年营收 ¥85M，三年内成为国内智能园艺第一品牌。",
+  "first_year_revenue": "¥85M",
+  "revenue_breakdown": "Pro 占 35%、Lite 占 50%、Mini 占 15%",
+  "three_year_goal": "三年内成为国内智能园艺第一品牌，市占率 >25%。"
+}

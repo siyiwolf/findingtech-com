@@ -1,0 +1,195 @@
+{
+  "direction_id": 201,
+  "direction_name": "smart-pet-sleep-monitor",
+  "direction_title": "Smart Pet Sleep Monitor 智能宠物睡眠监测系统",
+  "category": "智能宠物设备",
+  "segments": [
+    {
+      "id": "201-A",
+      "name": "Urban Dog Owners",
+      "value_orientation": "健康管理",
+      "consumption_motive": "宠物健康追踪+异常预警",
+      "tam": "$3.2B",
+      "sam": "$750M",
+      "tm": "$180M"
+    },
+    {
+      "id": "201-B",
+      "name": "Professional Breeders",
+      "value_orientation": "繁育优化",
+      "consumption_motive": "种犬/猫健康数据+配对建议",
+      "tam": "$1.8B",
+      "sam": "$420M",
+      "tm": "$120M"
+    },
+    {
+      "id": "201-C",
+      "name": "Veterinarian Clinics",
+      "value_orientation": "诊断辅助",
+      "consumption_motive": "远程监测+数据驱动的诊疗",
+      "tam": "$2.5B",
+      "sam": "$580M",
+      "tm": "$150M"
+    }
+  ],
+  "global_market_size": "$15.8B",
+  "china_2023_size": "¥12.5B",
+  "china_2027_size": "¥24.6B",
+  "china_cagr": "18.5%",
+  "segment_desc": "高端宠物健康监测",
+  "segment_pct": "28%",
+  "segment_growth": "42%+",
+  "sam_size": "¥1.2B/年",
+  "sam_breakdown": " Dogs ¥650M + Breeders ¥320M + Clinics ¥230M",
+  "integrated_cagr": "19%",
+  "integrated_2030": "$38B",
+  "segment_1_desc": "宠物睡眠追踪器",
+  "segment_1_size": "$6.5B",
+  "segment_1_2030": "$14.2B",
+  "segment_1_cagr": "14.2%",
+  "segment_2_desc": "宠物健康监测床垫",
+  "segment_2_size": "$5.2B",
+  "segment_2_2030": "$12.8B",
+  "segment_2_cagr": "16.0%",
+  "segment_3_desc": "兽医远程监测平台",
+  "segment_3_size": "$4.1B",
+  "segment_3_2030": "$11.0B",
+  "segment_3_cagr": "18.5%",
+  "target_users": [
+    {
+      "role": "城市养狗家庭",
+      "description": "25-50岁，幼犬/老年犬家长，关注睡眠质量和呼吸健康"
+    },
+    {
+      "role": "专业繁育者",
+      "description": "种犬/种猫数量>10只，需要批量健康数据优化繁育"
+    },
+    {
+      "role": "宠物医院",
+      "description": "提供住院监测和远程复诊，需要数据驱动的诊断工具"
+    }
+  ],
+  "pain_points": [
+    {
+      "title": "夜间异常无法察觉",
+      "description": "主人睡觉时，宠物呼吸/心率异常难以发现，延误救治"
+    },
+    {
+      "title": "睡眠质量无量化",
+      "description": "不知道宠物深睡/浅睡比例，无法评估健康状况"
+    },
+    {
+      "title": "繁育数据缺失",
+      "description": "种犬发情周期、配种后监测靠人工，效率低且不准确"
+    },
+    {
+      "title": "医院复诊依赖回忆",
+      "description": "宠物居家行为无法追踪，医生只能凭主人描述判断"
+    }
+  ],
+  "competitors": [
+    {
+      "name": "FitBark (美)",
+      "优势": "品牌先发，活动追踪成熟",
+      "劣势": "睡眠监测简单（仅时长），无呼吸/心率深度分析",
+      "对策": "医用级传感器+AI多维度分析，提供健康评分"
+    },
+    {
+      "name": "Petcube 带监控",
+      "优势": "视频双向通话",
+      "劣势": "无生物指标监测，仅娱乐功能",
+      "对策": "睡眠专用+健康预警，与摄像头互补"
+    },
+    {
+      "name": "小米宠物智能窝",
+      "优势": "价格亲民，智能家居联动",
+      "劣势": "数据粗糙，算法不专业，误报率高",
+      "对策": "专业算法+兽医背书，建立权威性"
+    }
+  ],
+  "differentiators": [
+    {
+      "title": "PPG+呼吸双重监测",
+      "description": "心率、呼吸率、血氧、HRV 四合一，精度达医疗级（±2 BPM）"
+    },
+    {
+      "title": "睡眠分期算法",
+      "description": "深睡/浅睡/REM 识别，对标人类睡眠分期，生成睡眠质量报告"
+    },
+    {
+      "title": "繁育管理模块",
+      "description": "自动记录发情期、配对时间、怀孕监测，提升繁育成功率"
+    }
+  ],
+  "product_models": [
+    {"name": "SleepTrack Pro"},
+    {"name": "SleepTrack Lite"},
+    {"name": "SleepTrack Clinic"}
+  ],
+  "product_attributes": [
+    {"attr": "定位", "values": [{"this": "旗舰家庭"}, {"this": "普及版"}, {"this": "专业版"}]},
+    {"attr": "监测指标", "values": [{"this": "4项+睡眠分期"}, {"this": "3项基础"}, {"this": "4项+多设备管理"}]},
+    {"attr": "适用体重", "values": [{"this": "2-50kg全量程"}, {"this": "2-20kg"}, {"this": "不限（医院级）"}]},
+    {"attr": "电池续航", "values": [{"this": "30天"}, {"this": "14天"}, {"this": "市电"}]},
+    {"attr": "价格", "values": [{"this": "¥1,299"}, {"this": "¥699"}, {"this": "¥1,999/台"}]}
+  ],
+  "flagship_model": "SleepTrack Pro",
+  "flagship_features": [
+    {"title": "PPG生物传感器", "description": "医用级心率/血氧精度，24小时连续监测"},
+    {"title": "呼吸带+麦克风", "description": "检测呼吸异常（如sleep apnea），鼾声识别"},
+    {"title": "AI睡眠分期", "description": "四阶段睡眠分析，输出睡眠质量评分和改善建议"},
+    {"title": "繁育专用模式", "description": "发情期预测、配对记录、怀孕概率计算"},
+    {"title": "兽医数据共享", "description": "一键生成PDF报告，可直接发送给医生作为诊断参考"}
+  ],
+  "ecosystem_synergy": [
+    {"title": "家庭 → 繁育", "description": "家庭用户升级繁育版，可管理多只宠物"},
+    {"title": "Pro → Clinic", "description": "Pro用户可为 hospitalized pet 购买Clinic报告服务"},
+    {"title": "耗材订阅", "description": "传感器贴片、电池（不可充电款）、报告订阅预计 ARPU ¥50/月"}
+  ],
+  "channels": [
+    {"model": "SleepTrack Pro", "desc": "DTC + 宠物店（90% DTC，10% 高端宠物店）"},
+    {"model": "SleepTrack Lite", "desc": "DTC + 电商（65% DTC，35% 天猫/拼多多）"},
+    {"model": "SleepTrack Clinic", "desc": "直销 + 兽医渠道（50% DTC，50% 医院采购）"}
+  ],
+  "pricing": [
+    {"model": "SleepTrack Pro", "msrp": "¥1,299", "channel_price": "DTC: ¥1,299\n宠物店: ¥1,099", "early_bird": "首发送6个月报告订阅"},
+    {"model": "SleepTrack Lite", "msrp": "¥699", "channel_price": "DTC: ¥699\n电商: ¥599", "early_bird": "早鸟减¥50"},
+    {"model": "SleepTrack Clinic", "msrp": "¥1,999/台", "channel_price": "医院: ¥1,699\nDTC: ¥1,999", "early_bird": "套餐含10次专业报告"}
+  ],
+  "marketing": [
+    {"model": "SleepTrack Pro", "plan": "宠物医生KOL背书，老年犬健康场景，小红书种草"},
+    {"model": "SleepTrack Lite", "plan": "抖音宠物博主，性价比定位，电商大促"},
+    {"model": "SleepTrack Clinic", "plan": "兽医会议推广，医院样品投放，B2B直销"}
+  ],
+  "roadmap": [
+    {"quarter": "2025 Q3", "milestone": "SleepTrack Pro 完成，多犬舍内测"},
+    {"quarter": "2025 Q4", "milestone": "Pro 发布，Lite 研发启动"},
+    {"quarter": "2026 Q1", "milestone": "Lite 发布，Clinic 临床验证"},
+    {"quarter": "2026 Q2", "milestone": "Clinic 发布，三款同时销售"},
+    {"quarter": "2026 Q3-Q4", "milestone": "猫用版本开发，多宠物管理 App 上线"}
+  ],
+  "capacity": [
+    {"model": "SleepTrack Pro", "plan": "首批5,000台（2025 Q4），2026年产能20,000台"},
+    {"model": "SleepTrack Lite", "plan": "首批20,000台（2026 Q1），年产能100,000台"},
+    {"model": "SleepTrack Clinic", "plan": "首批1,000台（2026 Q2），年产能5,000台"}
+  ],
+  "risks": [
+    {"risk": "宠物佩戴不适", "category": "产品体验", "probability": "中", "impact": "中", "mitigation": "3D扫描适配+无感设计，实测90%犬只24h适应"},
+    {"risk": "数据隐私担忧", "category": "合规", "probability": "中", "impact": "中", "mitigation": "端侧处理+匿名化+GDPR/个人信息保护法合规"},
+    {"risk": "兽医采纳慢", "category": "市场", "probability": "中", "impact": "高", "mitigation": "免费试用+学术论文发表+与大型连锁医院合作"},
+    {"risk": "传感器成本高", "category": "供应链", "probability": "中", "impact": "中", "mitigation": "自研ASIC+规模采购降本，目标降低成本30%"},
+    {"risk": "同类产品价格战", "category": "市场", "probability": "高", "impact": "中", "mitigation": "专注专业场景，不打价格战，建立兽医信任壁垒"}
+  ],
+  "data_sources": [
+    {"source": "Grand View Research: Pet Tech Market Size 2024"},
+    {"source": "艾瑞咨询：中国智能宠物设备消费洞察 2024"},
+    {"source": "APPA: US Pet Ownership & Spending Report 2023"},
+    {"source": "用户调研：Finding Company 1,500份养宠问卷（2024 Q1）"},
+    {"source": "VOC分析：收集300+宠物主人反馈（问卷编号 VOC-201-A/B/C）"},
+    {"source": "竞品测试：FitBark、Pawtrack、PetPace 深度体验"}
+  ],
+  "conclusion_summary": "SleepTrack 系列精准切入宠物健康监测蓝海，以医学级精度建立专业壁垒。Pro 面向家庭+C端，Lite 走量，Clinic 打开 B 端市场。首年营收目标 ¥72M，聚焦老年犬和繁育场景，快速占领细分心智。",
+  "first_year_revenue": "¥72M",
+  "revenue_breakdown": "Pro 40%、Lite 45%、Clinic 15%",
+  "three_year_goal": "三年内国内宠物睡眠监测市占率 >40%，成为兽医推荐第一品牌。"
+}
