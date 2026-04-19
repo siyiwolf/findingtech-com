@@ -112,6 +112,7 @@
     {"id": 97, "name": "2-person-outdoor-hot-tub", "market": 75, "comp": 72},
     {"id": 98, "name": "smart-pool-cover", "market": 78, "comp": 68},
     {"id": 99, "name": "portable-dance-floor", "market": 72, "comp": 60},
-    {"id": 100, "name": "smart-campfire", "market": 80, "comp": 65}
+    {"id": 100, "name": "smart-campfire", "market": 80, "comp": 65},
+    {"id": 101, "name": "consumer-robot", "market": 88, "comp": 75}
   ]
 }

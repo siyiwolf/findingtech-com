@@ -1,4 +1,4 @@
-# SPAN 战略决策 (100 Outdoor Smart Products)
+# SPAN 战略决策 (101 Outdoor Smart Products)
 
 **生成时间**: 2026-04-18
 **数据来源**: `span-data.json`, `span-chart.html`
@@ -9,7 +9,7 @@
 
 | 象限 | 策略 | 方向数量 | 占比 | 代表产品 |
 |------|------|----------|------|----------|
-| Q1: 高吸引+高竞争 | 快速执行 | ~22 | 22% | portable-solar-power-station, camping-wifi, smart-camping, bike-light-smart |
+| Q1: 高吸引+高竞争 | 快速执行 | ~23 | 23% | portable-solar-power-station, camping-wifi, smart-camping, bike-light-smart, consumer-robot |
 | Q2: 高吸引+低竞争 | 需投资建设 | ~26 | 26% | smart-sleep, anti-icing-spray-drone, smart-climbing-wall, outdoor-fridge-dual |
 | Q3: 低吸引+低竞争 | 避免/放弃 | ~13 | 13% | portable-kitchen-scale, outdoor-cup-warmer, camping-karaoke |
 | Q4: 低吸引+高竞争 | 利基/出口 | ~39 | 39% | portable-arcade-machine, smart-hat, outdoor-wifi-router, solar-phone-charger |
@@ -42,8 +42,9 @@
 20. **smart-hot-tub** (97) - 75/72 - 高端户外
 21. **electric-bike-trailer** (74) - 80/70 - 货运电动化
 22. **smart-roof-tile** (71) - 82/75 - 建筑光伏一体化
+23. **194-consumer-robot** (88/75) - 个人消费级机器人
 
-**建议**: 立即启动 Q1 全部 22 个方向的产品开发，优先量产。
+**建议**: 立即启动 Q1 全部 **23** 个方向的产品开发，优先量产。
 
 ---
 
