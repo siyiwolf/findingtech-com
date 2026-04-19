@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-19T06:52:06.721Z",
+  "entries": {
+    "memory:memory/2026-04-15.md:1:40": {
+      "key": "memory:memory/2026-04-15.md:1:40",
+      "path": "memory/2026-04-15.md",
+      "startLine": 1,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "# 2026-04-15 Daily Log ## Report Generation Project (Final Layout v1.0) **Scope**: Complete 20 insight reports for portfolio directions **Delivered**: 14/20 reports (01-07, 09-15) ✅ **Pending**: 08-additional (MKT-08), 16-20 (blocked) ### Layout Iterations (6+ versions) 1. Initial 02-report standard: CSS inline, 9 chapters, no header/footer repeats 2. Added full header (logo+company+slogan+title+subtitle) on every page 3. Cleaned duplicate titles; simplified to single header + footer 4. Redesigned homepage: top header, centered title + subtitle, blank rest 5. Made header/footer right-aligned 6. Final: header **logo only** (right), footer **\"make life easy\"** (right), homepage centered tit",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-19T06:52:06.721Z",
+      "lastRecalledAt": "2026-04-19T06:52:06.721Z",
+      "queryHashes": [
+        "88b3014868d6"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "v1.0",
+        "14/20",
+        "01-07",
+        "09-15",
+        "08-additional",
+        "mkt-08",
+        "16-20",
+        "02-report"
+      ]
+    },
+    "memory:memory/2026-04-14.md:503:549": {
+      "key": "memory:memory/2026-04-14.md:503:549",
+      "path": "memory/2026-04-14.md",
+      "startLine": 503,
+      "endLine": 549,
+      "source": "memory",
+      "snippet": "- Content: Product description, functional specs, user stories, project plan - Quality: Acceptable for proceeding - This was PRD team's first real delivery (after earlier 2.4KB file, now confirmed) **Impact**: PRD-10 now matches CEO's earlier temporary version. 10-direction now has all four components (insight, PRD, PM, GTM pending). --- --- ## [20:19-04:05] EMERGENCY RECOVERY & CEO TAKEOVER (Blockage Resolution) ### 20:19 Crisis Assessment **Blockage Status**: - ❌ GTM zero output (active but no files) - ⚠️ PRD only 1 file (10-outdoor-kitchen, 2.4KB, likely insufficient) - ✅ PM completed all 10-15 (quality good 9-14KB) - ✅ CEO insights 10-13 missing (only 09 completed) - ❌ GTM/PRD sessi",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-19T06:52:06.721Z",
+      "lastRecalledAt": "2026-04-19T06:52:06.721Z",
+      "queryHashes": [
+        "88b3014868d6"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "2.4kb",
+        "prd-10",
+        "10-direction",
+        "19-04",
+        "10-outdoor-kitchen",
+        "10-15",
+        "9-14kb",
+        "10-13"
+      ]
+    },
+    "memory:memory/2026-04-14.md:538:592": {
+      "key": "memory:memory/2026-04-14.md:538:592",
+      "path": "memory/2026-04-14.md",
+      "startLine": 538,
+      "endLine": 592,
+      "source": "memory",
+      "snippet": "- PRD-14 assigned to CEO temporary takeover --- ### 21:15-22:30 CEO Insight Sprint (4 directions) **21:15**: 10-户外移动厨房 insight (7.9KB) - Market $1.8B, CAGR 16.8% - Target: glamping + RV users - Competitive: Jetboil/MSR/BioLite differentiation **21:40**: 11-智能照明系统 insight (7.8KB) - Market $4.2B, outdoor segment 25% - IPX8 waterproof + Matter + solar - Target: courtyard families + campers **22:05**: 12-户外净水系统 insight (8.1KB) - Market $2.6B - Triple protection: ceramic + UF + UV-C - Target: long-distance hikers + explorers **22:30**: 13-露营Wi-Fi热点 insight (8.2KB) - Market $3.4B - 4G + satellite fusion - Based on historical user pain points (80% no-signal need) - Note: data limited from memo",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-19T06:52:06.721Z",
+      "lastRecalledAt": "2026-04-19T06:52:06.721Z",
+      "queryHashes": [
+        "88b3014868d6"
+      ],
+      "recallDays": [
+        "2026-04-19"
+      ],
+      "conceptTags": [
+        "prd-14",
+        "15-22",
+        "10-户外移动厨房",
+        "7.9kb",
+        "1.8b",
+        "16.8",
+        "jetboil/msr/biolite",
+        "11-智能照明系统"
+      ]
+    }
+  }
+}
