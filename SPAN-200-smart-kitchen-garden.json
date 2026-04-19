@@ -1,0 +1,75 @@
+{
+  "direction_id": 200,
+  "direction_name": "smart-kitchen-garden",
+  "span_analysis": [
+    {
+      "segment": "200-A 城市公寓高端用户",
+      "market_attractiveness": {
+        "score": 8.5,
+        "factors": {
+          "market_size": 7,
+          "growth_rate": 8,
+          "profit_margin": 9,
+          "competitive_intensity": 6
+        }
+      },
+      "competitive_position": {
+        "score": 6.5,
+        "factors": {
+          "tech_advantage": 8,
+          "channel_access": 5,
+          "brand_recognition": 4,
+          "cost_structure": 8
+        }
+      },
+      "recommendation": "P1 - 投资但不优先",
+      "rationale": "高毛利和技术壁垒明显，但市场规模较小需教育用户"
+    },
+    {
+      "segment": "200-B 忙碌都市人",
+      "market_attractiveness": {
+        "score": 9.2,
+        "factors": {
+          "market_size": 9,
+          "growth_rate": 8,
+          "profit_margin": 7,
+          "competitive_intensity": 8
+        }
+      },
+      "competitive_position": {
+        "score": 7.8,
+        "factors": {
+          "tech_advantage": 7,
+          "channel_access": 8,
+          "brand_recognition": 6,
+          "cost_structure": 9
+        }
+      },
+      "recommendation": "P0 - 全力投入",
+      "rationale": "市场空间最大，DTC渠道效率高，价格适中接受度高"
+    },
+    {
+      "segment": "200-C 礼品/企业",
+      "market_attractiveness": {
+        "score": 8.8,
+        "factors": {
+          "market_size": 6,
+          "growth_rate": 7,
+          "profit_margin": 9,
+          "competitive_intensity": 5
+        }
+      },
+      "competitive_position": {
+        "score": 7.2,
+        "factors": {
+          "tech_advantage": 7,
+          "channel_access": 6,
+          "brand_recognition": 8,
+          "cost_structure": 7
+        }
+      },
+      "recommendation": "P0 - 全力投入",
+      "rationale": "高毛利礼品市场，品牌溢价能力强，竞品尚未覆盖"
+    }
+  ]
+}
