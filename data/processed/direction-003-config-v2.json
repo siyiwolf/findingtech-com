@@ -1,0 +1,217 @@
+{
+  "direction_id": 3,
+  "direction_name": "campbot",
+  "direction_title": "CampBot 智能营地系统",
+  "category": "服务机器人",
+  "segments": [
+    {
+      "id": "003-A",
+      "name": "Luxury Glamping Resorts",
+      "value_orientation": "奢华体验",
+      "consumption_motive": "一站式智能服务",
+      "tam": "$3.2B",
+      "sam": "$850M",
+      "tm": "$180M",
+      "tam_source": "Grand View Research: Glamping Market 2023 - 2030",
+      "sam_rationale": "全球高端营地1.5万家，中国占比12%，单家年设备预算$5万",
+      "tm_rationale": "首年覆盖TOP 500营地，年增长80家"
+    },
+    {
+      "id": "003-B",
+      "name": "Corporate Team Building Bases",
+      "value_orientation": "效率与标准化",
+      "consumption_motive": "自动化团队服务",
+      "tam": "$2.5B",
+      "sam": "$620M",
+      "tm": "$110M",
+      "tam_source": "CBRE: Corporate Retreat Market Trends 2024",
+      "sam_rationale": "中国企业团建基地约8万家，月使用率3次/家，每次可节约人力成本¥1,200",
+      "tm_rationale": "服务5%高端企业客户，锁定年度合同"
+    },
+    {
+      "id": "003-C",
+      "name": "Military/Disaster Response Camps",
+      "value_orientation": "高可靠性",
+      "consumption_motive": "极端环境快速部署",
+      "tam": "$4.1B",
+      "sam": "$580M",
+      "tm": "$68M",
+      "tam_source": "MarketsandMarkets: Defence Logistics Market 2024",
+      "sam_rationale": "全球应急/军事营地需求年增7%，中国占比18%",
+      "tm_rationale": "通过政府采购，单项目规模 ¥50万~¥200万"
+    }
+  ],
+  "value_chain": [
+    {
+      "segment": "上游：核心零部件",
+      "market_size": "$8.6B",
+      "avg_gross_margin": "42%",
+      "operating_margin": "25%",
+      "trend": "芯片自主化（瑞芯微/紫光展锐）、伺服电机国产替代（汇川技术）",
+      "value_transfer": "Finding参与核心部件自研，成本降低35%",
+      "key_suppliers": [
+        {
+          "name": "优傲机械臂（UR）",
+          "market_share": "28%",
+          "gross_margin": "48%",
+          "operating_margin": "28%",
+          "source": "优傲机器人年度报告 2023"
+        },
+        {
+          "name": "瑞芯微（RK3588芯片）",
+          "market_share": "15%",
+          "gross_margin": "65%",
+          "operating_margin": "42%",
+          "source": "瑞芯微财报 2023"
+        },
+        {
+          "name": "汇川技术（伺服电机）",
+          "market_share": "22%",
+          "gross_margin": "45%",
+          "operating_margin": "30%",
+          "source": "汇川技术公告 2024"
+        }
+      ]
+    },
+    {
+      "segment": "中游：集成制造",
+      "market_size": "$4.2B",
+      "avg_gross_margin": "35%",
+      "operating_margin": "18%",
+      "trend": "自动化装配线，Finding自建工厂",
+      "value_transfer": "软件服务毛利提升至65%",
+      "key_suppliers": [
+        {
+          "name": "Finding Company",
+          "market_share": "<1%",
+          "gross_margin": "48%",
+          "operating_margin": "22%",
+          "source": "内部预测"
+        },
+        {
+          "name": "海康机器人",
+          "market_share": "12%",
+          "gross_margin": "35%",
+          "operating_margin": "18%",
+          "source": "海康威视财报 2023"
+        }
+      ]
+    },
+    {
+      "segment": "下游：营地服务",
+      "market_size": "$6.8B",
+      "avg_gross_margin": "55%",
+      "operating_margin": "35%",
+      "trend": "B端合作伙伴网络（携程、同程、华住）",
+      "value_transfer": "Finding软件订阅成为新利润中心",
+      "key_suppliers": [
+        {
+          "name": "携程文旅",
+          "market_share": "25%",
+          "gross_margin": "60%",
+          "operating_margin": "35%",
+          "source": "携程集团财报 2023"
+        },
+        {
+          "name": "Finding DTC",
+          "market_share": "<1%",
+          "gross_margin": "65%",
+          "operating_margin": "40%",
+          "source": "内部预测"
+        }
+      ]
+    }
+  ],
+  "value_chain_profit_transfer": "服务层利润占比从2023年15%提升至2030年42%，软件订阅费用（¥29,000/年/套）成为主要利润增长点。硬件毛利率稳定在45%，规模经济体现。",
+  "industry_trends": {
+    "tech_trends": [
+      {
+        "year": "2024",
+        "trend": "机器人协同算法（Swarm AI）进入实用阶段，效率提升20%+",
+        "source": "Gartner Robotics & AI Hype Cycle 2024"
+      },
+      {
+        "year": "2026",
+        "trend": "户外防护等级提升至IP68，温度范围-40°C~+70°C",
+        "source": "IDC Rugged Device Forecast 2024"
+      },
+      {
+        "year": "2028",
+        "trend": "机械臂成本降低50%，带动单套价格降至¥15万",
+        "source": "BCG Robotics Cost Curve 2025"
+      }
+    ],
+    "demand_trends": [
+      {
+        "year": "2024",
+        "demand": "基本自动化",
+        "share": "75%",
+        "source": "Finding用户调研2024"
+      },
+      {
+        "year": "2026",
+        "demand": "多机协同",
+        "share": "50%",
+        "source": "IDC Robotics Adoption Study 2025"
+      },
+      {
+        "year": "2028",
+        "demand": "AI调度优化",
+        "share": "30%",
+        "source": "McKinsey Industrial Robotics Report 2025"
+      }
+    ]
+  },
+  "track_selection": {
+    "methodology": "基于利润区识别（毛利率>40%） + Finding技术优势（多机串联+AI）",
+    "logic": "1. 排除低价低毛利赛道（消费级机器人）；2. 聚焦高附加值场景（自动化装备+服务）；3. 评估技术匹配（18个月研发周期）；4. 验证市场容量（SAM>$500M）",
+    "candidates": [
+      {
+        "name": "CampBot智能营地系统",
+        "cagr": "22%",
+        "gross_margin": "48%",
+        "force_assessment": "中高（技术+服务壁垒）",
+        "rating": "★★★★★",
+        "choice": "✅ 主赛道",
+        "rationale": "多机协同壁垒高，服务毛利率65%，SAM $850M，行业空白"
+      },
+      {
+        "name": "单一功能服务机器人",
+        "cagr": "15%",
+        "gross_margin": "38%",
+        "force_assessment": "中",
+        "rating": "★★★☆☆",
+        "choice": "🔲 备选",
+        "rationale": "市场竞争激烈（科沃斯/擎朗），Finding缺乏品牌优势"
+      },
+      {
+        "name": "家用清洁机器人",
+        "cagr": "10%",
+        "gross_margin": "35%",
+        "force_assessment": "低",
+        "rating": "★☆☆☆☆",
+        "choice": "❌ 放弃",
+        "rationale": "Finding户外专业特性无法发挥，竞争残酷，毛利低下"
+      }
+    ],
+    "selected_tracks": [
+      {
+        "id": "003",
+        "name": "CampBot 6机器人协同系统",
+        "rationale": "行业唯一自动化营地解决方案，集成度最高"
+      }
+    ]
+  },
+  "pestel": {
+    "P": {
+      "红利": "《智能制造十四五规划》购机补贴50%，户外机器人首批入选",
+      "风险": "出口管制（高精度伺服电机）",
+      "counter": "提前申请出口资质，寻求国产替代方案"
+    },
+    "E": {
+      "红利": "旅游经济复苏，团建市场年增25%",
+      "risk": "汇率波动（优傲等核心部件美元结算）",
+      "counter": 「建立外汇套期保值机制（远期合约）"
+    },
+    "S": {
+      "红利": "露营热潮持续，Z世代追捧

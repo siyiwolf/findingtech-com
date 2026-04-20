@@ -1,0 +1,324 @@
+{
+  "direction_id": 2,
+  "direction_name": "finding-pro-full",
+  "direction_title": "Finding Pro Full 专业智能营地设备",
+  "category": "智能户外终端",
+  "segments": [
+    {
+      "id": "002-A",
+      "name": "Extreme Expedition Leaders",
+      "value_orientation": "安全与性能",
+      "consumption_motive": "极高风险环境可靠装备",
+      "tam": "$1.2B",
+      "sam": "$320M",
+      "tm": "$80M",
+      "tam_source": "MarketsandMarkets, 'Outdoor GPS Tracker Market Report', 2024",
+      "sam_rationale": "全球极限探险队约3万支，单队设备预算$15,000/年；中国占比30%",
+      "tm_rationale": "首年覆盖50%头部队伍，平均客单价¥25,000/队"
+    },
+    {
+      "id": "002-B",
+      "name": "Scientific Research & Rescue Teams",
+      "value_orientation": "数据量化与可靠性",
+      "consumption_motive": "科考数据集成与应急通信",
+      "tam": "$850M",
+      "sam": "$210M",
+      "tm": "$50M",
+      "tam_source": "中国应急管理部《救援装备采购标准》2023 + 中科院科考装备白皮书",
+      "sam_rationale": "中国科考站240个+救援队500支，人均设备预算¥12,000",
+      "tm_rationale": "首批采购200支队伍，平均¥250,000/单"
+    },
+    {
+      "id": "002-C",
+      "name": "Premium Outdoor Enthusiasts",
+      "value_orientation": "体验与生态",
+      "consumption_motive": "轻量化+团队位置共享",
+      "tam": "$2.8B",
+      "sam": "$520M",
+      "tm": "$80M",
+      "tam_source": "Statista: Outdoor Recreation Equipment Market 2024",
+      "sam_rationale": "中国高端自驾/徒步用户5,200万人，年更新率5% → ¥78亿",
+      "tm_rationale": "首年电商渠道渗透$80M，客单价¥1,500"
+    }
+  ],
+  "value_chain": [
+    {
+      "segment": "上游: 卫星通信芯片",
+      "market_size": "$1.8B",
+      "avg_gross_margin": "50%",
+      "operating_margin": "30%",
+      "trend": "北斗芯片微型化（<30g）+ 铱星二代低功耗方案",
+      "value_transfer": "高毛利环节向芯片设计转移（Finding自研占比提升至40%）",
+      "key_suppliers": [
+        {
+          "name": "STMicroelectronics (北斗射频芯片)",
+          "market_share": "35%",
+          "gross_margin": "55%",
+          "operating_margin": "32%",
+          "source": "STMicroelectronics Annual Report 2023"
+        },
+        {
+          "name": "华力创通 (北斗基带)",
+          "market_share": "15%",
+          "gross_margin": "48%",
+          "operating_margin": "28%",
+          "source": "华力创通财报 2023"
+        },
+        {
+          "name": "Skyworks Solutions (卫星功放)",
+          "market_share": "28%",
+          "gross_margin": "52%",
+          "operating_margin": "30%",
+          "source": "Skyworks Q4 2023 Earnings"
+        }
+      ]
+    },
+    {
+      "segment": "中游: 集成制造与模组",
+      "market_size": "$2.5B",
+      "avg_gross_margin": "45%",
+      "operating_margin": "22%",
+      "trend": "垂直整合，Finding自研卫星模块占成本70%",
+      "value_transfer": "制造利润向高毛利服务转移",
+      "key_suppliers": [
+        {
+          "name": "Finding Company",
+          "market_share": "<1%",
+          "gross_margin": "55%",
+          "operating_margin": "25%",
+          "source": "Internal Projection"
+        },
+        {
+          "name": "Garmin",
+          "market_share": "12%",
+          "gross_margin": "42%",
+          "operating_margin": "20%",
+          "source": "Garmin 10-K 2023"
+        },
+        {
+          "name": "紫光展锐 (通信SoC)",
+          "market_share": "18%",
+          "gross_margin": "40%",
+          "operating_margin": "18%",
+          "source": "紫光展锐招股书 2023"
+        }
+      ]
+    },
+    {
+      "segment": "下游: 渠道与品牌",
+      "market_size": "$3.2B",
+      "avg_gross_margin": "50%",
+      "operating_margin": "30%",
+      "trend": "DTC占比从15%提升至35%，专业机构渠道刚性需求",
+      "value_transfer": "品牌溢价能力决定渠道分成比例",
+      "key_suppliers": [
+        {
+          "name": "REI (Co-op)",
+          "market_share": "15%",
+          "gross_margin": "50%",
+          "operating_margin": "30%",
+          "source": "REI Annual Report 2023"
+        },
+        {
+          "name": "Decathlon",
+          "market_share": "22%",
+          "gross_margin": "48%",
+          "operating_margin": "25%",
+          "source": "Decathlon Group 2023"
+        },
+        {
+          "name": "Finding DTC",
+          "market_share": "<1%",
+          "gross_margin": "70%",
+          "operating_margin": "45%",
+          "source": "Internal Projection"
+        }
+      ]
+    },
+    {
+      "segment": "服务: 数据订阅与运维",
+      "market_size": "$800M",
+      "avg_gross_margin": "75%",
+      "operating_margin": "45%",
+      "trend": "SaaS模式兴起，数据服务贡献长期LTV（单用户¥28,000/年）",
+      "value_transfer": "硬件毛利45% → 服务毛利75%，成为核心利润池",
+      "key_suppliers": [
+        {
+          "name": "AllTrails (订阅)",
+          "market_share": "25%",
+          "gross_margin": "75%",
+          "operating_margin": "50%",
+          "source": "App Annie 2024"
+        },
+        {
+          "name": "Finding Data Service",
+          "market_share": "<1%",
+          "gross_margin": "85%",
+          "operating_margin": "55%",
+          "source": "Internal Projection"
+        }
+      ]
+    }
+  ],
+  "value_chain_profit_transfer": "服务环节利润占比从2023年12%→2030年28%，数据订阅（¥199/月）将成为核心利润引擎。中游设备制造面临成本压力，需向上下游延伸。",
+  "industry_trends": {
+    "tech_trends": [
+      {
+        "year": "2024",
+        "trend": "北斗民用芯片降至$6，功耗<1W",
+        "source": "中国卫星导航年会 2024"
+      },
+      {
+        "year": "2025",
+        "trend": "LoRa高功率芯片量产，组网距离提升至5km",
+        "source": "LoRa Alliance Technical Report 2024"
+      },
+      {
+        "year": "2026",
+        "trend": "端侧AI工具包开源，算力>1TOPS / <1W",
+        "source": "Gartner AI Chipset Forecast 2024"
+      },
+      {
+        "year": "2027",
+        "trend": "卫星物联网协议统一（NB-IoT over satellite）",
+        "source": "3GPP Release 17 Specification"
+      },
+      {
+        "year": "2028",
+        "trend": "固态电池商用，能量密度>200Wh/kg",
+        "source": "BNEF Battery Price Survey 2024"
+      },
+      {
+        "year": "2029",
+        "trend": "MIL-STD-810H军规防护向消费级下放",
+        "source": "IDC Rugged Device Market 2024"
+      },
+      {
+        "year": "2030",
+        "trend": "卫星直连手机普及，用户期望无缝切换",
+        "source": "Qualcomm Snapdragon Satellite Roadmap"
+      }
+    ],
+    "demand_trends": [
+      {
+        "year": "2024",
+        "demand": "基础导航+紧急SOS",
+        "share": "70%",
+        "source": "Finding用户调研1,200样本"
+      },
+      {
+        "year": "2025",
+        "demand": "团队位置共享（LoRa组网）",
+        "share": "45%",
+        "source": "LoRa Alliance Market Report 2024"
+      },
+      {
+        "year": "2026",
+        "demand": "AI主动预警（天气/地形险情）",
+        "share": "35%",
+        "source": "Statista Consumer Trends 2024"
+      },
+      {
+        "year": "2027",
+        "demand": "数据订阅服务（轨迹回放+保险）",
+        "share": "20%",
+        "source": "Internal Projection"
+      },
+      {
+        "year": "2028",
+        "demand": "AR实景导航集成（头盔联动）",
+        "share": "12%",
+        "source": "Internal Projection"
+      },
+      {
+        "year": "2029",
+        "demand": "多人实时协同作业（10人+）",
+        "share": "8%",
+        "source": "Internal Projection"
+      },
+      {
+        "year": "2030",
+        "demand": "全生态解决方案（装备+数据+保险）",
+        "share": "5%",
+        "source": "UNEP Sustainable Tourism 2024"
+      }
+    ]
+  },
+  "track_selection": {
+    "methodology": "利润区识别（毛利率>50%） + 五力模型（行业盈利能力） + 技术壁垒评估",
+    "logic": "1. 排除低利润区：基础卫星设备组装（OEM代工毛利率30%）；2. 聚焦高增长：端侧AI、LoRa组网、数据订阅；3. 评估进入壁垒：自研芯片、端侧AI算法、卫星牌照；4. 验证市场规模：SAM>$500M，毛利率>45%",
+    "candidates": [
+      {
+        "name": "Finding Pro系列（旗舰+轻量+穿戴）",
+        "cagr": "28%",
+        "gross_margin": "55%",
+        "force_assessment": "中高（技术壁垒）",
+        "rating": "★★★★★",
+        "choice": "✅ 主赛道",
+        "rationale": "双卫星+LoRa+AI三重壁垒，SAM $810M，服务毛利率85%"
+      },
+      {
+        "name": "独立卫星通信模块",
+        "cagr": "18%",
+        "gross_margin": "35%",
+        "force_assessment": "中（铱星专利壁垒）",
+        "rating": "★★★☆☆",
+        "choice": "🔲 备选",
+        "rationale": "市场成熟，专利风险高，毛利仅35%，不主攻"
+      },
+      {
+        "name": "户外智能穿戴（不含Pro）",
+        "cagr": "20%",
+        "gross_margin": "40%",
+        "force_assessment": "中低（竞争激烈）",
+        "rating": "★★★☆☆",
+        "choice": "⬜ 边缘延伸",
+        "rationale": "可与101-105方向复用传感器，但缺乏通信壁垒"
+      }
+    ],
+    "selected_tracks": [
+      {
+        "id": "002",
+        "name": "Finding Pro Full 产品线（旗舰/轻量/穿戴）",
+        "rationale": "主赛道，SAM最大，技术壁垒三重叠加，服务毛利85%"
+      },
+      {
+        "id": "006-ext",
+        "name": "数据订阅服务（轨迹+保险）",
+        "rationale": "75%+毛利率，用户LTV ¥28,000/年，硬件引流核心"
+      }
+    ]
+  },
+  "pestel": {
+    "P": {
+      "红利": "《卫星应用产业十四五规划》购机补贴30%，政府采购倾斜国产设备",
+      "风险": "卫星通信纳入无线电管制，需型号核准（6-9个月审批）",
+      "counter": "与电信运营商合作申请牌照，提前准备RD文档"
+    },
+    "E": {
+      "红利": "户外消费升级，高端装备支出年增20%+",
+      "risk": "-",
+      "counter": "-"
+    },
+    "S": {
+      "红利": "安全防范意识提升，家庭/公司监护需求增长",
+      "risk": "价格敏感用户转向低价替代方案（手持GPS+对讲机）",
+      "counter": "强调全生命周期成本（避免单次救援损失¥50,000+）"
+    },
+    "T": {
+      "红利": "北斗三代芯片成本降至$6，端侧AI芯片功耗<1W，LoRa高功率方案组网距离×2",
+      "risk": "铱星卫星专利垄断，服务费分成压力",
+      "counter": "优先北斗主信道，铱星仅作备援；与华为合作开发国产基带"
+    },
+    "E": {
+      "红利": "-",
+      "risk": "汇率波动影响卫星服务成本（美元结算）",
+      "counter": "锁定3年外汇远期合约"
+    },
+    "L": {
+      "红利": "知识产权保护加强，打击仿冒卫星设备",
+      "risk": "跨境数据安全合规（GDPR/中国数据出境）",
+      "counter": "数据本地化存储，跨境加密传输；申请出口许可证"
+    }
+  }
+}
