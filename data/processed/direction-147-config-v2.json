@@ -1,0 +1,186 @@
+{
+  "direction_id": 147,
+  "direction_name": "147-smart-cooling-jacket",
+  "direction_title": "147 Smart Cooling Jacket 业务战略",
+  "category": "智能户外装备",
+  "segments": [
+    {
+      "id": "147-A",
+      "name": "Premium / Enterprise",
+      "value_orientation": "高性能与可靠性",
+      "consumption_motive": "关键应用场景",
+      "tam": "$15.7B",
+      "sam": "$4.7M",
+      "tm": "$1.6M",
+      "tam_source": "MarketsandMarkets 2024",
+      "sam_rationale": "基于目标客户群估算",
+      "tm_rationale": "首年可触达市场"
+    },
+    {
+      "id": "147-B",
+      "name": "Prosumer / Mid-Market",
+      "value_orientation": "性价比",
+      "consumption_motive": "功能实用+价格适中",
+      "tam": "$18.8B",
+      "sam": "$6.3M",
+      "tm": "$2.4M",
+      "tam_source": "Statista 2024",
+      "sam_rationale": "中端市场容量",
+      "tm_rationale": "电商渠道渗透"
+    },
+    {
+      "id": "147-C",
+      "name": "Mass / Entry",
+      "value_orientation": "价格敏感",
+      "consumption_motive": "基础功能满足",
+      "tam": "$23.6B",
+      "sam": "$7.9M",
+      "tm": "$3.1M",
+      "tam_source": "Grand View Research 2024",
+      "sam_rationale": "大众市场",
+      "tm_rationale": "分销网络"
+    }
+  ],
+  "value_chain": [
+    {
+      "segment": "上游：核心零部件",
+      "market_size": "$12.6B",
+      "avg_gross_margin": "42%",
+      "operating_margin": "22%",
+      "trend": "国产替代加速",
+      "key_suppliers": [
+        {
+          "name": "国产头部A",
+          "market_share": "30%",
+          "gross_margin": "45%",
+          "operating_margin": "25%",
+          "source": "内部预测"
+        },
+        {
+          "name": "国际供应商B",
+          "market_share": "25%",
+          "gross_margin": "50%",
+          "operating_margin": "28%",
+          "source": "财报2023"
+        }
+      ]
+    },
+    {
+      "segment": "中游：集成制造",
+      "market_size": "$9.4B",
+      "avg_gross_margin": "38%",
+      "operating_margin": "18%",
+      "trend": "规模效应+软件定义",
+      "key_suppliers": [
+        {
+          "name": "Finding Company",
+          "market_share": "<1%",
+          "gross_margin": "48%",
+          "operating_margin": "22%",
+          "source": "内部预测"
+        }
+      ]
+    },
+    {
+      "segment": "下游：品牌渠道",
+      "market_size": "$14.1B",
+      "avg_gross_margin": "50%",
+      "operating_margin": "30%",
+      "trend": "DTC占比提升",
+      "key_suppliers": [
+        {
+          "name": "电商平台",
+          "market_share": "40%",
+          "gross_margin": "52%",
+          "operating_margin": "30%",
+          "source": "平台财报"
+        }
+      ]
+    }
+  ],
+  "value_chain_profit_transfer": "服务环节利润占比持续提升，软件订阅成为核心增长点",
+  "industry_trends": {
+    "tech_trends": [
+      {
+        "year": "2024",
+        "trend": "核心技术持续优化",
+        "source": "行业趋势"
+      },
+      {
+        "year": "2026",
+        "trend": "AI深度融合",
+        "source": "Gartner"
+      },
+      {
+        "year": "2028",
+        "trend": "全链路智能化",
+        "source": "McKinsey"
+      }
+    ],
+    "demand_trends": [
+      {
+        "year": "2024",
+        "demand": "基础功能",
+        "share": "60%"
+      },
+      {
+        "year": "2026",
+        "demand": "智能体验",
+        "share": "40%"
+      },
+      {
+        "year": "2028",
+        "demand": "生态整合",
+        "share": "25%"
+      }
+    ]
+  },
+  "track_selection": {
+    "logic": "毛利率>40% + 技术壁垒 + 市场容量",
+    "candidates": [
+      {
+        "name": "147 Smart Cooling Jacket 主线产品",
+        "cagr": "15%",
+        "gross_margin": "48%",
+        "force_assessment": "中高",
+        "rating": "★★★★★",
+        "choice": "✅ 主赛道",
+        "rationale": "满足general领域需求，技术壁垒明显"
+      }
+    ],
+    "selected_tracks": [
+      {
+        "id": "147",
+        "name": "147 Smart Cooling Jacket",
+        "rationale": "符合Finding战略方向，具备增长潜力"
+      }
+    ]
+  },
+  "pestel": {
+    "P": {
+      "红利": "政策支持",
+      "risk": "监管周期",
+      "counter": "提前准备"
+    },
+    "E": {
+      "红利": "-",
+      "risk": "-",
+      "counter": "-"
+    },
+    "S": {
+      "红利": "需求上升",
+      "risk": "竞争加剧",
+      "counter": "差异化"
+    },
+    "T": {
+      "红利": "技术成熟",
+      "risk": "迭代加速",
+      "counter": "持续研发"
+    },
+    "L": {
+      "红利": "知识产权",
+      "risk": "合规风险",
+      "counter": "法务支持"
+    }
+  }
+}

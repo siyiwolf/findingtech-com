@@ -1,0 +1,93 @@
+{
+  "direction_id": 8,
+  "direction_name": "additional",
+  "direction_title": "Additional 扩展创新方向",
+  "category": "未来创新",
+  "segments": [
+    {
+      "id": "008-A",
+      "name": "AI露营管家 (CampButler)",
+      "value_orientation": "极致体验",
+      "consumption_motive": "语音交互+自动驾驶营地车",
+      "tam": "$8.5B",
+      "sam": "$2.1B",
+      "tm": "$200M",
+      "tam_source": "Gartner: AI Assistant Market 2024",
+      "sam_rationale": "高端营地+个人助理市场交叉",
+      "tm_rationale": "首批500个营地部署"
+    },
+    {
+      "id": "008-B",
+      "name": "AR沉浸式体验 (CampVerse)",
+      "value_orientation": "虚拟现实融合",
+      "consumption_motive": "AR眼镜+数字孪生",
+      "tam": "$5.2B",
+      "sam": "$1.4B",
+      "tm": "$120M",
+      "tam_source": "IDC: AR/VR Market 2024",
+      "sam_rationale": "户外AR设备市场",
+      "tm_rationale": "首年销售50,000副眼镜"
+    },
+    {
+      "id": "008-C",
+      "name": "生物识别健康 (CampHealth)",
+      "value_orientation": "安全与健康",
+      "consumption_motive": "可穿戴情绪感知+应急医疗",
+      "tam": "$3.8B",
+      "sam": "$950M",
+      "tm": "$80M",
+      "tam_source": "WHO Digital Health 2024",
+      "sam_rationale": "户外健康监测设备市场",
+      "tm_rationale": "首批20,000套设备"
+    }
+  ],
+  "value_chain": [
+    {
+      "segment": "上游：AI芯片+传感器",
+      "market_size": "$4.2B",
+      "avg_gross_margin": "50%",
+      "operating_margin": "30%",
+      "trend": "边缘AI芯片集成",
+      "key_suppliers": [
+        {"name": "NVIDIA Jetson", "market_share": "30%", "gross_margin": "55%", "source": "NVIDIA 2023"},
+        {"name": "瑞芯微RK3588", "market_share": "20%", "gross_margin": "45%", "source": "瑞芯微财报"}
+      ]
+    },
+    {
+      "segment": "中游：软硬件集成",
+      "market_size": "$2.8B",
+      "avg_gross_margin": "55%",
+      "operating_margin": "35%",
+      "trend": "软件定义功能",
+      "key_suppliers": [
+        {"name": "Finding R&D", "market_share": "<1%", "gross_margin": "70%", "source": "内部预测"}
+      ]
+    }
+  ],
+  "industry_trends": {
+    "tech_trends": [
+      {"year": "2024", "trend": "多模态大模型端侧部署", "source": "OpenAI"},
+      {"year": "2026", "trend": "脑机接口情绪识别", "source": "Neuralink"},
+      {"year": "2028", "trend": "完全自动驾驶营地车", "source": "Waymo"}
+    ],
+    "demand_trends": [
+      {"year": "2024", "demand": "基础语音交互(60%)", "share": "60%"},
+      {"year": "2026", "demand": "AR导航+叠加信息", "share": "40%"},
+      {"year": "2028", "demand": "无缝人机共生", "share": "20%"}
+    ]
+  },
+  "track_selection": {
+    "logic": "前沿探索，不计短期回报",
+    "candidates": [
+      {"name": "CampButler AI管家", "cagr": "35%", "gross_margin": "65%", "choice": "✅ 长期布局"}
+    ]
+  },
+  "pestel": {
+    "P": {"红利":"科技前沿企业税收优惠", "risk":"伦理审查", "counter":"设立伦理委员会"},
+    "E": {"红利":"风险投资充裕", "risk":"烧钱快","counter":"分阶段融资"},
+    "S": {"红利":"Z世代拥抱AI", "risk":"隐私担忧","counter":"数据本地化+透明政策"},
+    "T": {"红利":"大模型能力飞跃", "risk":"技术路线风险","counter":"多元技术储备"},
+    "L": {"红利":"-", "risk":"新产品责任险","counter":"购买保险"},
+    "E": {"红利":"-", "risk":"-", "counter":"-"}
+  }
+}

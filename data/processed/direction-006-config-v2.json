@@ -1,0 +1,221 @@
+{
+  "direction_id": 6,
+  "direction_name": "warehousing-logistics-robots",
+  "direction_title": "Warehousing & Logistics 分拣机器人系统",
+  "category": "工业机器人",
+  "segments": [
+    {
+      "id": "006-A",
+      "name": "电商仓储中心",
+      "value_orientation": "高效率分拣",
+      "consumption_motive": "双十一/大促峰值处理",
+      "tam": "$12.8B",
+      "sam": "$2.1B",
+      "tm": "$150M",
+      "tam_source": "MarketsandMarkets: Warehouse Robotics 2024",
+      "sam_rationale": "中国电商仓库10,000个，单个机器人价值$20k，渗透率<10%",
+      "tm_rationale": "首年交付75个仓库系统，平均¥2M/套"
+    },
+    {
+      "id": "006-B",
+      "name": "第三方物流（3PL）",
+      "value_orientation": "柔性产能",
+      "consumption_motive": "快速部署+可扩展",
+      "tam": "$8.5B",
+      "sam": "$1.5B",
+      "tm": "$100M",
+      "tam_source": "DHL Logistics Robotics Report 2024",
+      "sam_rationale": "全球3PL市场$1.2T，机器人自动化占比5%",
+      "tm_rationale": "签约20家大型3PL客户，客单价¥5M"
+    },
+    {
+      "id": "006-C",
+      "name": "制造业智能仓库",
+      "value_orientation": "全链路自动化",
+      "consumption_motive": "Just-in-Time生产配套",
+      "tam": "$6.2B",
+      "sam": "$1.2B",
+      "tm": "$80M",
+      "tam_source": "中国制造2025智能工厂白皮书 2024",
+      "sam_rationale": "中国规上制造企业20万家，智能仓库渗透率<15%",
+      "tm_rationale": "首年落地50个工厂，平均¥1.6M/套"
+    }
+  ],
+  "value_chain": [
+    {
+      "segment": "上游：核心部件",
+      "market_size": "$6.5B",
+      "avg_gross_margin": "42%",
+      "operating_margin": "22%",
+      "trend": "国产减速器/伺服电机替代",
+      "value_transfer": "Finding自研控制器降低成本15%",
+      "key_suppliers": [
+        {
+          "name": "汇川技术（伺服）",
+          "market_share": "18%",
+          "gross_margin": "45%",
+          "operating_margin": "25%",
+          "source": "汇川2023年报"
+        },
+        {
+          "name": "绿的谐波（减速器）",
+          "market_share": "12%",
+          "gross_margin": "40%",
+          "operating_margin": "20%",
+          "source": "绿的谐波财报 2023"
+        }
+      ]
+    },
+    {
+      "segment": "中游：系统集成",
+      "market_size": "$4.8B",
+      "avg_gross_margin": "35%",
+      "operating_margin": "18%",
+      "trend": "Finding专注算法+软件，硬件外包",
+      "value_transfer": "软件毛利>60%",
+      "key_suppliers": [
+        {
+          "name": "Finding Company",
+          "market_share": "<1%",
+          "gross_margin": "48%",
+          "operating_margin": "22%",
+          "source": "内部预测"
+        },
+        {
+          "name": "海康机器人",
+          "market_share": "15%",
+          "gross_margin": "35%",
+          "operating_margin": "18%",
+          "source": "海康2023财报"
+        }
+      ]
+    },
+    {
+      "segment": "下游：客户部署",
+      "market_size": "$3.2B",
+      "avg_gross_margin": "50%",
+      "operating_margin": "30%",
+      "trend": "交钥匙工程（维护+升级）",
+      "value_transfer": "年服务费（10%合同额）成为持续收入",
+      "key_suppliers": [
+        {
+          "name": "京东物流",
+          "market_share": "20%",
+          "gross_margin": "55%",
+          "operating_margin": "32%",
+          "source": "京东年报 2023"
+        },
+        {
+          "name": "菜鸟网络",
+          "market_share": "18%",
+          "gross_margin": "52%",
+          "operating_margin": "28%",
+          "source": "菜鸟财报 2023"
+        }
+      ]
+    }
+  ],
+  "value_chain_profit_transfer": "从硬件销售（35%）转向软件服务（60%），年维护费（10%合同额）提供稳定现金流",
+  "industry_trends": {
+    "tech_trends": [
+      {
+        "year": "2024",
+        "trend": "AI视觉分拣准确率>99.5%",
+        "source": "AI Research Lab 2024"
+      },
+      {
+        "year": "2026",
+        "trend": "5G+边缘计算实现毫秒级调度",
+        "source": "华为工业互联网白皮书 2024"
+      },
+      {
+        "year": "2028",
+        "trend": "数字孪生仿真，部署周期从3月缩短至2周",
+        "source": "Siemens Digital Twin Report"
+      }
+    ],
+    "demand_trends": [
+      {
+        "year": "2024",
+        "demand": "基础自动化（托盘搬运）",
+        "share": "70%",
+        "source": "Logistics IT Survey 2024"
+      },
+      {
+        "year": "2026",
+        "demand": "AI调度+动态路径",
+        "share": "50%",
+        "source": "内部预测"
+      },
+      {
+        "year": "2028",
+        "demand": "人机协同（AMR+工人）",
+        "share": "35%",
+        "source": "MIT Human-Robot Collaboration 2025"
+      }
+    ]
+  },
+  "track_selection": {
+    "methodology": "毛利率>40% + AI技术壁垒 + 国产替代机会",
+    "logic": "排除低利润组装；聚焦智能分拣；SAM>$1.5B符合",
+    "candidates": [
+      {
+        "name": "XYZ分拣机器人系统",
+        "cagr": "27%",
+        "gross_margin": "48%",
+        "force_assessment": "中高（技术壁垒）",
+        "rating": "★★★★★",
+        "choice": "✅ 主赛道",
+        "rationale": "AI视觉+高速分拣，速度提升30%，国产替代空间大"
+      },
+      {
+        "name": "AGV搬运机器人",
+        "cagr": "18%",
+        "gross_margin": "35%",
+        "force_assessment": "中（竞争激烈）",
+        "rating": "★★★☆☆",
+        "choice": "🔲 备选",
+        "rationale": "市场成熟，Founder缺乏规模优势"
+      }
+    ],
+    "selected_tracks": [
+      {
+        "id": "006",
+        "name": "XYZ智能分拣系统",
+        "rationale": "技术领先，国产替代机会，毛利率>45%"
+      }
+    ]
+  },
+  "pestel": {
+    "P": {
+      "红利": "《智能制造2025》专项资金支持，补贴30%",
+      "risk": "出口管制（高精度减速器）",
+      "counter": "申请豁免，推动国产替代"
+    },
+    "E": {
+      "红利": "电商年增15%",
+      "risk": "经济下行导致客户削减CAPEX",
+      "counter": "提供租赁选项，降低门槛"
+    },
+    "S": {
+      "红利": "蓝领劳动力短缺，自动化需求迫切",
+      "risk": "工会阻力（就业保护）",
+      "counter": "强调\"人机协同\"而非替代"
+    },
+    "T": {
+      "红利": "AI视觉成本下降，准确率>99.5%",
+      "risk": "海康/大华等巨头进入",
+      "counter": "持续研发投入20%营收"
+    },
+    "L": {
+      "红利": "知识产权保护加强",
+      "risk": "CE/UL认证周期长",
+      "counter": "提前6个月准备"
+    },
+    "E": {
+      "红利": "-",
+      "risk": "环保要求（废旧电池回收）",
+      "counter": "建立回收体系"
+    }
+  }
+}

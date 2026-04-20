@@ -1,0 +1,75 @@
+{
+  "direction_id": 7,
+  "direction_name": "swarm-coordination",
+  "direction_title": "SwarmAI 集群协作算法平台",
+  "category": "算法软件",
+  "segments": [
+    {
+      "id": "007-A",
+      "name": "机器人整机厂商",
+      "value_orientation": "技术差异化",
+      "consumption_motive": "提升产品协同能力",
+      "tam": "$1.8B",
+      "sam": "$320M",
+      "tm": "$50M",
+      "tam_source": "MarketsandMarkets: Multi-Robot Systems 2024",
+      "sam_rationale": "全球机器人整机厂商200家，算法授权年费$500k/家",
+      "tm_rationale": "首年签约50家，客单价$1M（含定制）"
+    },
+    {
+      "id": "007-B",
+      "name": "大型仓储/制造",
+      "value_orientation": "运营效率",
+      "consumption_motive": "多品牌机器人统一调度",
+      "tam": "$2.5B",
+      "sam": "$450M",
+      "tm": "$60M",
+      "tam_source": "CBRE: Warehouse Automation 2024",
+      "sam_rationale": "全球大型仓库5,000家，单项目算法部署$300k",
+      "tm_rationale": "首年部署200个仓库"
+    },
+    {
+      "id": "007-C",
+      "name": "科研与仿真平台",
+      "value_orientation": "算法验证",
+      "consumption_motive": "快速原型与仿真",
+      "tam": "$0.8B",
+      "sam": "$120M",
+      "tm": "$15M",
+      "tam_source": "IEEE Robotics Survey 2024",
+      "sam_rationale": "全球高校/研究所2,000家，年许可费$50k",
+      "tm_rationale": "首年销售300个许可"
+    }
+  ],
+  "value_chain": {
+    "summary": "纯软件赛道，价值链简化：算法开发 → 授权交付 → 运维服务",
+    "avg_gross_margin": "90%",
+    "operating_margin": "60%"
+  },
+  "industry_trends": {
+    "tech_trends": [
+      {"year": "2024", "trend": "去中心化协同（区块链共识）", "source": "ICRA 2024"},
+      {"year": "2026", "trend": "AI强化学习自适应调度", "source": "DeepMind Robotics"},
+      {"year": "2028", "trend": "5G+边缘计算毫秒级协同", "source": "华为5G工业网"}
+    ],
+    "demand_trends": [
+      {"year": "2024", "demand": "基础协同避障", "share": "60%"},
+      {"year": "2026", "demand": "任务分配+负载均衡", "share": "40%"},
+      {"year": "2028", "demand": "多机自组织（1000+）", "share": "20%"}
+    ]
+  },
+  "track_selection": {
+    "logic": "高毛利（90%）+技术壁垒+轻资产",
+    "candidates": [
+      {"name": "SwarmAI平台", "cagr": "25%", "gross_margin": "90%", "choice": "✅ 唯一赛道"}
+    ]
+  },
+  "pestel": {
+    "P": {"红利":"AI软件扶持政策", "risk":"出口管制（高端算法）", "counter":"开源核心+商业扩展"},
+    "E": {"红利":"软件出海高毛利", "risk":"汇率", "counter":"美元结算"},
+    "S": {"红利":"开源社区传播", "risk":"人才竞争激烈", "counter":"股权激励"},
+    "T": {"红利":"仿真技术成熟", "risk":"技术迭代快", "counter":"持续研发"},
+    "L": {"红利":"知识产权保护", "risk":"开源合规", "counter":"双许可证"},
+    "E": {"红利":"-", "risk":"-", "counter":"-"}
+  }
+}

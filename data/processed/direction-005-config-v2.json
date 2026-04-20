@@ -1,0 +1,221 @@
+{
+  "direction_id": 5,
+  "direction_name": "solar-power",
+  "direction_title": "SolarPower 便携太阳能电源",
+  "category": "便携储能",
+  "segments": [
+    {
+      "id": "005-A",
+      "name": "自驾露营爱好者",
+      "value_orientation": "轻便与续航",
+      "consumption_motive": "户外持续供电，解除电力焦虑",
+      "tam": "$3.8B",
+      "sam": "$520M",
+      "tm": "$80M",
+      "tam_source": "BNEF: Portable Energy Storage Market 2024",
+      "sam_rationale": "中国自驾露营用户5,200万人，高端占比10%",
+      "tm_rationale": "首年渗透5%，客单价¥2,500"
+    },
+    {
+      "id": "005-B",
+      "name": "户外摄影/视频团队",
+      "value_orientation": "大功率+快充",
+      "consumption_motive": "多设备同时供电",
+      "tam": "$1.5B",
+      "sam": "$280M",
+      "tm": "$40M",
+      "tam_source": "IDC: Professional Outdoor Power 2024",
+      "sam_rationale": "中国摄影工作室50,000家，年设备预算¥50,000",
+      "tm_rationale": "签约1,000家，客单价¥4,000"
+    },
+    {
+      "id": "005-C",
+      "name": "应急备灾家庭",
+      "value_orientation": "可靠性",
+      "consumption_motive": "灾害时备用电力",
+      "tam": "$2.2B",
+      "sam": "$350M",
+      "tm": "$50M",
+      "tam_source": "应急管理部《家庭应急物资储备建议》2023",
+      "sam_rationale": "中国一二线城市家庭2亿户，应急电源渗透率<1%",
+      "tm_rationale": "首年电商销售200,000台"
+    }
+  ],
+  "value_chain": [
+    {
+      "segment": "上游：电芯（锂离子）",
+      "market_size": "$4.2B",
+      "avg_gross_margin": "30%",
+      "operating_margin": "18%",
+      "trend": "CATL/比亚迪主导，成本年均降8%",
+      "value_transfer": "Finding规模化采购降低成本",
+      "key_suppliers": [
+        {
+          "name": "宁德时代 (CATL)",
+          "market_share": "35%",
+          "gross_margin": "32%",
+          "operating_margin": "20%",
+          "source": "CATL财报 2023"
+        },
+        {
+          "name": "比亚迪电池",
+          "market_share": "25%",
+          "gross_margin": "28%",
+          "operating_margin": "17%",
+          "source": "比亚迪2023年报"
+        }
+      ]
+    },
+    {
+      "segment": "中游：逆变器+控制系统",
+      "market_size": "$2.8B",
+      "avg_gross_margin": "40%",
+      "operating_margin": "22%",
+      "trend": "数字化控制，Finding自研MPPT算法",
+      "value_transfer": "软件优化效率提升5%，成本降低3%",
+      "key_suppliers": [
+        {
+          "name": "锦浪科技 (逆变器)",
+          "market_share": "18%",
+          "gross_margin": "42%",
+          "operating_margin": "24%",
+          "source": "锦浪科技2023财报"
+        },
+        {
+          "name": "Finding自研",
+          "market_share": "<1%",
+          "gross_margin": "50%",
+          "operating_margin": "30%",
+          "source": "内部预测"
+        }
+      ]
+    },
+    {
+      "segment": "下游：品牌渠道",
+      "market_size": "$3.5B",
+      "avg_gross_margin": "45%",
+      "operating_margin": "25%",
+      "trend": "DTC+户外KOL带货",
+      "value_transfer": "Finding DTC占比提升至60%",
+      "key_suppliers": [
+        {
+          "name": "Jackery (正浩)",
+          "market_share": "22%",
+          "gross_margin": "45%",
+          "operating_margin": "25%",
+          "source": "Jackery招股书 2023"
+        },
+        {
+          "name": "Anker",
+          "market_share": "18%",
+          "gross_margin": "42%",
+          "operating_margin": "22%",
+          "source": "Anker年报 2023"
+        }
+      ]
+    }
+  ],
+  "value_chain_profit_transfer": "软硬结合（硬件毛利率45% + 智能管理订阅¥5,000/年）成为差异化，纯硬件厂商毛利仅35%",
+  "industry_trends": {
+    "tech_trends": [
+      {
+        "year": "2024",
+        "trend": "钠离子电池商用，成本降低20%",
+        "source": "宁德时代技术发布会 2024"
+      },
+      {
+        "year": "2025",
+        "trend": "柔性太阳能板效率>25%",
+        "source": "NREL Solar Report 2024"
+      },
+      {
+        "year": "2027",
+        "trend": "AI智能能量管理（预测发电+负载调度）",
+        "source": "Finding研发路线图"
+      }
+    ],
+    "demand_trends": [
+      {
+        "year": "2024",
+        "demand": "基础供电（手机+灯具）",
+        "share": "65%",
+        "source": "用户调研"
+      },
+      {
+        "year": "2026",
+        "demand": "大功率（电磁炉+投影）",
+        "share": "35%",
+        "source": "IDC 2025"
+      },
+      {
+        "year": "2028",
+        "demand": "智能联动（自动开关+负载优化）",
+        "share": "20%",
+        "source": "McKinsey 2025"
+      }
+    ]
+  },
+  "track_selection": {
+    "methodology": "毛利率>40% + 技术创新（智能MPPT+AI调度）+ 市场空白（高性价比太阳能电源）",
+    "logic": "排除低速增长（10%）；聚焦便携储能高增长赛道；技术匹配Finding电控能力",
+    "candidates": [
+      {
+        "name": "SolarPower智能太阳能电源",
+        "cagr": "28%",
+        "gross_margin": "50%",
+        "force_assessment": "中高（技术创新+成本优势）",
+        "rating": "★★★★★",
+        "choice": "✅ 主赛道",
+        "rationale": "柔性板+AI调度，成本比Jackery低15%"
+      },
+      {
+        "name": "普通逆变器",
+        "cagr": "12%",
+        "gross_margin": "25%",
+        "force_assessment": "低",
+        "rating": "★☆☆☆☆",
+        "choice": "❌ 放弃",
+        "rationale": "红海市场，标品无溢价"
+      }
+    ],
+    "selected_tracks": [
+      {
+        "id": "005",
+        "name": "SolarPower 便携太阳能电源",
+        "rationale": "露营刚需，太阳能充电成为标配，AI调度提升体验"
+      }
+    ]
+  },
+  "pestel": {
+    "P": {
+      "红利": "户外装备纳入消费品补贴试点",
+      "risk": "出口认证（UL/CE）周期",
+      "counter": "提前送样认证"
+    },
+    "E": {
+      "红利": "露营经济爆发式增长",
+      "risk": "锂价波动",
+      "counter": "与CATL战略合作"
+    },
+    "S": {
+      "红利": "环保意识增强，太阳能接受度提升",
+      "risk": "安全顾虑（爆炸风险）",
+      "counter": "通过央视质检，宣传安全数据"
+    },
+    "T": {
+      "红利": "光伏效率提升，充电时间缩短30%",
+      "risk": "专利壁垒（MPPT算法）",
+      "counter": "自研算法绕开专利"
+    },
+    "L": {
+      "红利": "-",
+      "risk": "出口目的国产品责任法",
+      "counter": "购买产品责任险"
+    },
+    "E": {
+      "红利": "碳中和政策推动清洁能源装备",
+      "risk": "-",
+      "counter": "-"
+    }
+  }
+}
