@@ -1,0 +1,153 @@
+{
+  "direction_id": 1,
+  "direction_name": "smart-camping",
+  "direction_title": "Smart Camping 智能露营生态系统",
+  "category": "智能露营生态系统",
+  "segments": [
+    {
+      "id": "001-A",
+      "name": "Premium Glamping Resorts",
+      "value_orientation": "高端奢华体验",
+      "consumption_motive": "四季运营+差异化+零人力",
+      "tam": "$18B",
+      "sam": "$650M",
+      "tm": "$150M"
+    },
+    {
+      "id": "001-B",
+      "name": "Luxury Camping Companies",
+      "value_orientation": "全包式服务",
+      "consumption_motive": "自动化搭建+温控+电力一体化",
+      "tam": "$22B",
+      "sam": "$480M",
+      "tm": "$120M"
+    },
+    {
+      "id": "001-C",
+      "name": "Self-drive Premium Users",
+      "value_orientation": "便携与便捷",
+      "consumption_motive": "一体化便携方案+卫星通信",
+      "tam": "$28B",
+      "sam": "$520M",
+      "tm": "$80M"
+    }
+  ],
+  "global_market_size": "$152B (营地设备)",
+  "china_2023_size": "¥15B (露营经济)",
+  "china_2027_size": "¥35B",
+  "china_cagr": "24.3%",
+  "segment_desc": "智能露营生态系统（CampBot+ClimateBot+SolarPower）",
+  "segment_pct": "15%高端占比",
+  "segment_growth": "CAGR 24%",
+  "sam_size": "¥1.65B/年",
+  "sam_breakdown": "Resorts ¥650M + Luxury ¥480M + Self-drive ¥520M",
+  "integrated_cagr": "24%",
+  "integrated_2030": "$120B (集成溢价1/3)",
+  "segment_1_desc": "高端营地自动化系统",
+  "segment_1_size": "$12B",
+  "segment_1_2030": "$68B",
+  "segment_1_cagr": "18.2%",
+  "segment_2_desc": "智能温控帐篷",
+  "segment_2_size": "$18B",
+  "segment_2_2030": "$35B",
+  "segment_2_cagr": "12.5%",
+  "segment_3_desc": "便携太阳能电源",
+  "segment_3_size": "$50B",
+  "segment_3_2030": "$200B",
+  "segment_3_cagr": "22%",
+  "target_users": [
+    {"role": "高端Glamping营地运营商", "description": "需四季运营能力、差异化、高客单价（¥2000+/晚），人力成本¥200-400/人/天"},
+    {"role": "豪华露营企业", "description": "提供全包式体验，减少人力依赖，体验割裂问题严重"},
+    {"role": "自驾游高端用户", "description": "房车营地，自助搭建，需要一体化便携方案，关注卫星通信能力"}
+  ],
+  "pain_points": [
+    {"title": "人力密集", "description": "帐篷搭建、温控设备调试、电力管理需多人，成本高"},
+    {"title": "体验割裂", "description": "帐篷、空调、电源来自不同品牌，无法统一控制，App碎片化"},
+    {"title": "季节限制", "description": "传统设备仅适合春秋，冬夏无法兼顾（过热或过冷）"},
+    {"title": "安全性差", "description": "暖风机火灾风险、电池过放、CO中毒、湿度骤降"},
+    {"title": "高能耗", "description": "独立设备耗电高，续航短，频繁充电/加油"}
+  ],
+  "competitors": [
+    {"name": "传统高端帐篷（The North Face等）", "优势": "品牌强、材质好", "劣势": "无主动功能，依赖外部设备", "对策": "集成智能控制，一键搭建+温控+供电"},
+    {"name": "独立营地机器人（Concept/原型）", "优势": "自动化搭建效率高", "劣势": "仅搭建，无温控/电力集成", "对策": "三合一系统，覆盖完整露营场景"},
+    {"name": "便携空调扇/电暖器", "优势": "制冷/加热效果", "劣势": "噪音大、能耗高、安全隐患", "对策": "半导体静音+安全监控+自动温湿度调节"},
+    {"name": "便携电源（Jackery/Anker）", "优势": "品牌成熟、渠道广", "劣势": "充电慢、寿命短（500次）、无智能", "对策": "磷酸铁锂+太阳能2h快充+AI调度"}
+  ],
+  "differentiators": [
+    {"title": "卫星+AI+LoRa集群三位一体", "description": "竞品最多只有2项，我们实现全球通信+智能预警+团队组网"},
+    {"title": "三合一生态系统", "description": "CampBot搭建 + ClimateBot温控 + SolarPower供电，统一APP控制"},
+    {"title": "军用级防护", "description": "IP68、MIL-STD-810H认证，-30°C~60°C全温域工作"},
+    {"title": "72小时超长续航", "description": "6000mAh电池，低功耗模式下3天持续工作"}
+  ],
+  "product_models": [
+    {"name": "SmartCamp Pro"},
+    {"name": "SmartCamp Lite"},
+    {"name": "SmartCamp Mini"}
+  ],
+  "product_attributes": [
+    {"attr": "定位", "values": [{"this": "旗舰全能"}, {"this": "轻量户外"}, {"this": "超小穿戴"}]},
+    {"attr": "重量", "values": [{"this": "250g"}, {"this": "150g"}, {"this": "50g"}]},
+    {"attr": "卫星通信", "values": [{"this": "北斗+铱星双模"}, {"this": "北斗单模"}, {"this": "无"}]},
+    {"attr": "LoRa集群", "values": [{"this": "4km"}, {"this": "2km"}, {"this": "无"}]},
+    {"attr": "续航", "values": [{"this": "72小时"}, {"this": "48小时"}, {"this": "7天待机"}]},
+    {"attr": "价格", "values": [{"this": "¥4,999"}, {"this": "¥1,999"}, {"this": "¥799"}]}
+  ],
+  "flagship_model": "SmartCamp Pro",
+  "flagship_features": [
+    {"title": "全球双向卫星通信", "description": "北斗短报文 + 铱星语音/SMS，随时随地无死角联络"},
+    {"title": "端侧AI引擎", "description": "主动预警（天气、地形、健康风险），不依赖云端，离线可用"},
+    {"title": "LoRa自组网", "description": "团队模式下设备间4km内自动组网，位置共享，无需基站"},
+    {"title": "72小时超长续航", "description": "6000mAh电池，低功耗模式下3天GPS持续工作"},
+    {"title": "军用级防护", "description": "IP68、MIL-STD-810H认证，-30°C~60°C全温域工作，抗冲击"}
+  ],
+  "ecosystem_synergy": [
+    {"title": "Pro → Lite 升级", "description": "Pro用户向朋友推荐Lite，以旧换新享受折扣"},
+    {"title": "Lite → Mini 监护", "description": "Lite用户为家人购买Mini作为儿童/老人监护设备"},
+    {"title": "交叉销售", "description": "购买Pro送Mini试用装（团队场景），构建生态闭环"}
+  ],
+  "channels": [
+    {"model": "SmartCamp Pro", "desc": "DTC + 机构直销（80% DTC，20% 企业/政府）"},
+    {"model": "SmartCamp Lite", "desc": "DTC + 零售（60% DTC，40% 电商+户外店）"},
+    {"model": "SmartCamp Mini", "desc": "DTC + 穿戴渠道（70% DTC，30% 运动商城、手机店）"}
+  ],
+  "pricing": [
+    {"model": "SmartCamp Pro", "msrp": "¥4,999", "channel_price": "DTC: ¥4,999\\n企业: ¥4,199", "early_bird": "早鸟减¥500"},
+    {"model": "SmartCamp Lite", "msrp": "¥1,999", "channel_price": "DTC: ¥1,999\\n零售: ¥1,699", "early_bird": "套装减¥200"},
+    {"model": "SmartCamp Mini", "msrp": "¥799", "channel_price": "DTC: ¥799\\n渠道: ¥599", "early_bird": "首发送腕带"}
+  ],
+  "marketing": [
+    {"model": "SmartCamp Pro", "plan": "赞助登山队、科考队、海事机构；KOL深度测评（户外探险大V）"},
+    {"model": "SmartCamp Lite", "plan": "小红书/抖音内容营销；音乐节场景体验；电商大促（618/双11）"},
+    {"model": "SmartCamp Mini", "plan": "跑步社群合作；老年人监护场景；与运动APP（Keep）打通"}
+  ],
+  "roadmap": [
+    {"quarter": "2025 Q3", "milestone": "SmartCamp Pro MVP完成，内测开启"},
+    {"quarter": "2025 Q4", "milestone": "Pro正式发布，Lite研发启动，签约首批高端营地"},
+    {"quarter": "2026 Q1", "milestone": "Lite发布，Mini概念验证，渠道扩展至户外零售"},
+    {"quarter": "2026 Q2", "milestone": "Mini发布，三款同时在售，DAU突破10万"},
+    {"quarter": "2026 Q3-Q4", "milestone": "海外市场启动（美、欧、日），海外营收占比 >15%"}
+  ],
+  "capacity": [
+    {"model": "SmartCamp Pro", "plan": "首批5,000台（2025 Q4），2026年产能50,000台"},
+    {"model": "SmartCamp Lite", "plan": "首批30,000台（2026 Q1），2027年产能200,000台"},
+    {"model": "SmartCamp Mini", "plan": "首批50,000台（2026 Q2），2027年产能500,000台"}
+  ],
+  "risks": [
+    {"risk": "卫星通信成本", "category": "供应链", "probability": "中", "impact": "中", "mitigation": "与北斗/铱星运营商谈判批量折扣，年采购额达$5M可降15%"},
+    {"risk": "芯片供应", "category": "供应", "probability": "高", "impact": "高", "mitigation": "多供应商策略（TI/Bosch/Sensirion），建立6个月安全库存"},
+    {"risk": "用户隐私担忧", "category": "合规", "probability": "中", "impact": "高", "mitigation": "GDPR/CCPA合规，数据本地存储选项，透明隐私政策"},
+    {"risk": "大品牌跟进", "category": "市场", "probability": "高", "impact": "中", "mitigation": "快速占领高端营地B端，建立场景壁垒，开放平台绑定第三方"},
+    {"risk": "产品复杂度高", "category": "体验", "probability": "中", "impact": "中", "mitigation": "简化APP，一键模式优先，用户教育/KOL内容先行"}
+  ],
+  "data_sources": [
+    {"source": "Grand View Research: Camping Equipment Market Size 2024"},
+    {"source": "Statista: Glamping Revenue Forecast 2023-2030"},
+    {"source": "中国露营行业协会：2023年中国露营经济白皮书"},
+    {"source": "Finding 公司访谈：12家高端营地运营数据（2024 Q1）"},
+    {"source": "竞品拆解：Jackery Explorer + The North Face 帐篷集成方案分析"}
+  ],
+  "conclusion_summary": "SmartCamp 通过卫星+AI+LoRa三位一体，打通搭建-温控-供电全链路，解决高端露营人力密集、体验割裂、季节限制痛点。Pro攻占专业营地，Lite覆盖大众户外，Mini延伸至运动监护场景。首年营收目标 ¥85M，技术壁垒在于生态整合与端侧AI能力。",
+  "first_year_revenue": "¥85M",
+  "revenue_breakdown": "Pro 40%、Lite 45%、Mini 15%",
+  "three_year_goal": "三年内成为智能露营生态系统领导者，国内市占率 >30%，海外营收占比 >25%。"
+}
