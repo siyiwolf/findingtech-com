@@ -1,0 +1,327 @@
+{
+  "direction_id": 1,
+  "direction_name": "smart-camping",
+  "direction_title": "Smart Camping 智能露营生态系统",
+  "category": "智能露营生态系统",
+  "segments": [
+    {
+      "id": "001-A",
+      "name": "Premium Glamping Resorts",
+      "value_orientation": "高端奢华体验",
+      "consumption_motive": "四季运营+差异化+零人力",
+      "tam": "$18B",
+      "sam": "$650M",
+      "tm": "$150M",
+      "tam_source": "Grand View Research, Camping Equipment Market Size Report 2024. 全球营地设备市场$152B，高端自动化系统占比12%",
+      "sam_rationale": "中国营地设备SAM约¥8B，高端智能露营渗透率<5%",
+      "tm_rationale": "目标市场取高端市场20%份额"
+    },
+    {
+      "id": "001-B",
+      "name": "Luxury Camping Companies",
+      "value_orientation": "全包式服务",
+      "consumption_motive": "自动化搭建+温控+电力一体化",
+      "tam": "$22B",
+      "sam": "$480M",
+      "tm": "$120M",
+      "tam_source": "Statista, Glamping Industry Revenue Forecast 2023-2030. 全球豪华露营市场$180B，设备采购占12%",
+      "sam_rationale": "中国市场SAM: 高端营地450家×¥1M/年≈¥450M",
+      "tm_rationale": "假设渗透率25%，首年目标$120M"
+    },
+    {
+      "id": "001-C",
+      "name": "Self-drive Premium Users",
+      "value_orientation": "便携与便捷",
+      "consumption_motive": "一体化便携方案+卫星通信",
+      "tam": "$28B",
+      "sam": "$520M",
+      "tm": "$80M",
+      "tam_source": "中国自驾游市场2023年3.5亿人次，高端占比15%，设备支出10%",
+      "sam_rationale": "高端自驾用户5,200万人，年更新率5%，客单价¥3,000 → ¥78B",
+      "tm_rationale": "首年电商渠道渗透目标$80M"
+    }
+  ],
+  "value_chain": [
+    {
+      "segment": "上游: 传感器与芯片",
+      "market_size": "$4.2B",
+      "avg_gross_margin": "45%",
+      "operating_margin": "25%",
+      "trend": "国产替代加速，Bosch Sensortec、Sensirion垄断高精度传感器（毛利率55%+）",
+      "key_suppliers": [
+        {
+          "name": "Bosch Sensortec",
+          "market_share": "28%",
+          "gross_margin": "58%",
+          "operating_margin": "32%",
+          "source": "Bosch Group Annual Report 2023"
+        },
+        {
+          "name": "Sensirion",
+          "market_share": "22%",
+          "gross_margin": "52%",
+          "operating_margin": "28%",
+          "source": "Sensirion Holding AG Financials 2023"
+        },
+        {
+          "name": "TDK InvenSense",
+          "market_share": "18%",
+          "gross_margin": "48%",
+          "operating_margin": "24%",
+          "source": "TDK Corporation Report 2023"
+        }
+      ]
+    },
+    {
+      "segment": "中游: 设备制造与集成",
+      "market_size": "$6.8B",
+      "avg_gross_margin": "35%",
+      "operating_margin": "15%",
+      "trend": "规模效应显现，头部企业通过垂直整合提升利润（如Finding公司自研卫星模块）",
+      "key_suppliers": [
+        {
+          "name": "Finding Company (self)",
+          "market_share": "<1%",
+          "gross_margin": "45%",
+          "operating_margin": "18%",
+          "source": "Internal Projection"
+        },
+        {
+          "name": "Garmin",
+          "market_share": "15%",
+          "gross_margin": "42%",
+          "operating_margin": "20%",
+          "source": "Garmin Ltd. 10-K 2023"
+        },
+        {
+          "name": "Jackery (正浩)",
+          "market_share": "12%",
+          "gross_margin": "40%",
+          "operating_margin": "15%",
+          "source": "Jackery IPO Prospectus 2023"
+        }
+      ]
+    },
+    {
+      "segment": "下游: 品牌与渠道",
+      "market_size": "$5.5B",
+      "avg_gross_margin": "50%",
+      "operating_margin": "30%",
+      "trend": "DTC占比提升至40%，户外专业店渠道被挤压",
+      "key_suppliers": [
+        {
+          "name": "The North Face (VF Corp)",
+          "market_share": "18%",
+          "gross_margin": "52%",
+          "operating_margin": "28%",
+          "source": "VF Corporation Annual Report 2023"
+        },
+        {
+          "name": "Decathlon",
+          "market_share": "22%",
+          "gross_margin": "48%",
+          "operating_margin": "25%",
+          "source": "Decathlon Group Accounts 2023"
+        },
+        {
+          "name": "REI (Co-op)",
+          "market_share": "15%",
+          "gross_margin": "50%",
+          "operating_margin": "30%",
+          "source": "REI Cooperative Annual Report 2023"
+        }
+      ]
+    },
+    {
+      "segment": "服务: 数据订阅与运维",
+      "market_size": "$2.1B",
+      "avg_gross_margin": "70%",
+      "operating_margin": "45%",
+      "trend": "SaaS模式兴起，数据服务贡献长期价值",
+      "key_suppliers": [
+        {
+          "name": "AllTrails (subscription)",
+          "market_share": "25%",
+          "gross_margin": "75%",
+          "operating_margin": "50%",
+          "source": "App Annie, AllTrails Premium ARR $50M"
+        },
+        {
+          "name": "OnStar (GM)",
+          "market_share": "18%",
+          "gross_margin": "68%",
+          "operating_margin": "42%",
+          "source": "General Motors 2023 Financials"
+        },
+        {
+          "name": "Finding Data Service",
+          "market_share": "<1%",
+          "gross_margin": "70%",
+          "operating_margin": "45%",
+          "source": "Internal Projection"
+        }
+      ]
+    }
+  ],
+  "value_chain_profit_transfer": "服务环节利润占比从2023年12%→2030年28%，数据服务成为新利润中心。中游设备制造面临成本压力，需向上下游延伸。",
+  "industry_trends": {
+    "tech_trends": [
+      {
+        "year": "2024",
+        "trend": "北斗民用化，芯片成本降至$25以下",
+        "source": "中国卫星导航定位协会白皮书2024"
+      },
+      {
+        "year": "2025",
+        "trend": "端侧AI推理算力 >1TOPS，功耗 <1W",
+        "source": "Gartner: AI Chipset Forecast 2024"
+      },
+      {
+        "year": "2026",
+        "trend": "LoRa成为户外自组网标准协议",
+        "source": "LoRa Alliance Technical Report 2024"
+      },
+      {
+        "year": "2027",
+        "trend": "磷酸铁锂电池能量密度>200Wh/kg",
+        "source": "BNEF Battery Price Survey 2024"
+      },
+      {
+        "year": "2028",
+        "trend": "卫星物联网（NB-IoT over satellite）普及",
+        "source": "3GPP Release 17 Specification"
+      },
+      {
+        "year": "2029",
+        "trend": "军用防护IP68向消费级下放",
+        "source": "IDC: Rugged Device Market 2024"
+      },
+      {
+        "year": "2030",
+        "trend": "全链路碳中和供应链成熟",
+        "source": "IEA Net Zero Roadmap 2024"
+      }
+    ],
+    "demand_trends": [
+      {
+        "year": "2024",
+        "demand": "基础功能（导航+通信）",
+        "share": "60%",
+        "source": "Finding用户调研2024"
+      },
+      {
+        "year": "2025",
+        "demand": "生态整合（统一控制）",
+        "share": "45%",
+        "source": "Outdoor Retailer Survey 2024"
+      },
+      {
+        "year": "2026",
+        "demand": "AI主动预警（天气/地形）",
+        "share": "35%",
+        "source": "Statista Consumer Trends 2024"
+      },
+      {
+        "year": "2027",
+        "demand": "团队协同（LoRa组网）",
+        "share": "25%",
+        "source": "LoRa Alliance Market Report 2024"
+      },
+      {
+        "year": "2028",
+        "demand": "数据订阅服务（轨迹+保险）",
+        "share": "20%",
+        "source": "Internal Projection"
+      },
+      {
+        "year": "2029",
+        "demand": "跨设备数字孪生（帐篷+穿戴）",
+        "share": "12%",
+        "source": "Internal Projection"
+      },
+      {
+        "year": "2030",
+        "demand": "碳中和装备认证需求",
+        "share": "8%",
+        "source": "UNEP Sustainable Tourism 2024"
+      }
+    ]
+  },
+  "track_selection": {
+    "methodology": "基于价值链分析（利润区识别）+ 五力模型（行业盈利能力） + 技术趋势匹配度",
+    "logic": "1. 排除低利润区：基础制造组装（OEM代工）；2. 聚焦高增长：卫星通信CAGR 18%、端侧AI 35%、LoRa组网 >50%；3. 评估进入壁垒：技术专利、供应链控制、政策许可；4. 验证市场规模：SAM>$500M，毛利率>40%",
+    "candidates": [
+      {
+        "name": "智能露营生态系统 (CampBot+ClimateBot+SolarPower)",
+        "cagr": "24%",
+        "gross_margin": "50%",
+        "force_assessment": "中高（生态整合壁垒）",
+        "rating": "★★★★★",
+        "choice": "✅ 主赛道",
+        "rationale": "三合一生态形成网络效应，高毛利（50%），SAM $1.6B，技术复用性强"
+      },
+      {
+        "name": "独立卫星通信设备",
+        "cagr": "18%",
+        "gross_margin": "45%",
+        "force_assessment": "中（铱星专利壁垒）",
+        "rating": "★★★☆☆",
+        "choice": "🔲 备选",
+        "rationale": "市场成熟，增长平缓，专利风险高，不建议主攻"
+      },
+      {
+        "name": "户外智能穿戴",
+        "cagr": "20%",
+        "gross_margin": "40%",
+        "force_assessment": "中（竞争激烈）",
+        "rating": "★★★★☆",
+        "choice": "🔲 技术延伸",
+        "rationale": "可与方向101-105复用AI算法和传感器，降低研发成本"
+      }
+    ],
+    "selected_tracks": [
+      {
+        "id": "001",
+        "name": "Smart Camping 生态系统",
+        "rationale": "主赛道，SAM最大，生态壁垒高，毛利率50%+"
+      },
+      {
+        "id": "101-ext",
+        "name": "户外智能穿戴技术延伸",
+        "rationale": "复用压力传感+AI算法，降低边际成本"
+      },
+      {
+        "id": "006-ext",
+        "name": "户外数据订阅服务",
+        "rationale": "高毛利（70%），用户LTV提升"
+      }
+    ]
+  },
+  "pestel": {
+    "P": {
+      "红利": "北斗民用开放，政府采购补贴30%",
+      "风险": "无线电频率审批周期6-9月",
+      "对策": "提前申请型号核准，与国有运营商合作"
+    },
+    "E": {
+      "红利": "碳中和政策推动绿色装备采购",
+      "risk": "-",
+      "counter": "-"
+    },
+    "S": {
+      "红利": "Glamping概念TikTok播放量>3.8亿，年增40%",
+      "risk": "户外安全意识不足，需教育市场",
+      "counter": "内容营销+KOL科普"
+    },
+    "T": {
+      "红利": "北斗芯片成本<$25，AI芯片算力/功耗比提升10倍",
+      "risk": "铱星卫星专利垄断，许可费高昂",
+      "counter": "优先北斗方案，铱星仅Pro款"
+    },
+    "L": {
+      "红利": "知识产权保护加强，打击仿冒",
+      "risk": "GDPR数据出境限制，卫星出口管制",
+      "counter": "数据本地化存储，申请出口许可证"
+    }
+  }
+}
