@@ -1,0 +1,389 @@
+{
+  "direction_id": 101,
+  "direction_name": "smart-hiking-boots",
+  "direction_title": "Smart Hiking Boots 智能登山鞋",
+  "category": "智能户外鞋类",
+  "segments": [
+    {
+      "id": "101-A",
+      "name": "Hardcore Hikers",
+      "value_orientation": "专业性能",
+      "consumption_motive": "预防受伤+提升表现",
+      "tam": "$2.8B",
+      "sam": "$650M",
+      "tm": "$150M"
+    },
+    {
+      "id": "101-B",
+      "name": "Weekend Hikers",
+      "value_orientation": "安全保障",
+      "consumption_motive": "步态分析+防滑预警",
+      "tam": "$3.5B",
+      "sam": "$920M",
+      "tm": "$200M"
+    },
+    {
+      "id": "101-C",
+      "name": "Medical Rehab Patients",
+      "value_orientation": "康复训练",
+      "consumption_motive": "步态异常监测+医生数据同步",
+      "tam": "$1.2B",
+      "sam": "$280M",
+      "tm": "$80M"
+    }
+  ],
+  "global_market_size": "$12.8B",
+  "china_2023_size": "¥9.2B",
+  "china_2027_size": "¥16.5B",
+  "china_cagr": "15.8%",
+  "segment_desc": "智能户外鞋类",
+  "segment_pct": "22%",
+  "segment_growth": "30%+",
+  "sam_size": "¥1.2B/年",
+  "sam_breakdown": "Hardcore ¥420M + Weekend ¥580M + Medical ¥200M",
+  "integrated_cagr": "17%",
+  "integrated_2030": "$28B",
+  "segment_1_desc": "智能徒步鞋（中端）",
+  "segment_1_size": "$5.2B",
+  "segment_1_2030": "$11.2B",
+  "segment_1_cagr": "13.8%",
+  "segment_2_desc": "专业登山鞋（高端）",
+  "segment_2_size": "$4.5B",
+  "segment_2_2030": "$10.5B",
+  "segment_2_cagr": "16.0%",
+  "segment_3_desc": "医疗康复鞋（康复）",
+  "segment_3_size": "$3.1B",
+  "segment_3_2030": "$6.3B",
+  "segment_3_cagr": "12.5%",
+  "target_users": [
+    {
+      "role": "硬核徒步者",
+      "description": "月均徒步>50km，关注装备性能和安全性，价格敏感度低"
+    },
+    {
+      "role": "周末休闲徒步者",
+      "description": "每月1-2次短途徒步，需要步态指导和防滑提示，价格适中"
+    },
+    {
+      "role": "康复训练者",
+      "description": "术后/伤后步态恢复，需持续监测足底压力，数据分享医生"
+    }
+  ],
+  "pain_points": [
+    {
+      "title": "足部受伤风险高",
+      "description": "复杂地形下脚踝扭伤、足底筋膜炎发生率高，缺乏预警"
+    },
+    {
+      "title": "步态不标准",
+      "description": "初学者错误发力导致疲劳和慢性损伤，无人纠正"
+    },
+    {
+      "title": "地面湿滑难察觉",
+      "description": "青石板、岩石表面有苔藓时容易滑倒，缺乏实时提醒"
+    },
+    {
+      "title": "鞋款选择困难",
+      "description": "不同地形需要不同硬度/支撑，一双鞋无法满足所有场景"
+    }
+  ],
+  "competitors": [
+    {
+      "name": "传统高端徒步鞋（Salomon, Merrell）",
+      "优势": "舒适耐用，品牌认可度高",
+      "劣势": "无智能功能，纯机械",
+      "对策": "智能传感器+AI分析，提供数据价值"
+    },
+    {
+      "name": "Under Armour HOVR智能跑鞋",
+      "优势": "有UA Record传感器，跑步数据采集成熟",
+      "劣势": "仅跑步，无徒步场景优化",
+      "对策": "徒步专项算法+地形识别"
+    },
+    {
+      "name": "Nike Adapt（自动系带）",
+      "优势": "科技感强，自动调节",
+      "劣势": "功能单一，续航短，户外不实用",
+      "对策": "聚焦实用功能（防滑+步态），避免花哨"
+    }
+  ],
+  "differentiators": [
+    {
+      "title": "多维压力传感阵列",
+      "description": "7点足底压力分布，精度±5g，实时监测重心转移"
+    },
+    {
+      "title": "地形自适应算法",
+      "description": "识别岩石/泥地/石板，自动调整防滑策略和震动提醒强度"
+    },
+    {
+      "title": "医疗级步态分析",
+      "description": "与康复医院合作，步态异常检出率>90%，数据可导出为PDF报告"
+    }
+  ],
+  "product_models": [
+    {
+      "name": "TrailPro"
+    },
+    {
+      "name": "TrailLite"
+    },
+    {
+      "name": "RehabCare"
+    }
+  ],
+  "product_attributes": [
+    {
+      "attr": "定位",
+      "values": [
+        {
+          "this": "专业探险"
+        },
+        {
+          "this": "大众徒步"
+        },
+        {
+          "this": "医疗康复"
+        }
+      ]
+    },
+    {
+      "attr": "传感器",
+      "values": [
+        {
+          "this": "7点压力+IMU"
+        },
+        {
+          "this": "5点压力+IMU"
+        },
+        {
+          "this": "7点压力+心率"
+        }
+      ]
+    },
+    {
+      "attr": "防水等级",
+      "values": [
+        {
+          "this": "IP68"
+        },
+        {
+          "this": "IP67"
+        },
+        {
+          "this": "IPX5"
+        }
+      ]
+    },
+    {
+      "attr": "续航",
+      "values": [
+        {
+          "this": "40小时"
+        },
+        {
+          "this": "30小时"
+        },
+        {
+          "this": "24小时"
+        }
+      ]
+    },
+    {
+      "attr": "价格",
+      "values": [
+        {
+          "this": "¥2,999"
+        },
+        {
+          "this": "¥1,599"
+        },
+        {
+          "this": "¥2,199"
+        }
+      ]
+    }
+  ],
+  "flagship_model": "TrailPro",
+  "flagship_features": [
+    {
+      "title": "7点压力传感阵列",
+      "description": "足跟、前掌、脚掌后跟7个压力点，实时监测重心转移"
+    },
+    {
+      "title": "IMU 9轴姿态",
+      "description": "检测脚踝内外翻角度，>15°即预警扭伤风险"
+    },
+    {
+      "title": "AI步态教练",
+      "description": "实时语音提示'脚跟先着地'，纠正不良习惯"
+    },
+    {
+      "title": "地形识别与防滑",
+      "description": "识别湿滑地面，震动提醒，紧急情况自动发送SOS"
+    },
+    {
+      "title": "可更换电池模块",
+      "description": "徒步中可拆卸充电，或外接充电宝延长续航"
+    }
+  ],
+  "ecosystem_synergy": [
+    {
+      "title": "TrailLite → TrailPro 升级",
+      "description": "Lite用户进阶购买Pro，数据迁移，享受老用户折扣"
+    },
+    {
+      "title": "Pro → RehabCare 医疗授权",
+      "description": "Pro用户如有康复需求，可激活RehabCare模式（付费）"
+    },
+    {
+      "title": "数据订阅服务",
+      "description": "高级步态分析报告 ¥29/月，云端存储历史数据12个月"
+    }
+  ],
+  "channels": [
+    {
+      "model": "TrailPro",
+      "desc": "DTC + 高端户外店（85% DTC，15% REI等）"
+    },
+    {
+      "model": "TrailLite",
+      "desc": "DTC + 电商（65% DTC，35% 天猫/京东）"
+    },
+    {
+      "model": "RehabCare",
+      "desc": "医院/康复中心 + DTC（50% B2B，50% DTC）"
+    }
+  ],
+  "pricing": [
+    {
+      "model": "TrailPro",
+      "msrp": "¥2,999",
+      "channel_price": "DTC: ¥2,999\\n户外店: ¥2,549",
+      "early_bird": "早鸟减¥300，送1年数据订阅"
+    },
+    {
+      "model": "TrailLite",
+      "msrp": "¥1,599",
+      "channel_price": "DTC: ¥1,599\\n电商: ¥1,359",
+      "early_bird": "首发送3个月订阅"
+    },
+    {
+      "model": "RehabCare",
+      "msrp": "¥2,199",
+      "channel_price": "医院: ¥1,869\\nDTC: ¥2,199",
+      "early_bird": "含5次专家报告"
+    }
+  ],
+  "marketing": [
+    {
+      "model": "TrailPro",
+      "plan": "顶级登山队赞助（如中国登山队），KOL极限测试，专业户外杂志"
+    },
+    {
+      "model": "TrailLite",
+      "plan": "抖音徒步博主，周末轻户外场景广告，电商大促"
+    },
+    {
+      "model": "RehabCare",
+      "plan": "骨科/运动医学科合作，康复师推荐，医院样品体验"
+    }
+  ],
+  "roadmap": [
+    {
+      "quarter": "2025 Q3",
+      "milestone": "TrailPro完成，步态算法准确率>92%"
+    },
+    {
+      "quarter": "2025 Q4",
+      "milestone": "Pro发布，Lite研发，签约首批户外店"
+    },
+    {
+      "quarter": "2026 Q1",
+      "milestone": "Lite发布，RehabCare临床验证"
+    },
+    {
+      "quarter": "2026 Q2",
+      "milestone": "RehabCare发布，三款同时在售"
+    },
+    {
+      "quarter": "2026 Q3-Q4",
+      "milestone": "开放API给运动APP，启动欧洲市场（德语区）"
+    }
+  ],
+  "capacity": [
+    {
+      "model": "TrailPro",
+      "plan": "首批5,000双（2025 Q4），2026年产能20,000双"
+    },
+    {
+      "model": "TrailLite",
+      "plan": "首批20,000双（2026 Q1），年产能100,000双"
+    },
+    {
+      "model": "RehabCare",
+      "plan": "首批2,000双（2026 Q2），年产能8,000双"
+    }
+  ],
+  "risks": [
+    {
+      "risk": "传感器防水耐久性",
+      "category": "硬件",
+      "probability": "中",
+      "impact": "高",
+      "mitigation": "IP68+灌封工艺，实测500km徒步无故障"
+    },
+    {
+      "risk": "用户充电习惯",
+      "category": "体验",
+      "probability": "中",
+      "impact": "中",
+      "mitigation": "低功耗设计（30天待机），外接充电宝兼容"
+    },
+    {
+      "risk": "步态算法争议",
+      "category": "医学",
+      "probability": "低",
+      "impact": "高",
+      "mitigation": "与三甲医院合作临床验证，明确免责声明"
+    },
+    {
+      "risk": "户外大品牌跟进",
+      "category": "市场",
+      "probability": "高",
+      "impact": "中",
+      "mitigation": "快速占领B端康复市场，建立医疗壁垒"
+    },
+    {
+      "risk": "尺码适配问题",
+      "category": "产品",
+      "probability": "中",
+      "impact": "中",
+      "mitigation": "半定制式鞋垫（3种宽度），支持7天无理由退换"
+    }
+  ],
+  "data_sources": [
+    {
+      "source": "Grand View Research: Smart Footwear Market Size 2024"
+    },
+    {
+      "source": "Statista: Hiking Boots Sales Forecast 2023-2030"
+    },
+    {
+      "source": "中国 Outdoor 运动协会：2023年中国徒步市场白皮书"
+    },
+    {
+      "source": "用户调研：Finding Company 1,800份徒步问卷（2024 Q1）"
+    },
+    {
+      "source": "竞品拆解：Under Armour HOVR, Nike Adapt 传感方案分析"
+    },
+    {
+      "source": "临床合作北京协和医院：步态异常数据样本（2024）"
+    }
+  ],
+  "conclusion_summary": "Trail 系列通过压力传感+IMU+AI步态分析，精准解决徒步受伤风险。Pro攻占专业户外，Lite覆盖大众市场，RehabCare打开B端蓝海。首年营收目标 ¥62M，技术复用将压力传感方案延伸至跑鞋、训练鞋等品类。",
+  "first_year_revenue": "¥62M",
+  "revenue_breakdown": "Pro 35%、Lite 50%、RehabCare 15%",
+  "three_year_goal": "三年内国内智能徒步鞋市占率 >30%、成为户外智能穿戴第一品牌。"
+}

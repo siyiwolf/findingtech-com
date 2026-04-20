@@ -1,0 +1,386 @@
+{
+  "direction_id": 102,
+  "direction_name": "portable-solar-cooker",
+  "direction_title": "Portable Solar Cooker 便携太阳能 cookers",
+  "category": "户外太阳能烹饪",
+  "segments": [
+    {
+      "id": "102-A",
+      "name": "Expedition Campers",
+      "value_orientation": "极端环境供电",
+      "consumption_motive": "无燃料烹饪",
+      "tam": "$1.8B",
+      "sam": "$420M",
+      "tm": "$120M"
+    },
+    {
+      "id": "102-B",
+      "name": "Eco-Conscious Families",
+      "value_orientation": "低碳生活",
+      "consumption_motive": "家庭露营零碳烹饪",
+      "tam": "$2.5B",
+      "sam": "$650M",
+      "tm": "$180M"
+    },
+    {
+      "id": "102-C",
+      "name": "Disaster Relief",
+      "value_orientation": "应急备灾",
+      "consumption_motive": "灾害后电力中断应急",
+      "tam": "$0.9B",
+      "sam": "$180M",
+      "tm": "$50M"
+    }
+  ],
+  "global_market_size": "$7.8B",
+  "china_2023_size": "¥5.2B",
+  "china_2027_size": "¥8.9B",
+  "china_cagr": "14.2%",
+  "segment_desc": "太阳能户外烹饪设备",
+  "segment_pct": "18%",
+  "segment_growth": "25%+",
+  "sam_size": "¥680M/年",
+  "sam_breakdown": "Expedition ¥320M + Eco ¥250M + Relief ¥110M",
+  "integrated_cagr": "15%",
+  "integrated_2030": "$16B",
+  "segment_1_desc": "便携太阳能灶",
+  "segment_1_size": "$3.2B",
+  "segment_1_2030": "$6.8B",
+  "segment_1_cagr": "13.5%",
+  "segment_2_desc": "太阳能烧烤架",
+  "segment_2_size": "$2.8B",
+  "segment_2_2030": "$5.9B",
+  "segment_2_cagr": "13.0%",
+  "segment_3_desc": "应急太阳能厨房",
+  "segment_3_size": "$1.8B",
+  "segment_3_2030": "$3.3B",
+  "segment_3_cagr": "15.5%",
+  "target_users": [
+    {
+      "role": "探险露营者",
+      "description": "极端环境（沙漠、高原）需无燃料烹饪，重量敏感"
+    },
+    {
+      "role": "环保家庭",
+      "description": "周末露营，追求零碳排放，烹饪效率要求高"
+    },
+    {
+      "role": "应急管理部门",
+      "description": "灾害救援，需要快速部署的户外厨房"
+    }
+  ],
+  "pain_points": [
+    {
+      "title": "传统燃料不安全",
+      "description": "瓦斯罐在高温下易爆炸，森林露营禁用"
+    },
+    {
+      "title": "充电宝供电有限",
+      "description": "电煮锅功率大，充电宝只能支撑30分钟"
+    },
+    {
+      "title": "传统太阳能板笨重",
+      "description": "折叠板面积大，携带不便"
+    },
+    {
+      "title": "阴天无法使用",
+      "description": "传统太阳能板阴天效率<30%"
+    }
+  ],
+  "competitors": [
+    {
+      "name": "传统瓦斯炉（MSR等）",
+      "优势": "即点火，火力猛",
+      "劣势": "燃料罐危险，需持续购买",
+      "对策": "无燃料，阳光下即可自持"
+    },
+    {
+      "name": "电热饭盒+充电宝",
+      "优势": "简单，成本低",
+      "劣势": "电量不足，功率低，加热慢",
+      "对策": "100W太阳能板+储能，持续供电"
+    },
+    {
+      "name": "固定式太阳能灶（大型）",
+      "优势": "聚光效率高",
+      "劣势": "不可携带，组装麻烦",
+      "对策": "折叠设计+自动追踪，1分钟展开"
+    }
+  ],
+  "differentiators": [
+    {
+      "title": "高效聚光+双面发电",
+      "description": "槽式聚光+光伏板，晴日发电效率35%，比普通板高50%"
+    },
+    {
+      "title": "自动追光支架",
+      "description": "轻量舵机控制，跟踪太阳角度，发电量提升40%"
+    },
+    {
+      "title": "储能+快充",
+      "description": "内置5000mAh电池，15分钟快充70%，阴天可支撑1小时烹饪"
+    }
+  ],
+  "product_models": [
+    {
+      "name": "SolarCook Pro"
+    },
+    {
+      "name": "SolarCook Lite"
+    },
+    {
+      "name": "SolarCook Emergency"
+    }
+  ],
+  "product_attributes": [
+    {
+      "attr": "定位",
+      "values": [
+        {
+          "this": "专业探险"
+        },
+        {
+          "this": "大众露营"
+        },
+        {
+          "this": "应急救援"
+        }
+      ]
+    },
+    {
+      "attr": "功率",
+      "values": [
+        {
+          "this": "200W"
+        },
+        {
+          "this": "120W"
+        },
+        {
+          "this": "100W"
+        }
+      ]
+    },
+    {
+      "attr": "重量",
+      "values": [
+        {
+          "this": "2.5kg"
+        },
+        {
+          "this": "1.8kg"
+        },
+        {
+          "this": "1.2kg"
+        }
+      ]
+    },
+    {
+      "attr": "制冷时间",
+      "values": [
+        {
+          "this": "10分钟煮沸1L"
+        },
+        {
+          "this": "15分钟煮沸1L"
+        },
+        {
+          "this": "20分钟煮沸1L"
+        }
+      ]
+    },
+    {
+      "attr": "价格",
+      "values": [
+        {
+          "this": "¥1,599"
+        },
+        {
+          "this": "¥999"
+        },
+        {
+          "this": "¥1,299"
+        }
+      ]
+    }
+  ],
+  "flagship_model": "SolarCook Pro",
+  "flagship_features": [
+    {
+      "title": "槽式聚光+光伏",
+      "description": "双重能量获取，聚光聚焦+光伏发电，效率倍增"
+    },
+    {
+      "title": "自动追光",
+      "description": "光敏传感器+舵机，10分钟自动对准太阳，无需手动"
+    },
+    {
+      "title": "模块化设计",
+      "description": "面板可拆卸，支架可收纳，背包侧袋可装"
+    },
+    {
+      "title": "智能温控",
+      "description": "内置温度传感器，超温自动降功率，安全防烫"
+    },
+    {
+      "title": "多协议充电",
+      "description": "支持PD/QC/太阳能板直充，兼容所有户外电源"
+    }
+  ],
+  "ecosystem_synergy": [
+    {
+      "title": "Lite → Pro 升级",
+      "description": "Lite用户可单独购买聚光模块升级为Pro"
+    },
+    {
+      "title": "Pro + 储能组合",
+      "description": "Pro可与Finding Solar Power系列储能产品联动"
+    },
+    {
+      "title": "耗材订阅",
+      "description": "备用反射膜、聚光片 ¥99/次（年均更换）"
+    }
+  ],
+  "channels": [
+    {
+      "model": "SolarCook Pro",
+      "desc": "DTC + 专业户外店（80% DTC，20% REI等）"
+    },
+    {
+      "model": "SolarCook Lite",
+      "desc": "DTC + 电商（70% DTC，30% 淘宝/京东）"
+    },
+    {
+      "model": "SolarCook Emergency",
+      "desc": "政府采购 + DTC（30% DTC，70% B2G）"
+    }
+  ],
+  "pricing": [
+    {
+      "model": "SolarCook Pro",
+      "msrp": "¥1,599",
+      "channel_price": "DTC: ¥1,599\\n户外店: ¥1,359",
+      "early_bird": "早鸟减¥200，送便携箱"
+    },
+    {
+      "model": "SolarCook Lite",
+      "msrp": "¥999",
+      "channel_price": "DTC: \\n电商: ¥899",
+      "early_bird": "首发送收纳袋"
+    },
+    {
+      "model": "SolarCook Emergency",
+      "msrp": "¥1,299",
+      "channel_price": "政府: ¥1,099\\nDTC: ¥1,299",
+      "early_bird": "批量采购50台起单价¥999"
+    }
+  ],
+  "marketing": [
+    {
+      "model": "SolarCook Pro",
+      "plan": "极限环境测试（罗布泊、青藏高原），纪录片赞助"
+    },
+    {
+      "model": "SolarCook Lite",
+      "plan": "露营地体验，抖音短视频（阳光下10分钟煮沸），大促冲量"
+    },
+    {
+      "model": "SolarCook Emergency",
+      "plan": "红十字会合作，灾害演练，政府采购投标"
+    }
+  ],
+  "roadmap": [
+    {
+      "quarter": "2025 Q3",
+      "milestone": "SolarCook Pro完成，聚光效率达35%"
+    },
+    {
+      "quarter": "2025 Q4",
+      "milestone": "Pro发布，Lite研发，申请EnergyStar认证"
+    },
+    {
+      "quarter": "2026 Q1",
+      "milestone": "Lite发布，Emergency原型，与应急署合作测试"
+    },
+    {
+      "quarter": "2026 Q2",
+      "milestone": "Emergency发布，三款同时在售"
+    },
+    {
+      "quarter": "2026 Q3-Q4",
+      "milestone": "扩展配件生态（烤盘、蒸锅），启动非洲市场"
+    }
+  ],
+  "capacity": [
+    {
+      "model": "SolarCook Pro",
+      "plan": "首批10,000台（2025 Q4），2026年产能50,000台"
+    },
+    {
+      "model": "SolarCook Lite",
+      "plan": "首批30,000台（2026 Q1），年产能150,000台"
+    },
+    {
+      "model": "SolarCook Emergency",
+      "plan": "首批5,000台（2026 Q2），年产能20,000台"
+    }
+  ],
+  "risks": [
+    {
+      "risk": "聚光板耐候性",
+      "category": "材料",
+      "probability": "中",
+      "impact": "中",
+      "mitigation": "采用航天级铝材+UV涂层，质保3年"
+    },
+    {
+      "risk": "阴天发电不足",
+      "category": "技术",
+      "probability": "高",
+      "impact": "中",
+      "mitigation": "内置储能支持1小时烹饪，晴天可预存储"
+    },
+    {
+      "risk": "用户担心慢",
+      "category": "市场",
+      "probability": "中",
+      "impact": "中",
+      "mitigation": "实测宣传（10分钟煮沸），对比瓦斯炉预热+ combust时间"
+    },
+    {
+      "risk": "政府采购门槛高",
+      "category": "合规",
+      "probability": "中",
+      "impact": "中",
+      "mitigation": "通过应急管理部认证，参与行业标准制定"
+    },
+    {
+      "risk": "模仿者低价竞争",
+      "category": "市场",
+      "probability": "高",
+      "impact": "中",
+      "mitigation": "专利保护+品牌定位，强调追踪功能差异"
+    }
+  ],
+  "data_sources": [
+    {
+      "source": "Global Market Insights: Solar Cooking Equipment Report 2024"
+    },
+    {
+      "source": "国际能源署（IEA）：可再生能源用于烹饪 2023"
+    },
+    {
+      "source": "中国应急管理部：应急救援装备配备标准 2024"
+    },
+    {
+      "source": "用户调研：Finding Company 1,200份露营问卷（2024 Q1）"
+    },
+    {
+      "source": "竞品实测：GoSun, SolSource, BioLite 各2周"
+    }
+  ],
+  "conclusion_summary": "SolarCook 系列以聚光+光伏双模+自动追光，解决户外太阳能 cooking 效率低、携带不便痛点。Pro面向极端环境，Lite覆盖大众露营，Emergency切入应急蓝海。首年营收目标 ¥45M，技术可延伸至太阳能热水器、太阳能充电站。",
+  "first_year_revenue": "¥45M",
+  "revenue_breakdown": "Pro 40%、Lite 45%、Emergency 15%",
+  "three_year_goal": "三年内成为国内户外太阳能烹饪第一品牌，市占率 >35%，出口占比30%。"
+}
