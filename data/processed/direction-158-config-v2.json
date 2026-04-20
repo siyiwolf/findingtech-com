@@ -1,0 +1,15 @@
+{
+  "direction_id": 158,
+  "direction_name": "smart-temperature-patch",
+  "direction_title": "Smart Temperature Patch 智能温控贴片",
+  "category": "可穿戴健康",
+  "segments": [
+    {"id": "158-A", "name": "Premium Wearables", "value_orientation": "精准温控", "consumption_motive": "医疗级温度监测", "tam": "$1.2B", "sam": "$300M", "tm": "$50M"},
+    {"id": "158-B", "name": "Athletes", "value_orientation": "性能优化", "consumption_motive": "运动后体温恢复", "tam": "$1.5B", "sam": "$400M", "tm": "$60M"},
+    {"id": "158-C", "name": "Elderly Care", "value_orientation": "安全监护", "consumption_motive": "异常体温预警", "tam": "$1.0B", "sam": "$250M", "tm": "$40M"}
+  ],
+  "value_chain": [{"segment": "上游", "market_size": "$0.6B", "avg_gross_margin": "42%", "operating_margin": "20%", "trend": "柔性电子", "key_suppliers": []}, {"segment": "中游", "market_size": "$0.4B", "avg_gross_margin": "35%", "operating_margin": "15%", "trend": "集成化", "key_suppliers": []}, {"segment": "下游", "market_size": "$0.5B", "avg_gross_margin": "50%", "operating_margin": "28%", "trend": "DTC+医疗渠道", "key_suppliers": []}],
+  "industry_trends": {"tech_trends": [{"year": "2024", "trend": "柔性温度传感"}], "demand_trends": [{"year": "2024", "demand": "基础监护", "share": "70%"}]},
+  "track_selection": {"logic": "毛利率>40%", "candidates": [{"name": "Smart Temperature Patch", "cagr": "18%", "gross_margin": "48%", "choice": "✅"}], "selected_tracks": [{"id": "158", "name": "Smart Temperature Patch"}]},
+  "pestel": {"P": {"红利": "健康监测政策", "risk": "二类医疗器械认证", "counter": "提前准备"}, "E": {"红利": "老龄化市场", "risk": "芯片价格", "counter": "战略采购"}, "S": {"红利": "健康意识", "risk": "竞争", "counter": "差异化"}, "T": {"红利": "柔性电了", "risk": "技术迭代", "counter": "研发"}, "L": {"红利": "知识产权", "risk": "合规", "counter": "法务"}, "E": {"红利": "-", "risk": "-", "counter": "-"}}
+}
