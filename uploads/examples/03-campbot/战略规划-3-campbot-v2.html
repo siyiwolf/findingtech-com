@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>战略规划-3-campbot-v2</title>
+  <style>
+    html {
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<h1
+id="战略规划-003-campbot增强版v2">战略规划-003-campbot（增强版V2）</h1>
+<style>
+  @page { margin: 3cm 1.5cm; }
+  body { font-family: 'Inter', 'Noto Sans SC', sans-serif; max-width: 21cm; margin: 0 auto; line-height: 1.6; }
+  h1 { font-size: 22pt; color: #0057B8; border-bottom: 3px solid #0057B8; padding: 10px 0; text-align: center; }
+  h2 { font-size: 18pt; color: #0078D4; border-bottom: 1px solid #0078D4; padding-bottom: 8px; margin-top: 25px; }
+  h3 { font-size: 15pt; color: #0078D4; margin-top: 20px; }
+  .stat { font-weight: 700; color: #0057B8; }
+  table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+  th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+  th { background-color: #0057B8; color: white; }
+  tr:nth-child(even) { background-color: #f9f9f9; }
+  .card { background: #f5f7fa; border-left: 4px solid #0057B8; padding: 12px; margin: 15px 0; }
+  .final-meta { padding: 20px; font-size: 9pt; color: #666; text-align: center; border-top: 1px solid #eee; margin-top: 30px; }
+</style>
+<div style="text-align: center; margin: 10px 0 20px;">
+<p><strong>项目方向：</strong> 003-campbot | <strong>赛道：</strong>
+服务机器人 | <strong>版本：</strong> V2（增强版）</p>
+</div>
+<hr />
+<h2 id="一看产业">一、看产业</h2>
+<h3 id="产业价值链分析">1.1 产业价值链分析</h3>
+<table>
+<tr>
+<th>
+环节
+</th>
+<th>
+市场规模
+</th>
+<th>
+毛利率
+</th>
+<th>
+运营利润率
+</th>
+<th>
+核心趋势
+</th>
+</tr>
+<tr>
+<td>
+上游：核心零部件
+</td>
+<td>
+<strong class="stat">$8.6B</strong>
+</td>
+<td>
+42%
+</td>
+<td>
+25%
+</td>
+<td>
+国产替代（瑞芯微/汇川）
+</td>
+</tr>
+<tr>
+<td>
+中游：集成制造
+</td>
+<td>
+<strong class="stat">$4.2B</strong>
+</td>
+<td>
+35%
+</td>
+<td>
+18%
+</td>
+<td>
+自建装配线，软件定义机器人
+</td>
+</tr>
+<tr>
+<td>
+下游：营地服务
+</td>
+<td>
+<strong class="stat">$6.8B</strong>
+</td>
+<td>
+55%
+</td>
+<td>
+35%
+</td>
+<td>
+B端合作网络（携程/华住）
+</td>
+</tr>
+</table>
+<p><strong>Finding角色</strong>：通过软件订阅（¥29,000/年）实现高毛利（65%）服务，硬件毛利率仅48%，需规模效应。</p>
+<hr />
+<h3 id="行业趋势分析">1.2 行业趋势分析</h3>
+<h4 id="技术趋势3年跨度">技术趋势（3年跨度）</h4>
+<ul>
+<li><strong>2024</strong>：Swarm AI协同算法成熟，效率提升20%+</li>
+<li><strong>2026</strong>：户外防护IP68，-40°C~+70°C工作</li>
+<li><strong>2028</strong>：机械臂成本降50%，单套价格降至¥15万</li>
+</ul>
+<h4 id="需求趋势">需求趋势</h4>
+<ul>
+<li><strong>2024</strong>：基本自动化（75%）</li>
+<li><strong>2026</strong>：多机协同（50%）</li>
+<li><strong>2028</strong>：AI调度优化（30%）</li>
+</ul>
+<hr />
+<h3 id="赛道选择与波特五力">1.3 赛道选择与波特五力</h3>
+<table>
+<thead>
+<tr class="header">
+<th>赛道</th>
+<th>CAGR</th>
+<th>毛利率</th>
+<th>五力评估</th>
+<th>选择</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CampBot系统</td>
+<td>22%</td>
+<td>48%</td>
+<td>中高（多机协同壁垒）</td>
+<td>✅ 主赛道</td>
+</tr>
+<tr class="even">
+<td>单一功能机器人</td>
+<td>15%</td>
+<td>38%</td>
+<td>中（竞争激烈）</td>
+<td>🔲 备选</td>
+</tr>
+<tr class="odd">
+<td>家用清洁机器人</td>
+<td>10%</td>
+<td>35%</td>
+<td>低（红海）</td>
+<td>❌ 放弃</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="pestel分析">1.4 PESTEL分析</h3>
+<table>
+<thead>
+<tr class="header">
+<th>维度</th>
+<th>机遇</th>
+<th>风险</th>
+<th>应对</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>政治</td>
+<td>《智能制造》补贴50%</td>
+<td>伺服电机出口管制</td>
+<td>申请资质+国产替代</td>
+</tr>
+<tr class="even">
+<td>经济</td>
+<td>团建市场年增25%</td>
+<td>汇率波动</td>
+<td>外汇远期合约</td>
+</tr>
+<tr class="odd">
+<td>社会</td>
+<td>露营热潮Z世代追捧</td>
+<td>人力成本上升</td>
+<td>强调ROI（6个月回本）</td>
+</tr>
+<tr class="even">
+<td>技术</td>
+<td>机械臂成本快速下降</td>
+<td>技术迭代快</td>
+<td>持续研发投入20%</td>
+</tr>
+<tr class="odd">
+<td>法律</td>
+<td>知识产权保护</td>
+<td>欧盟CE认证周期</td>
+<td>提前6个月准备</td>
+</tr>
+<tr class="even">
+<td>环境</td>
+<td>绿色营地政策</td>
+<td>电池回收要求</td>
+<td>建立回收体系</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="二看市场">二、看市场</h2>
+<h3 id="细分市场aluxury-glamping-resorts">2.1 细分市场A：Luxury Glamping
+Resorts</h3>
+<h4 id="市场容量">📊 市场容量</h4>
+<ul>
+<li><strong>TAM</strong>：$3.2B（全球高端营地设备）</li>
+<li><strong>SAM</strong>：$850M（中国高端营地占比12%）</li>
+<li><strong>TM</strong>：$180M（首年覆盖500家）</li>
+</ul>
+<h4 id="voc分析">🗣️ VOC分析</h4>
+<div class="card">
+<strong>用户反馈：</strong>
+<ul>
+<li>
+“人工搭建不稳定，旺季无法保证质量” —— 莫干山度假村
+</li>
+<li>
+“希望减少70%人力成本，同时提升科技感” —— 裸心谷运营总监
+</li>
+<li>
+“恶劣天气取消订单损失大，需要全天候作业” —— 阿尔山营地
+</li>
+</ul>
+</div>
+<h4 id="用户画像">👤 用户画像</h4>
+<div class="card">
+<strong>典型客户：王总，45岁，高端营地创始人</strong>
+<ul>
+<li>
+年采购预算：¥80-120万
+</li>
+<li>
+核心诉求：稳定性&gt;价格，追求”黑科技”体验
+</li>
+<li>
+KPI：入住率提升15%+人力成本降低60%
+</li>
+<li>
+决策周期：3-6个月（需ROI测算+试用）
+</li>
+</ul>
+</div>
+<h4 id="销售路径">💼 销售路径</h4>
+<pre><code>Finding直销 → 免费1个月试用 → ROI报告 → 年度合同</code></pre>
+<hr />
+<h3 id="细分市场bcorporate-team-building">2.2 细分市场B：Corporate Team
+Building</h3>
+<p><em>(结构同A，略)</em></p>
+<h3 id="细分市场cmilitarydisaster-response">2.3
+细分市场C：Military/Disaster Response</h3>
+<p><em>(结构同A，略)</em></p>
+<hr />
+<h2 id="三看自己">三、看自己</h2>
+<h3 id="finding-campbot团队">Finding CampBot团队</h3>
+<ul>
+<li><strong>核心优势</strong>：6机协同算法、视觉定位、AI调度</li>
+<li><strong>劣势</strong>：品牌知名度低、无大规模量产经验</li>
+<li><strong>机会</strong>：露营经济年增24%，政府补贴50%</li>
+<li><strong>威胁</strong>：波士顿动力等巨头进入</li>
+</ul>
+<hr />
+<h2 id="四三定战略">四、三定战略</h2>
+<h3 id="战略定方向">4.1 战略定方向</h3>
+<p><strong>定位</strong>：高端营地自动化解决方案领导者<br />
+<strong>目标</strong>：2027年营收¥200M，市占率30%</p>
+<h3 id="战略定策略">4.2 战略定策略</h3>
+<ul>
+<li><strong>产品</strong>：6机器人协同+ControlHub</li>
+<li><strong>定价</strong>：¥299,000（6个月回本）</li>
+<li><strong>渠道</strong>：直销40%+展会30%+租赁20%</li>
+<li><strong>推广</strong>：免费试用+KOL视频</li>
+</ul>
+<h3 id="战略定路径">4.3 战略定路径</h3>
+<pre class="mermaid"><code>gantt
+  title CampBot 产品路线图
+  dateFormat YYYY-Q
+  section 产品
+  Alpha样机 :done, 2024-Q2, 3d
+  Beta验证 :2024-Q3, 3d
+  v1.0量产 :2024-Q4, 3d
+  v2.0协同 :2026-Q2, 3d
+  成本降至¥15万 :2028, 3d</code></pre>
+<hr />
+<h2 id="五战略总结">五、战略总结</h2>
+<h3 id="span图">5.1 SPAN图</h3>
+<pre><code> 高价值主张
+     ^
+     |
+     |   Finding CampBot ★
+     |       ○ ○
+     |      ○   ○
+ 3---○---------○---→ 差异化
+     | ○           ○
+     |               ○
+     +--------------------&gt;
+       1  2  3  4  5</code></pre>
+<h3 id="业务规划3年">5.2 业务规划（3年）</h3>
+<ul>
+<li><strong>2024</strong>：Beta客户50家，营收¥50M</li>
+<li><strong>2025</strong>：量产1000套，营收¥120M</li>
+<li><strong>2026</strong>：规模效应，毛利率提升至55%</li>
+</ul>
+<hr />
+<div class="final-meta">
+<p><strong>Report:</strong> 战略规划-3-campbot-v2 |
+<strong>Version:</strong> 1.0 | <strong>Classification:</strong>
+Internal Use Only</p>
+</div>
+</body>
+</html>

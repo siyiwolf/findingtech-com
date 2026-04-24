@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-04-19T06:52:06.721Z",
+  "updatedAt": "2026-04-22T23:05:09.824Z",
   "entries": {
     "memory:memory/2026-04-15.md:1:40": {
       "key": "memory:memory/2026-04-15.md:1:40",
@@ -93,6 +93,136 @@
         "16.8",
         "jetboil/msr/biolite",
         "11-智能照明系统"
+      ]
+    },
+    "memory:memory/2026-04-18.md:1:39": {
+      "key": "memory:memory/2026-04-18.md:1:39",
+      "path": "memory/2026-04-18.md",
+      "startLine": 1,
+      "endLine": 39,
+      "source": "memory",
+      "snippet": "# 2026-04-18 工作记录（续） ## 08:00-08:30 方向 46-50 完成 & 推送 - 方向 46-50 (6批) 全部 PRD/GTM/PM/洞察报告创建完毕 - Git 提交 `084cfb6`，推送成功 - 进度: 50/100 (50%) ## 08:30-08:50 方向 51-55 完成 & 推送 - 方向 51-55 (7批) 完成 - Git 提交 `a81f038`，推送 **部分成功** 后遇网络波动 - 本地提交已保存，等待网络恢复重推 - 进度: 55/100 (55%) ## 08:50-09:20 方向 56-60 完成（第8批） 已完成: - 56-smart-socks - 57-portable-smart-grill - 58-solar-shower - 59-smart-bike-lock - 60-outdoor-white-noise 每方向包含： - MKT 洞察报告（HTML） - PRD、GTM、PM 简短文档 - 特点：根据产品类型，保持 1-3KB 精炼但信息完整 下一步： - 提交 batch 8（56-60） - 继续 61-65 生成 - 网络恢复后统一推送 总进度: 60/100 (60%) **注意**: GitHub 推送出现间歇性 TLS/连接超时，已自动重试机制，后续批次将累积本地提交，待网络稳定后批量推送。 --- **记录时间**: 2026-04-18 08:20 (Asia/Shanghai) **记录人**: CEO Agent",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-20T21:10:47.497Z",
+      "lastRecalledAt": "2026-04-22T23:05:09.824Z",
+      "queryHashes": [
+        "8cfd81d46fc4",
+        "8231669358cf"
+      ],
+      "recallDays": [
+        "2026-04-21",
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "网络",
+        "00-08",
+        "46-50",
+        "prd/gtm/pm/洞察报告创建完毕",
+        "50/100",
+        "30-08",
+        "51-55",
+        "55/100"
+      ]
+    },
+    "memory:memory/2026-04-13.md:1:41": {
+      "key": "memory:memory/2026-04-13.md:1:41",
+      "path": "memory/2026-04-13.md",
+      "startLine": 1,
+      "endLine": 41,
+      "source": "memory",
+      "snippet": "# Memory: 2025-04-13 (Day 1) ## 重大决策与机制 ### 1. 团队协作模式确立 - **会议频率**：每4小时一次（17:00, 21:00, 01:00, 05:00, 09:00, 13:00） - **CEO自主决策**：不再等待用户指示，CEO评估后快速决策 - **24小时工作制**：所有成员（包括子Agent）24小时不间断工作 - **项目经理监督**：PM每4小时唤醒团队，检查产出，无响应则CEO替换 ### 2. 目标明确 - **每日产出**：20个新的洞察方向（独立方向，非文件数） - **当前进度**：7个完整方向（01-07中除08）+ 01占位页 = 7个有效 - **总目标**：24小时内完成20个方向（需新增13个） - **质量要求**：每个方向8模块完整报告（HTML，5-10KB） --- ## 完成交付物（04-13） ### P0 核心三连（03/04/05） | 方向 | 洞察报告 | GTM策略 | PRD | PM计划 | 完成时间 | |------|----------|---------|-----|--------|----------| | 03-campbot | ✅ 7.8KB | ✅ 3.2KB | ✅ 5.8KB | ✅ 3.8KB | 10:36-13:20 | | 04-climatent | ✅ 8.2KB | ❌ | ❌ | ❌ | 13:22 | | 05-solar-power | ✅ 8.4KB | ❌ | ❌ | ❌ | 13:30 | **GitHu",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-20T21:10:47.497Z",
+      "lastRecalledAt": "2026-04-22T23:03:17.113Z",
+      "queryHashes": [
+        "8cfd81d46fc4",
+        "d634dbdc4d75",
+        "ed4c70d2b6d6"
+      ],
+      "recallDays": [
+        "2026-04-21",
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "01-07中除08",
+        "5-10kb",
+        "04-13",
+        "03/04/05",
+        "03-campbot",
+        "7.8kb",
+        "3.2kb",
+        "5.8kb"
+      ]
+    },
+    "memory:memory/2026-04-17.md:1:27": {
+      "key": "memory:memory/2026-04-17.md:1:27",
+      "path": "memory/2026-04-17.md",
+      "startLine": 1,
+      "endLine": 27,
+      "source": "memory",
+      "snippet": "## 2026-04-17 项目完成日志 ### ⏳ 项目里程碑 - **02:14-06:09**：GitHub 推送阻塞（TLS handshake 超时），导致14方向无法同步 - 解决：重试推送，移除硬编码token，成功推送commit `8e8dd2e` - 应急：创建Git Bundle备份(`/tmp/findingtech-com-2026-04-16.bundle`) - **06:42-06:49**：批量转换洞察报告PDF（8份），使用pandoc+weasyprint - 状态：全部成功（含01-smart-camping、04-climatent、05-solar-power等） - **06:50**：发现部门主会话（MKT/PRD/GTM/PM）全部离线（>18小时） - 行动：尝试sessions_spawn重连，部分子代理恢复活跃 ### 🚀 CEO接管与手动交付 - **07:09-07:55**：CEO手动创建16-20方向交付物（16-drone-swarm、17-entertainment、18-rescue、19-storage、20-eco-monitor） - 手动完成文件：MKT洞察9份（HTML），PRD/GTM/PM策略15份（MD） - 阻塞：PRD-19和PM-18/20子代理超时，CEO手动补全 - **08:12-10:55**：报告样式优化（header高度、logo间距、final-meta唯一性） - 行动：批量修复30个HTML文件，重新生成PDF - 提交：`4",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-22T23:02:15.429Z",
+      "lastRecalledAt": "2026-04-22T23:03:17.113Z",
+      "queryHashes": [
+        "d634dbdc4d75",
+        "ed4c70d2b6d6"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "备份",
+        "14-06",
+        "42-06",
+        "含01-smart-camping",
+        "04-climatent",
+        "05-solar-power等",
+        "mkt/prd/gtm/pm",
+        "尝试sessions-spawn重连"
+      ]
+    },
+    "memory:memory/2026-04-14.md:1:40": {
+      "key": "memory:memory/2026-04-14.md:1:40",
+      "path": "memory/2026-04-14.md",
+      "startLine": 1,
+      "endLine": 40,
+      "source": "memory",
+      "snippet": "# Daily Log - 2026-04-14 ## [07:28] A2A Heartbeat Report - UPDATE **Status**: GTM recovered successfully. ### Team Status (07:28) - ✅ MKT: Active - ✅ PRD: Recovered (06:59) - ✅ **GTM: RECOVERED** (07:27, subagent confirmed) - ⏳ PM: Recovery in progress (spawned 07:26) ### GTM Recovery Details - Subagent: `agent:gtm:subagent:506984af...` - Request: Needs MKT洞察报告 + CEO指令 for 09-智能睡眠系统 GTM strategy - Response: GTM ready to proceed with template once inputs provided ### CEO Actions & GTM Response - Provided GTM with MKT report directory (reports/04-climatent etc.) and requested specifics - GTM requested: full MKT insights + CEO directives for 09-智能睡眠系统 - Continuing PRD writing for 09-智能睡眠系统",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-22T23:02:15.429Z",
+      "lastRecalledAt": "2026-04-22T23:02:15.429Z",
+      "queryHashes": [
+        "d634dbdc4d75"
+      ],
+      "recallDays": [
+        "2026-04-23"
+      ],
+      "conceptTags": [
+        "09-智能睡眠系统",
+        "reports/04-climatent",
+        "log",
+        "a2a",
+        "heartbeat",
+        "report",
+        "update",
+        "status"
       ]
     }
   }
